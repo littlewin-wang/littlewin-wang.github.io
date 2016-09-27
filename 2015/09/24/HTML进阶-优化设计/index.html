@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> HTML进阶-优化设计 | Littlewin's blog</title><meta name="description" content="HTML进阶-优化设计 - Littlewin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/casual.css"><link rel="stylesheet" href="/css/semantic.min.css"><link rel="search" type="application/opensearchdescription+xml" href="http://littlewin.info/atom.xml" title="Littlewin's blog"></head><body><div class="sidebar"><div class="ui vertical inverted menu"><div class="h100"></div><h3 class="ui inverted aligned icon header"><div class="content">LITTLEWIN'S BLOG</div></h3><div class="h50"></div><div class="side-nav"><a href="/" target="_self" class="item">HOME<i class="icon home"></i></a><a href="/archives" target="_self" class="item">ARCHIVE<i class="icon archive"></i></a><a href="/tags" target="_self" class="item">TAGS<i class="icon tags"></i></a><a href="/about" target="_self" class="item">INFO<i class="icon info"></i></a><a href="/atom.xml" target="_self" class="item">RSS<i class="icon rss"></i></a></div><div class="item"><div class="ui inverted transparent icon input"><input type="text" placeholder="Search..."><i class="search icon"></i></div></div><div class="h50"></div></div><div class="h50 mq"><a class="ui teal big label"><i class="content icon"></i></a></div><div class="author-info"><img src="/avatar.png" class="author-photo ui tiny circular image"><h4 class="ui aligned icon header"><div class="content">Littlewin</div></h4><p class="author-desc">朝着前端打怪升级中 | 目前从事闪存产品的固件和测试工具开发工作 | 多特蒙德死忠</p><div class="social-outer"><div class="social-inner"><a href="http://github.com/littlewin-wang" target="_blank" class="social-link"><i class="icon github"></i></a><a target="_self" class="social-link"><i class="icon twitter"></i></a><a target="_self" class="social-link"><i class="icon weibo"></i></a></div></div></div></div><div class="main"><div class="wrap"><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">HTML进阶-优化设计</h1><div class="post-info"><div class="post-date"><h6 class="ui header"><i class="calendar icon"></i><div class="content">Sep 24, 2015</div></h6></div></div><div class="post-content"><h5 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h5><p>时至今日，网页加载的性能已经很大程度影响了网页的体验效果。而提到加载性能的提升点，大部分人会想到<code>图片优化</code>、<code>JavaScript优化</code>、<code>服务器配置升级</code>、<code>文件压缩</code>甚至是<code>CSS压缩</code>这些方式。反而在前端初学阶段接触的HTML代码的质量，容易被忽视。<br>网页内容的丰富离不开页面元素的快速累积，举一个典型值，YouTube的首页元素大概有3500个。网页性能的提升无法靠精简元素来实现，特别是HTML5还在多媒体方面增加了更多的标签。但是如果在页面开发之初，就注重HTML代码的清晰，干净，整洁，对提升网页性能十分有益。在初学阶段，就培养良好的开发习惯，不仅能够让你的网页在许多设备上都能快速正常的加载运行，而且会另你的项目易于debug和维护。</p>
+<blockquote>
+<p>HTML用于搭建架构，至少要保证脱离CSS和JavaScript之后页面可基本呈现。<br>CSS用于美化样式，尽可能在完成需求的前提下精简。<br>JavaScript用于控制行为，完成上述二者无法完成的附加功能</p>
+</blockquote>
+<a id="more"></a> 
+<h5 id="一、结构至上"><a href="#一、结构至上" class="headerlink" title="一、结构至上"></a>一、结构至上</h5><p>网页的总体设计原则是 － “渐进增强，优雅降级”，而HTML作为这一切的基石，在搭建之初就应该最先被考虑，总体而言，在初学阶段，需要注意以下几点：</p>
+<h5 id="页面结构的完整性"><a href="#页面结构的完整性" class="headerlink" title="页面结构的完整性"></a>页面结构的完整性</h5><p>完整HTML包括“DOCTYPE声明”，“head网页信息” “body网页具体内容”。采用HTML5标准时开头应该加上&lt;!DOCTYPE html&gt;，在<code>&lt;head&gt;</code>标签中引入资源文件，像这样：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span> </div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Demo<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"/styles/global.css"</span>&gt;</span> </div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span> </div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        ...</div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h6 id="标签结构的完备性"><a href="#标签结构的完备性" class="headerlink" title="标签结构的完备性"></a>标签结构的完备性</h6><ol>
+<li>要准备好备用内容：比如给<code>&lt;track&gt;</code>元素添加说明和副标题，给<code>&lt;video&gt;</code>和<code>&lt;audio&gt;</code>元素添加备用的文字或者图片，视频内容配上相应的截图或海报，每张图片都要加<code>alt</code>属性（如果图片只是用来装饰页面的话可以给<code>alt</code>赋空值）。</li>
+<li>链接要加<code>title</code>属性，<code>title</code>必须要有意义，不要只是链接的复述。</li>
+</ol>
+<h6 id="结构顺序和视觉顺序基本保持一致"><a href="#结构顺序和视觉顺序基本保持一致" class="headerlink" title="结构顺序和视觉顺序基本保持一致"></a>结构顺序和视觉顺序基本保持一致</h6><ol>
+<li>按照从上至下、从左到右的视觉顺序书写HTML结构。</li>
+<li>有时候为了便于搜索引擎抓取，可将重要内容在HTML结构顺序上提前。</li>
+<li>用<code>div</code>代替<code>table</code>布局，可以使HTML更具灵活性，也方便利用CSS控制。</li>
+<li><code>table</code>不建议用于布局，但表现具有明显表格形式的数据，<code>table</code>还是首选。</li>
+</ol>
+<h6 id="保持良好简洁的树形结构"><a href="#保持良好简洁的树形结构" class="headerlink" title="保持良好简洁的树形结构"></a>保持良好简洁的树形结构</h6><ol>
+<li>每一个块级元素都另起一行，每一行都使用Tab缩进对齐（<code>head</code>和<code>body</code>的子元素不需要缩进），删除冗余的行尾的空格。</li>
+<li>使用2个空格代替1个Tab（大多数编辑器中可设置）。</li>
+<li>对于内容较为简单的元素，建议将其写成单行。</li>
+<li>大的模块之间用空行隔开，使模块更清晰。</li>
+</ol>
+<h5 id="二、语义化设计"><a href="#二、语义化设计" class="headerlink" title="二、语义化设计"></a>二、语义化设计</h5><p>语义化的意思是从名称一眼就能看出其内容和作用是什么，HTML的标签就是通过使用浅显易懂的元素名和属性名来实现语义化。HTML5引进了一些新的语义化元素，比如<code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>和<code>&lt;nav&gt;</code>。一定要针对内容使用相应的语义化元素，便于理解代码：</p>
+<ol>
+<li>标题使用<code>&lt;h1&gt;</code>(<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>…)，列表使用<code>&lt;ul&gt;</code>或者<code>&lt;ol&gt;</code>。</li>
+<li><code>&lt;article&gt;</code>内容中的标题应该从<code>&lt;h1&gt;</code>开始。</li>
+<li>在适当的地方使用HTML5的新元素，比如   <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,  <code>&lt;nav&gt;</code>和<code>&lt;aside&gt;</code>。</li>
+<li>正文中的文本内容要用 <code>&lt;p&gt;</code>标签，内容的结构化可以使用HTML5的新元素（或者<code>&lt;div&gt;</code>），不要颠倒。</li>
+<li>修改文字样式时，<code>&lt;em&gt;</code>和<code>&lt;strong&gt;</code>要比<code>&lt;i&gt;</code>和<code>&lt;b&gt;</code>更好些，因为前者语义更加明显。</li>
+<li><code>&lt;form&gt;</code>中要包含<code>&lt;label&gt;</code>元素，<code>&lt;input&gt;</code>元素要有 <code>type</code>、<code>placeholder</code>以及其他必要的属性，即使值为空都可以。</li>
+<li>不要把文字和元素混合在一起，采用完全元素化布局，比如这样：</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span> </div><div class="line">    Name: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>  写成这样会更好</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">label</span>&gt;</span>Name:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h5 id="三、布局"><a href="#三、布局" class="headerlink" title="三、布局"></a>三、布局</h5><p>样式一定是由CSS控制的，但HTML的设计中也要考虑到一些便于布局的事项：</p>
+<ol>
+<li><code>&lt;p&gt;</code>元素用来放文字，而不是用来布局，在浏览器自身的样式表中默认<code>&lt;p&gt;</code>有margin和其他样式。</li>
+<li>想实现换行可以使用<code>&lt;block&gt;</code>元素或者CSS的<code>display</code>属性，尽量避免使用<code>&lt;br&gt;</code>来换行。文字内容中的换行可以用<code>&lt;br&gt;</code>，但通常也很少这样用，有时在诗文中会把<code>&lt;br&gt;</code>作为标点来使用。</li>
+<li>避免使用<code>&lt;hr&gt;</code>，因为这个元素对语义和结构都没有太大帮助，反而<code>&lt;hr&gt;</code>极差的灵活性对布局和显示都有很大的影响。</li>
+<li>不要滥用<code>&lt;div&gt;</code>，W3C对<code>&lt;div&gt;</code>的描述是这样的：当没有其他元素可用时才能使用<code>&lt;div&gt;</code>。如果想让<code>&lt;link&gt;</code>和<code>&lt;img&gt;</code>这类元素能够在结尾换行，可以在样式中添加<code>display: block</code>，这样要比把它们放进<code>&lt;div&gt;</code>或者使用<code>&lt;br&gt;</code>来换行要好得多。</li>
+<li>必须知道哪些是块级元素，这样就可以避免把块级元素放到<code>&lt;div&gt;</code>里面，比如列表就不需要放到<code>&lt;div&gt;</code>里面。</li>
+<li><code>&lt;table&gt;</code>是用来放表格数据的，不是用来布局的。</li>
+</ol>
+<h5 id="四、Web三大件的配合"><a href="#四、Web三大件的配合" class="headerlink" title="四、Web三大件的配合"></a>四、Web三大件的配合</h5><h6 id="开发顺序"><a href="#开发顺序" class="headerlink" title="开发顺序"></a>开发顺序</h6><ol>
+<li>首先完成HTML的设计，具体的设计准则在之前三点都有所提及。</li>
+<li>然后根据样式需求来设计CSS，会在后续学习记录里更新。</li>
+<li>最后在确实需要的情况下才设计JavaScript，会在后续学习记录里更新。</li>
+</ol>
+<h6 id="文件配合"><a href="#文件配合" class="headerlink" title="文件配合"></a>文件配合</h6><ol>
+<li>保持结构、样式、行为的独立性。<br> 将CSS和JavaScript文件进行归档，与HTML文件分开（这样不仅有助于页面缓存，而且可以使后期Debug更容易），这之后再把CSS和JavaScript链接到HTML中，可以根据需要来对CSS和JavaScript代码进行压缩加密。</li>
+<li><p>按需加载：<br> 应在head标签中引入CSS文件，这样浏览器就可以在输出HTML之前获取CSS信息：</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span> </div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Demo<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"/styles/global.css"</span>&gt;</span> </div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div></pre></td></tr></table></figure>
+<p> 在 <code>&lt;body&gt;</code>标签的末尾引入JavaScript文件，这样可以在页面显示之后再编译JavaScript文件，以加快页面读取速度，同时有助于JavaScript对页面中的元素进行操作，像这样：</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> </div><div class="line">    ... </div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/index.js"</span>&gt;</span><span class="xml"></span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>避免内联样式或内联操作<br> 例如：</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">style</span>=<span class="string">"background-color:red;"</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div></pre></td></tr></table></figure>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"handleFoo()"</span>&gt;</span>Foo<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+<p> 这些内联操作会在web项目复杂度提升后给后期扩展和维护带来很多风险，应避免使用。</p>
+</li>
+</ol>
+<h5 id="五、其它、"><a href="#五、其它、" class="headerlink" title="五、其它、"></a>五、其它、</h5><p>本文主要给予前端初学者在设计之初的一些借鉴之处，在页面设计的后期工作中，测试特别是对不同屏幕和使用环境的适配也是值得注重的问题，这部分内容会在引入调试和打包工具的介绍之后再进行探讨。</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/01/01/Objective-C学习之OOP/" class="prev"><button class="ui button teal">上一篇</button></a><a href="/2015/09/08/Hello-new-transform/" class="next"><button class="ui button teal">下一篇</button></a></div><div data-thread-key="2015/09/24/HTML进阶-优化设计/" data-title="HTML进阶-优化设计" data-url="http://littlewin.info/2015/09/24/HTML进阶-优化设计/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"littlewin"};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0] 
+   || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script><div class="copyright"><p>© 2016 <a href="http://littlewin.info">Littlewin</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and theme by <a href="https://github.com/littlewin-wang/hexo-theme-casual" target="_blank">casual</a></p></div></footer></div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><script src="/js/jquery.scrollex.js"></script><script src="/js/semantic.min.js"></script><script src="/js/casual.js"></script><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></div></body></html>

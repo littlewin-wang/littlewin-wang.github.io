@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Littlewin&#39;s blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://littlewin.info/"/>
+  <updated>2016-09-27T03:38:06.484Z</updated>
+  <id>http://littlewin.info/</id>
+  
+  <author>
+    <name>Littlewin</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>乍暖还寒时候，最难将息</title>
+    <link href="http://littlewin.info/2016/09/18/%E4%B9%8D%E6%9A%96%E8%BF%98%E5%AF%92%E6%97%B6%E5%80%99%EF%BC%8C%E6%9C%80%E9%9A%BE%E5%B0%86%E6%81%AF/"/>
+    <id>http://littlewin.info/2016/09/18/乍暖还寒时候，最难将息/</id>
+    <published>2016-09-18T13:01:31.000Z</published>
+    <updated>2016-09-27T03:38:06.484Z</updated>
+    
+    <content type="html"><![CDATA[<p>很久没执笔写下一些有关心情和感悟的文字，总觉得现在没有消化不了的情绪，没有抑制不住的情感。</p>
+<p><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-9-27/77701867.jpg" alt=""></p>
+<a id="more"></a> 
+<p>对于自己的目标也就不紧不慢的追着，过得有些过度平凡。</p>
+<p>来深圳之后经历过几个阶段，初来对本地环境的排斥和对一段不深厚的异地恋的紧紧依恋，异地恋崩盘之后的无奈和放纵，和有一个平淡无喜报的跨年。</p>
+<p>今年年初找到一些方向，已经坚持了数月，从最初目标来看成果甚至超过预期很多，但是一想到快要奔三的人需要面对的准准，不免心中一直惴惴不安。</p>
+<p>其实自己一直都是“背负臭皮囊，梦想有日翻身”的典型屌丝IT男心态，很多时候都会重复着睡前呐喊，醒后茫然的状态，并非自己毫无原则和自律，而是从学校一路走过来，对自己的定位一降再降，说白了就是怂吧。</p>
+<p>最近貌似看到一个对20-30岁之间的年轻人的幸福感程度评价，除了无聊的职业收入和职位成就感，占比较重的还有“你最近一次外出旅游”和“你是否在一段恋情中”，面对这类问题的时候，自己还真是觉得很尴尬，想不通是不是自己的问题，却每次经历着一些类似的苦果。</p>
+<p>好在节奏虽慢但不断，步伐虽缓但不停，对于工作这块未来的期望是早就定好的，这半年来本职工作还算轻松，有了一些时间积累自己想从事的前端内容，应该在年底之前会做为一版release将自己发布出去吧，希望有好的面试机会。</p>
+<p>在每日面向谷歌编程的过程中，也翻阅了一些小牛们的blog，一方面悔悟自己当初不能，二来也重新给自己树立一些方法和习惯，在中国，能进入BAT这个level的公司起码证明一个人在自己的专业领域做到了80分以上，而从他们blog可以清晰的看到自本科起就开始积累的技术路线和项目，不一定所产出的项目一定是耳目一新的idea，但他们会长期维护，利用积累的技能去更新和推进，同样会在git上得到很高的认可。</p>
+<p>此时应是故乡乍暖还寒，此时应是故乡近中秋，先定个小目标，约个年轻的小美女一起爬山？本月累积跑掉100公里？快点把自己的hexo主题弄好？快点把今年的BAIDU IFE的最后一道大题刷完？在找工作前完成俩成熟的project？</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;很久没执笔写下一些有关心情和感悟的文字，总觉得现在没有消化不了的情绪，没有抑制不住的情感。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xpot0.com1.z0.glb.clouddn.com/16-9-27/77701867.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
+    
+      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Objective-C学习之ARC</title>
+    <link href="http://littlewin.info/2016/01/03/Objective-C%E5%AD%A6%E4%B9%A0%E4%B9%8BARC/"/>
+    <id>http://littlewin.info/2016/01/03/Objective-C学习之ARC/</id>
+    <published>2016-01-03T13:27:33.000Z</published>
+    <updated>2016-09-06T11:31:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>内存管理在程序开发中有着至关重要的作用，基本上每个C系的程序员都会遇到与内存相关的错误，这种错误是灾难性的。Java或脚本语言的内存管理是自动进行的，就像父母会给孩子打扫房间一样。对于C系程序开发，我们必须合理分配内存，在内存结束使用后释放它们，避免内存泄漏（leak memory）。</p>
+<a id="more"></a> 
+<h5 id="iOS内存管理机制"><a href="#iOS内存管理机制" class="headerlink" title="iOS内存管理机制"></a>iOS内存管理机制</h5><p>iOS开发中，内存中的对象主要有两类，一类是值类型，比如<code>int</code>、<code>float</code>、<code>struct</code>等基本数据类型；另一类是引用类型，也就是继承自NSObject类的所有的OC对象。</p>
+<p>值类型会被放入栈中，他们依次紧密排列，在内存中占有一块连续的内存空间，遵循先进后出的原则。栈内存中的值类型系统会随着其生命周期自动管理。</p>
+<p>引用类型会被放到堆中，当给对象分配内存空间时，会随机的从内存当中开辟空间，设备内存使有限的，需要我们在释放对象后将其占据的内存归还堆空间，使之可以再被利用。</p>
+<p>在Apple引入自动引用计数（Automatic Reference Counting, ARC）之前，应用只能通过手动引用计数（Mannul Reference Counting, MRC）来管理内存，具体的原则也很简单</p>
+<blockquote>
+<p>如果需要持有一个对象，那么对其发送<code>retain</code>如果之后不再使用该对象，那么需要对其发送<code>release</code>（或者<code>autorealse</code>）。每一次对<code>retain</code>，<code>alloc</code>或者<code>new</code>的调用，需要对应一次<code>release</code>或<code>autorealse</code>调用。</p>
+</blockquote>
+<p>大多数情况下，可以依靠ARC来自动的完成需要的内存管理功能。但是，理解其工作原理，可以便于我们调试应用或对一些场景做特殊处理。</p>
+<h5 id="指针变量与对象所有权"><a href="#指针变量与对象所有权" class="headerlink" title="指针变量与对象所有权"></a>指针变量与对象所有权</h5><blockquote>
+<p>当某个方法（或函数）有一个指向某个对象的局部变量时，可以称该变量拥有该变量所指向的对象。<br>当某个对象有一个指向其他对象的实例变量时，可以称该对象拥有该实例变量所指向的对象。</p>
+</blockquote>
+<p>例如<br><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-1-3/76239862.jpg" alt=""><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@interface NewClass : NSObject</div><div class="line">&#123;</div><div class="line">    NSString *newString;</div><div class="line">&#125;</div><div class="line">@property (nonatomic, retain) NSString *newString;</div><div class="line">@end</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">NewClass *newClass = [NewClass alloc];</div><div class="line">[newClass init];</div><div class="line">newClass.newString = @&quot;littlewin&quot;</div></pre></td></tr></table></figure>
+<p><code>newClass</code>对象拥有其实例变量<code>newString</code>所指向的对象<code>@&quot;littlewin&quot;</code>。</p>
+<p>对象的所有权可以帮助我们决定释放对象和回收内存的时机。</p>
+<blockquote>
+<p>如果某个对象没有拥有者，就应该将其释放掉。<br>如果某个对象有一个或多个拥有者，就必须保留不能释放。</p>
+</blockquote>
+<p>下列情况会使对象失去拥有者：</p>
+<ul>
+<li>当指针变量指向另一个对象时<br><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-1-3/11277658.jpg" alt=""></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;内存管理在程序开发中有着至关重要的作用，基本上每个C系的程序员都会遇到与内存相关的错误，这种错误是灾难性的。Java或脚本语言的内存管理是自动进行的，就像父母会给孩子打扫房间一样。对于C系程序开发，我们必须合理分配内存，在内存结束使用后释放它们，避免内存泄漏（leak memory）。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Objective-C" scheme="http://littlewin.info/tags/Objective-C/"/>
+    
+      <category term="iOS" scheme="http://littlewin.info/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Objective-C学习之OOP</title>
+    <link href="http://littlewin.info/2016/01/01/Objective-C%E5%AD%A6%E4%B9%A0%E4%B9%8BOOP/"/>
+    <id>http://littlewin.info/2016/01/01/Objective-C学习之OOP/</id>
+    <published>2016-01-01T07:02:41.000Z</published>
+    <updated>2016-09-06T11:31:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><em>最近元旦无事在家休息，将这半年来所学记录于此。以后无论事情再多，也要力争在短周期内通过blog上update自己的学习记录和心得，一来督促自己，二来方便日后查阅。</em></p>
+<p>开发iOS应用需要使用Objective-C语言和Cocoa Touch框架。Objective-C源自C语言，是C语言的扩展。Cocoa Touch框架则是一个Objective-C类的集合。<br><a id="more"></a> </p>
+<h5 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h5><p>Objective-C的类与其他OOP语言基本类似，是一种表示对象类型的结构体。对象通过它隶属的类来获取自身的各种信息，尤其是执行每个操作所要运行的代码。<br><code>@interface</code>指令将类所提供的数据结构成员告知Objective-C编译器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@interface NewClass : NSObject  </div><div class="line">&#123;</div><div class="line">//fill in instance variable</div><div class="line">&#125;</div><div class="line">//fill in method declaration</div><div class="line">@end</div></pre></td></tr></table></figure></p>
+<p><code>@implementation</code>部分提供各个数据接口的功能代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@implementation NewClass</div><div class="line">//fill in implementation</div><div class="line">@end</div></pre></td></tr></table></figure></p>
+<p>在Objective-C中，几乎所有的类都是NSObject类的子类，因此，可以将这些类也看为对象，对象能够接收的消息列表是保存在它所对应的类中。每一个对象都有一个名为 isa 的指针，指向该对象的类。</p>
+<p>NSObject 就是一个包含 isa 指针的结构体，它的定义如下所示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@interface NSObject  &#123; </div><div class="line">    Class isa; </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>类是元类(metaclass)的实例，元类的isa指针指向根元类（root metaclass），根元类 (root metaclass) 本身的 isa 指针指向自己，形成一个闭环的继承路径。<br><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-1-1/48692569.jpg" alt=""><br>对象是类的实例，其本身是分配在内存中的一块数据。对象是有生命周期的，首先被创建，然后接受消息，最后在不需要时被释放。向类发alloc消息，会在内存中创建对象并返回对象指针。对新创建的对象，必须先向其发送一个初始化消息，然后它才能正常工作。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">NewClass *newClass = [NewClass alloc];</div><div class="line">[newClass init];</div></pre></td></tr></table></figure></p>
+<p>在对象完成使命后，可以要求程序释放对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">newClass=nil;</div></pre></td></tr></table></figure></p>
+<h5 id="实例变量和属性"><a href="#实例变量和属性" class="headerlink" title="实例变量和属性"></a>实例变量和属性</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@interface NewClass : NSObject</div><div class="line">&#123;</div><div class="line">    NSString *newString;</div><div class="line">&#125;</div><div class="line">@property (nonatomic, retain) NSString *newString;</div><div class="line">@end</div></pre></td></tr></table></figure>
+<p>声明类的实例变量时，需要将相应的声明写在花括号里，并紧跟在类声明的后面。为类添加实例变量后，还要定义存取方法（accessor method），否则无法访问对象的实例变量。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- (void)setNewString:(NSString *)str;</div><div class="line">- (NSString *)newString;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">- (void)setNewString:(NSString *)str</div><div class="line">&#123;</div><div class="line">    _newString = str;</div><div class="line">&#125;</div><div class="line"></div><div class="line">- (NSString *)newString</div><div class="line">&#123;</div><div class="line">    return _newString;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><code>@Property</code>是声明属性的语法，它可以快速方便的为实例变量创建存取器，并允许我们通过点语法使用存取器。</p>
+<p>它们的区别有以下几点</p>
+<ul>
+<li>直接操作实例变量明显更快。因为不需要经过OC的方法分发，直接从内存中读取。</li>
+<li>直接写实例变量会绕过属性的内存管理声明，假如你的属性声明为 <code>copy</code>，直接写入它的实例变量将不会产生copy操作。</li>
+<li>直接操作实例变量，不会发送KVO通知。</li>
+<li>操作属性方便调试，你可以给get/set方法加断点，就能知道谁在什么时候进行了读写操作。</li>
+</ul>
+<h5 id="类方法和实例方法"><a href="#类方法和实例方法" class="headerlink" title="类方法和实例方法"></a>类方法和实例方法</h5><p>类方法的作用通常是创建对象，或者获取类的某些全局属性。<strong>类方法不会作用在在对象上，也不能存取实例变量</strong>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">+ (void)toNewString</div><div class="line">&#123;</div><div class="line">    NSLog(@&quot;this is a class method of NewString&quot;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>实例方法则用来操作类的对象（对象有时也可称为类的一个实例）例如上述存取方法。</p>
+<p>在创建一个NewClass对象时，首先向NewClass类发送<code>alloc</code>（类方法）消息，然后向使用alloc方法创建的对象newClass发送<code>init</code>（实例方法）消息。</p>
+<h5 id="继承与复合"><a href="#继承与复合" class="headerlink" title="继承与复合"></a>继承与复合</h5><p>继承（is-a关系）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@interface NewClass : NSObject</div></pre></td></tr></table></figure></p>
+<p>Objective-c不支持多继承。<br>Objective-c支持重写方法，同时仍然调用超类的实现方式，这时需要使用<code>super</code>关键词来调用父类方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[super init]；</div></pre></td></tr></table></figure></p>
+<p>复合（has-a关系）<br>在objective-c中，复合是通过包含作为实例变量的对象指针实现的，如NewClass可以包含newString和oldString。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@interface NewClass : NSObject </div><div class="line">&#123; </div><div class="line">    NSString *newString; </div><div class="line">    NSString *oldString;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>严格来讲，只有对象间的组合才能叫复合，而基本类型都被认为是对象的一部分。</p>
+<h5 id="一些没提到的关键字"><a href="#一些没提到的关键字" class="headerlink" title="一些没提到的关键字"></a>一些没提到的关键字</h5><ul>
+<li><code>self</code> 与 <code>super</code><br><code>self</code> 是一个隐含的指针，指向接收消息的对象的指针。<br><code>super</code>既不是参数也不是实例变量。向<code>super</code>发消息时，实际上是在请求Objective-C向该类的超类发送消息。如果超类中没有定义的消息，Objective-C将按照继承的通常规则在继承链中查找。例如<code>[super init]</code>用于向超类的<code>init</code>方法发送消息。</li>
+<li><code>id</code><br><code>id</code>是指向Objective-C类对象的指针，它可以声明为任何类对象的指针，当在Objective-C中使用id时，编译器会假定你知道，<code>id</code>指向哪个类的对象。与<code>void*</code>是不同的是，<code>void*</code>编译器不知道也不假定指向任何类型的指针。</li>
+<li><code>nil</code><br>定义为一个常量，如果一个指针的值为<code>nil</code>,代表这个指针没有指向任何对象。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;最近元旦无事在家休息，将这半年来所学记录于此。以后无论事情再多，也要力争在短周期内通过blog上update自己的学习记录和心得，一来督促自己，二来方便日后查阅。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;开发iOS应用需要使用Objective-C语言和Cocoa Touch框架。Objective-C源自C语言，是C语言的扩展。Cocoa Touch框架则是一个Objective-C类的集合。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Objective-C" scheme="http://littlewin.info/tags/Objective-C/"/>
+    
+      <category term="iOS" scheme="http://littlewin.info/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML进阶-优化设计</title>
+    <link href="http://littlewin.info/2015/09/24/HTML%E8%BF%9B%E9%98%B6-%E4%BC%98%E5%8C%96%E8%AE%BE%E8%AE%A1/"/>
+    <id>http://littlewin.info/2015/09/24/HTML进阶-优化设计/</id>
+    <published>2015-09-24T15:26:42.000Z</published>
+    <updated>2016-09-27T03:45:03.614Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h5><p>时至今日，网页加载的性能已经很大程度影响了网页的体验效果。而提到加载性能的提升点，大部分人会想到<code>图片优化</code>、<code>JavaScript优化</code>、<code>服务器配置升级</code>、<code>文件压缩</code>甚至是<code>CSS压缩</code>这些方式。反而在前端初学阶段接触的HTML代码的质量，容易被忽视。<br>网页内容的丰富离不开页面元素的快速累积，举一个典型值，YouTube的首页元素大概有3500个。网页性能的提升无法靠精简元素来实现，特别是HTML5还在多媒体方面增加了更多的标签。但是如果在页面开发之初，就注重HTML代码的清晰，干净，整洁，对提升网页性能十分有益。在初学阶段，就培养良好的开发习惯，不仅能够让你的网页在许多设备上都能快速正常的加载运行，而且会另你的项目易于debug和维护。</p>
+<blockquote>
+<p>HTML用于搭建架构，至少要保证脱离CSS和JavaScript之后页面可基本呈现。<br>CSS用于美化样式，尽可能在完成需求的前提下精简。<br>JavaScript用于控制行为，完成上述二者无法完成的附加功能</p>
+</blockquote>
+<a id="more"></a> 
+<h5 id="一、结构至上"><a href="#一、结构至上" class="headerlink" title="一、结构至上"></a>一、结构至上</h5><p>网页的总体设计原则是 － “渐进增强，优雅降级”，而HTML作为这一切的基石，在搭建之初就应该最先被考虑，总体而言，在初学阶段，需要注意以下几点：</p>
+<h5 id="页面结构的完整性"><a href="#页面结构的完整性" class="headerlink" title="页面结构的完整性"></a>页面结构的完整性</h5><p>完整HTML包括“DOCTYPE声明”，“head网页信息” “body网页具体内容”。采用HTML5标准时开头应该加上&lt;!DOCTYPE html&gt;，在<code>&lt;head&gt;</code>标签中引入资源文件，像这样：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span> </div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Demo<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"/styles/global.css"</span>&gt;</span> </div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span> </div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        ...</div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h6 id="标签结构的完备性"><a href="#标签结构的完备性" class="headerlink" title="标签结构的完备性"></a>标签结构的完备性</h6><ol>
+<li>要准备好备用内容：比如给<code>&lt;track&gt;</code>元素添加说明和副标题，给<code>&lt;video&gt;</code>和<code>&lt;audio&gt;</code>元素添加备用的文字或者图片，视频内容配上相应的截图或海报，每张图片都要加<code>alt</code>属性（如果图片只是用来装饰页面的话可以给<code>alt</code>赋空值）。</li>
+<li>链接要加<code>title</code>属性，<code>title</code>必须要有意义，不要只是链接的复述。</li>
+</ol>
+<h6 id="结构顺序和视觉顺序基本保持一致"><a href="#结构顺序和视觉顺序基本保持一致" class="headerlink" title="结构顺序和视觉顺序基本保持一致"></a>结构顺序和视觉顺序基本保持一致</h6><ol>
+<li>按照从上至下、从左到右的视觉顺序书写HTML结构。</li>
+<li>有时候为了便于搜索引擎抓取，可将重要内容在HTML结构顺序上提前。</li>
+<li>用<code>div</code>代替<code>table</code>布局，可以使HTML更具灵活性，也方便利用CSS控制。</li>
+<li><code>table</code>不建议用于布局，但表现具有明显表格形式的数据，<code>table</code>还是首选。</li>
+</ol>
+<h6 id="保持良好简洁的树形结构"><a href="#保持良好简洁的树形结构" class="headerlink" title="保持良好简洁的树形结构"></a>保持良好简洁的树形结构</h6><ol>
+<li>每一个块级元素都另起一行，每一行都使用Tab缩进对齐（<code>head</code>和<code>body</code>的子元素不需要缩进），删除冗余的行尾的空格。</li>
+<li>使用2个空格代替1个Tab（大多数编辑器中可设置）。</li>
+<li>对于内容较为简单的元素，建议将其写成单行。</li>
+<li>大的模块之间用空行隔开，使模块更清晰。</li>
+</ol>
+<h5 id="二、语义化设计"><a href="#二、语义化设计" class="headerlink" title="二、语义化设计"></a>二、语义化设计</h5><p>语义化的意思是从名称一眼就能看出其内容和作用是什么，HTML的标签就是通过使用浅显易懂的元素名和属性名来实现语义化。HTML5引进了一些新的语义化元素，比如<code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>和<code>&lt;nav&gt;</code>。一定要针对内容使用相应的语义化元素，便于理解代码：</p>
+<ol>
+<li>标题使用<code>&lt;h1&gt;</code>(<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>…)，列表使用<code>&lt;ul&gt;</code>或者<code>&lt;ol&gt;</code>。</li>
+<li><code>&lt;article&gt;</code>内容中的标题应该从<code>&lt;h1&gt;</code>开始。</li>
+<li>在适当的地方使用HTML5的新元素，比如   <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,  <code>&lt;nav&gt;</code>和<code>&lt;aside&gt;</code>。</li>
+<li>正文中的文本内容要用 <code>&lt;p&gt;</code>标签，内容的结构化可以使用HTML5的新元素（或者<code>&lt;div&gt;</code>），不要颠倒。</li>
+<li>修改文字样式时，<code>&lt;em&gt;</code>和<code>&lt;strong&gt;</code>要比<code>&lt;i&gt;</code>和<code>&lt;b&gt;</code>更好些，因为前者语义更加明显。</li>
+<li><code>&lt;form&gt;</code>中要包含<code>&lt;label&gt;</code>元素，<code>&lt;input&gt;</code>元素要有 <code>type</code>、<code>placeholder</code>以及其他必要的属性，即使值为空都可以。</li>
+<li>不要把文字和元素混合在一起，采用完全元素化布局，比如这样：</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span> </div><div class="line">    Name: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>  写成这样会更好</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">label</span>&gt;</span>Name:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h5 id="三、布局"><a href="#三、布局" class="headerlink" title="三、布局"></a>三、布局</h5><p>样式一定是由CSS控制的，但HTML的设计中也要考虑到一些便于布局的事项：</p>
+<ol>
+<li><code>&lt;p&gt;</code>元素用来放文字，而不是用来布局，在浏览器自身的样式表中默认<code>&lt;p&gt;</code>有margin和其他样式。</li>
+<li>想实现换行可以使用<code>&lt;block&gt;</code>元素或者CSS的<code>display</code>属性，尽量避免使用<code>&lt;br&gt;</code>来换行。文字内容中的换行可以用<code>&lt;br&gt;</code>，但通常也很少这样用，有时在诗文中会把<code>&lt;br&gt;</code>作为标点来使用。</li>
+<li>避免使用<code>&lt;hr&gt;</code>，因为这个元素对语义和结构都没有太大帮助，反而<code>&lt;hr&gt;</code>极差的灵活性对布局和显示都有很大的影响。</li>
+<li>不要滥用<code>&lt;div&gt;</code>，W3C对<code>&lt;div&gt;</code>的描述是这样的：当没有其他元素可用时才能使用<code>&lt;div&gt;</code>。如果想让<code>&lt;link&gt;</code>和<code>&lt;img&gt;</code>这类元素能够在结尾换行，可以在样式中添加<code>display: block</code>，这样要比把它们放进<code>&lt;div&gt;</code>或者使用<code>&lt;br&gt;</code>来换行要好得多。</li>
+<li>必须知道哪些是块级元素，这样就可以避免把块级元素放到<code>&lt;div&gt;</code>里面，比如列表就不需要放到<code>&lt;div&gt;</code>里面。</li>
+<li><code>&lt;table&gt;</code>是用来放表格数据的，不是用来布局的。</li>
+</ol>
+<h5 id="四、Web三大件的配合"><a href="#四、Web三大件的配合" class="headerlink" title="四、Web三大件的配合"></a>四、Web三大件的配合</h5><h6 id="开发顺序"><a href="#开发顺序" class="headerlink" title="开发顺序"></a>开发顺序</h6><ol>
+<li>首先完成HTML的设计，具体的设计准则在之前三点都有所提及。</li>
+<li>然后根据样式需求来设计CSS，会在后续学习记录里更新。</li>
+<li>最后在确实需要的情况下才设计JavaScript，会在后续学习记录里更新。</li>
+</ol>
+<h6 id="文件配合"><a href="#文件配合" class="headerlink" title="文件配合"></a>文件配合</h6><ol>
+<li>保持结构、样式、行为的独立性。<br> 将CSS和JavaScript文件进行归档，与HTML文件分开（这样不仅有助于页面缓存，而且可以使后期Debug更容易），这之后再把CSS和JavaScript链接到HTML中，可以根据需要来对CSS和JavaScript代码进行压缩加密。</li>
+<li><p>按需加载：<br> 应在head标签中引入CSS文件，这样浏览器就可以在输出HTML之前获取CSS信息：</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span> </div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Demo<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"/styles/global.css"</span>&gt;</span> </div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div></pre></td></tr></table></figure>
+<p> 在 <code>&lt;body&gt;</code>标签的末尾引入JavaScript文件，这样可以在页面显示之后再编译JavaScript文件，以加快页面读取速度，同时有助于JavaScript对页面中的元素进行操作，像这样：</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> </div><div class="line">    ... </div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/index.js"</span>&gt;</span><span class="xml"></span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>避免内联样式或内联操作<br> 例如：</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">style</span>=<span class="string">"background-color:red;"</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div></pre></td></tr></table></figure>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"handleFoo()"</span>&gt;</span>Foo<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+<p> 这些内联操作会在web项目复杂度提升后给后期扩展和维护带来很多风险，应避免使用。</p>
+</li>
+</ol>
+<h5 id="五、其它、"><a href="#五、其它、" class="headerlink" title="五、其它、"></a>五、其它、</h5><p>本文主要给予前端初学者在设计之初的一些借鉴之处，在页面设计的后期工作中，测试特别是对不同屏幕和使用环境的适配也是值得注重的问题，这部分内容会在引入调试和打包工具的介绍之后再进行探讨。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h5&gt;&lt;p&gt;时至今日，网页加载的性能已经很大程度影响了网页的体验效果。而提到加载性能的提升点，大部分人会想到&lt;code&gt;图片优化&lt;/code&gt;、&lt;code&gt;JavaScript优化&lt;/code&gt;、&lt;code&gt;服务器配置升级&lt;/code&gt;、&lt;code&gt;文件压缩&lt;/code&gt;甚至是&lt;code&gt;CSS压缩&lt;/code&gt;这些方式。反而在前端初学阶段接触的HTML代码的质量，容易被忽视。&lt;br&gt;网页内容的丰富离不开页面元素的快速累积，举一个典型值，YouTube的首页元素大概有3500个。网页性能的提升无法靠精简元素来实现，特别是HTML5还在多媒体方面增加了更多的标签。但是如果在页面开发之初，就注重HTML代码的清晰，干净，整洁，对提升网页性能十分有益。在初学阶段，就培养良好的开发习惯，不仅能够让你的网页在许多设备上都能快速正常的加载运行，而且会另你的项目易于debug和维护。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;HTML用于搭建架构，至少要保证脱离CSS和JavaScript之后页面可基本呈现。&lt;br&gt;CSS用于美化样式，尽可能在完成需求的前提下精简。&lt;br&gt;JavaScript用于控制行为，完成上述二者无法完成的附加功能&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML" scheme="http://littlewin.info/tags/HTML/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello, new transform</title>
+    <link href="http://littlewin.info/2015/09/08/Hello-new-transform/"/>
+    <id>http://littlewin.info/2015/09/08/Hello-new-transform/</id>
+    <published>2015-09-08T14:51:36.000Z</published>
+    <updated>2016-09-06T11:32:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>来到深圳参加工作已经快到俩月，工作和生活基本进入了一个新的稳态，这个阶段最应该放下之前的波折，重新审视内心，制定计划。</p>
+<a id="more"></a> 
+<p><em>ABOUT WORK</em><br>以前基本是在写嵌入式硬件上的驱动和系统应用代码，实习过程也是在从事持续集成系统后台的脚本的开发，前端的东西在持续的了解，但从未深入学习过。前端涵盖的知识面非常广，既有具体的技术，又有抽象的理念。简单地说，它的主要职能就是把各个终端界面更好地呈现给用户。于我而言，这是一件很屌的事情，于是，我要转型，并且开启了这个<a href="http://littlewin.info" title="Littlewin&#39;s blog">blog</a>来记录这个过程的点滴。</p>
+<p><em>ABOUT LIFE</em><br>－ 刚参加工作就想着转型的确是一件很荒唐的事情，我愿意为此付出很多时间的经济上的支出，有目标驱动，有挤出来的资源支持，最终还希望有能力去重新选择。<br>－ 执行力在某些方面的体现已经不错了，其他方面仍需补齐，这最终将一一被时间和记录所检验。<br>－ 在很远的地方打通一处心扉是件不太容易的事情，我是一个结果导向的人，希望一点一滴的煎熬和坚持最终能换来终点的释怀。</p>
+<p>其实汇总之后就是一句话，不服就干！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;来到深圳参加工作已经快到俩月，工作和生活基本进入了一个新的稳态，这个阶段最应该放下之前的波折，重新审视内心，制定计划。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
+    
+      <category term="工作" scheme="http://littlewin.info/tags/%E5%B7%A5%E4%BD%9C/"/>
+    
+  </entry>
+  
+</feed>
