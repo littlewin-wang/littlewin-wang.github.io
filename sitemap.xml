@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://littlewin.info/tags/index.html</loc>
+    
+    <lastmod>2016-09-29T09:30:22.970Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://littlewin.info/2015/11/29/JavaScript%20Learning%20-%20apply%EF%BC%8Ccall%E5%92%8Cbind%E6%B5%85%E6%9E%90/</loc>
     
     <lastmod>2016-09-29T09:11:26.425Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://littlewin.info/about/index.html</loc>
     
     <lastmod>2016-09-12T09:57:51.048Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://littlewin.info/tags/index.html</loc>
-    
-    <lastmod>2016-09-12T09:11:23.870Z</lastmod>
     
   </url>
   
