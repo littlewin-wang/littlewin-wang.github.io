@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://littlewin.info/"/>
-  <updated>2016-10-08T02:18:50.735Z</updated>
+  <updated>2016-10-17T08:01:54.393Z</updated>
   <id>http://littlewin.info/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小任性大男孩</title>
+    <link href="http://littlewin.info/2016/10/17/%E5%B0%8F%E4%BB%BB%E6%80%A7%E5%A4%A7%E7%94%B7%E5%AD%A9/"/>
+    <id>http://littlewin.info/2016/10/17/小任性大男孩/</id>
+    <published>2016-10-17T07:47:06.000Z</published>
+    <updated>2016-10-17T08:01:54.393Z</updated>
+    
+    <content type="html"><![CDATA[<p>致一个长得像ALEX SANCHEZ的枪手球迷 &amp; 朋友<br><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-10-17/11886208.jpg" width="40%" height="40%"><br><a id="more"></a> </p>
+<p>从儿时希望，有面包跟牛奶当早餐<br>而立前也想，留青春和热血不言弃</p>
+<p>小任性，一时之快，姿态甩向世界，以便巩固和强化，仅能扮演的角色<br>大实话，余音绕梁，没有任何形状，终究自由而如愿，恰似山间的清风</p>
+<p>雨来之时，发型是伞么<br>浪起之时，礁石是港湾么<br>远足之时，风是帆么<br>但满溢着水的世界里，坚信回头是岸</p>
+<p>看似鱼贯的穿越 适度卷曲的悲伤<br>其实不然 或许鸡汤本该有三分咸度<br>余下七分 给自己埋下几处伏笔</p>
+<p>经过岁月筛选后 还能完整保留在沙滩上<br>一定是 具备了某种特质的形状<br>譬如 用报纸褶皱后准备 起航<br>孩童时期 那一艘 日益膨胀的想象</p>
+<p>原谅我 如此大费周章 写下这些 素颜非韵脚<br>只因 我和你一样 都愿做个 半大不小的孩子</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;致一个长得像ALEX SANCHEZ的枪手球迷 &amp;amp; 朋友&lt;br&gt;&lt;img src=&quot;http://7xpot0.com1.z0.glb.clouddn.com/16-10-17/11886208.jpg&quot; width=&quot;40%&quot; height=&quot;40%&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
+    
+      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>我理解的有效沟通</title>
@@ -163,7 +192,7 @@
 </ul>
 <p>JSONP实现原理是 - <code>&lt;script&gt;</code>标签可以有来自不同域的资源，当浏览器解析<code>&lt;script&gt;</code>标签，它会GET请求脚本内容（来自任何源）并在当前的页面中执行。通常，服务器会返回HTML或一些XML或JSON数据。有时向一个启用JSONP的服务器请求时，它会返回一个脚本块，这个脚本块执行一个在页面中定义好的回调函数，并提供参数。以下举例：</p>
 <p>源3000的页面想要获取存储在源3001的资源。源3000页面包含下面的script标签：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
 <p>当浏览器解析这个script标签，它将正常的发出GET请求：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /?callback=myCallbackFunction HTTP/1.1</div></pre></td></tr></table></figure>
 <p>服务器没法返回原生JSON，而是返回一个脚本块，包含函数的调用，函数名在URL中指定，输出的数据作为参数传递。</p>
@@ -208,9 +237,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -386,9 +415,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -443,9 +472,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -532,9 +561,9 @@
     </summary>
     
     
-      <category term="HTML" scheme="http://littlewin.info/tags/HTML/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="http://littlewin.info/tags/HTML/"/>
     
   </entry>
   
