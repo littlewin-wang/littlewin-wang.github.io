@@ -37,7 +37,7 @@
 </ul>
 <p>JSONP实现原理是 - <code>&lt;script&gt;</code>标签可以有来自不同域的资源，当浏览器解析<code>&lt;script&gt;</code>标签，它会GET请求脚本内容（来自任何源）并在当前的页面中执行。通常，服务器会返回HTML或一些XML或JSON数据。有时向一个启用JSONP的服务器请求时，它会返回一个脚本块，这个脚本块执行一个在页面中定义好的回调函数，并提供参数。以下举例：</p>
 <p>源3000的页面想要获取存储在源3001的资源。源3000页面包含下面的script标签：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
 <p>当浏览器解析这个script标签，它将正常的发出GET请求：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /?callback=myCallbackFunction HTTP/1.1</div></pre></td></tr></table></figure>
 <p>服务器没法返回原生JSON，而是返回一个脚本块，包含函数的调用，函数名在URL中指定，输出的数据作为参数传递。</p>
