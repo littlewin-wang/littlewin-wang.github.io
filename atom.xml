@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://littlewin.info/"/>
-  <updated>2016-10-30T08:05:43.958Z</updated>
+  <updated>2016-11-02T08:53:33.848Z</updated>
   <id>http://littlewin.info/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://littlewin.info/2016/10/30/%E4%BD%95%E4%BB%A5%E9%A9%B4%E5%BE%97%E6%B0%B4/"/>
     <id>http://littlewin.info/2016/10/30/何以驴得水/</id>
     <published>2016-10-30T08:04:50.000Z</published>
-    <updated>2016-10-30T08:05:43.958Z</updated>
+    <updated>2016-11-02T08:53:33.848Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>生存压力以外的理想主义到底是不是耍流氓<br>脱离知识分子的气韵来黑知识分子的虚伪外表是不是耍流氓<br>抛弃雅俗共赏的勇气勾勒出一个不完整的人性思考轴是不是耍流氓</p>
@@ -35,8 +35,7 @@
 <p>校长女儿在本剧中承载着唯一的希望一路走向正确的道路（^.^ 我们的事业的正确而伟大的）。一个满怀童真的新青年未经权利和利益的过渡在亲情绑架下也被迫放弃追求真善美的最后转机，幸好矛盾在她的悲剧铸造前爆发，草地上撒下五彩缤纷的弹力球，应该是本片尾声出释放出的一丝亲和观众的美好吧。</p>
 <p>学工科的喜欢一切具体化，总结一下，就是知识分子在高压下开始妥协由小骗子晋身为大骗子再亲手塑造出悲剧的载体，进而毁掉了自己为之奋斗的理想主义。</p>
 <p>没有答案告诉我们知识分子可不可以轻易的谈起理想。</p>
-<p>但下次我跟你讲个喜剧，你可以先不笑么？</p>
-<p><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-10-30/10288178.jpg" alt=""></p>
+<p>我讲个笑话，你可别哭啊</p>
 ]]></content>
     
     <summary type="html">
@@ -319,7 +318,7 @@
 </ul>
 <p>JSONP实现原理是 - <code>&lt;script&gt;</code>标签可以有来自不同域的资源，当浏览器解析<code>&lt;script&gt;</code>标签，它会GET请求脚本内容（来自任何源）并在当前的页面中执行。通常，服务器会返回HTML或一些XML或JSON数据。有时向一个启用JSONP的服务器请求时，它会返回一个脚本块，这个脚本块执行一个在页面中定义好的回调函数，并提供参数。以下举例：</p>
 <p>源3000的页面想要获取存储在源3001的资源。源3000页面包含下面的script标签：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
 <p>当浏览器解析这个script标签，它将正常的发出GET请求：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /?callback=myCallbackFunction HTTP/1.1</div></pre></td></tr></table></figure>
 <p>服务器没法返回原生JSON，而是返回一个脚本块，包含函数的调用，函数名在URL中指定，输出的数据作为参数传递。</p>
