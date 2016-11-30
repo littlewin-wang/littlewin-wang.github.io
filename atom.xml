@@ -268,6 +268,65 @@
   </entry>
   
   <entry>
+    <title>JavaScript爬坑笔记（一）</title>
+    <link href="http://littlewin.info/2016/02/28/JavaScript%E7%88%AC%E5%9D%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://littlewin.info/2016/02/28/JavaScript爬坑笔记（一）/</id>
+    <published>2016-02-28T02:26:10.000Z</published>
+    <updated>2016-11-30T12:12:08.325Z</updated>
+    
+    <content type="html"><![CDATA[<p>“坑”也就是“陷阱”。由于JavaScript“弱语言”的性质，使得其在使用过程中异常的宽松灵活，但也极为容易“中招”。这些坑往往隐藏着，只有亲自尝试并爬坑，才能在学习与应用的道路上走的一帆风顺。<br>平时积累一些觉得比较有意思或是比较有难度的JavaScript题目，顺便附上理解和心得。既是为了将来的面试做准备，也增强印象以防自己掉进坑里。<br><a id="more"></a></p>
+<h3 id="一、-函数声明的预解析"><a href="#一、-函数声明的预解析" class="headerlink" title="一、 函数声明的预解析"></a>一、 函数声明的预解析</h3><h4 id="函数的声明方式"><a href="#函数的声明方式" class="headerlink" title="函数的声明方式"></a>函数的声明方式</h4><p>定义一个函数有两种方式：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">foo() &#123;&#125;;                   <span class="comment">// 函数声明</span></div><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;;    <span class="comment">// 函数表达式</span></div></pre></td></tr></table></figure>
+<p>不同之处 - </p>
+<ol>
+<li>函数表达式后面加括号可以直接执行</li>
+<li>函数声明会提前预解析</li>
+</ol>
+<h4 id="预解析"><a href="#预解析" class="headerlink" title="预解析"></a>预解析</h4><p>下面这段代码的输出结果是什么？</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(a);</div><div class="line">  <span class="built_in">console</span>.log(foo());</div><div class="line">  <span class="keyword">var</span> a =<span class="number">1</span>;</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="number">2</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">test();</div></pre></td></tr></table></figure>
+<blockquote>
+<p>undefined和2</p>
+</blockquote>
+<p>换种写法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(a);</div><div class="line">  <span class="built_in">console</span>.log(foo());</div><div class="line">  <span class="keyword">var</span> a =<span class="number">1</span>;</div><div class="line">  <span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="number">2</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">test();</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>undefined<br>第二条打印会报错 - TypeError: foo is not a function</p>
+</blockquote>
+<h4 id="变量提升"><a href="#变量提升" class="headerlink" title="变量提升"></a>变量提升</h4><blockquote>
+<p>JavaScript解析器会在自身作用域内将变量和函数声明提前(hoist)。</p>
+</blockquote>
+<p>也就是说，上面的例子其实被解析器理解解析成了以下形式：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> a;</div><div class="line">  <span class="keyword">var</span> foo;</div><div class="line">  <span class="built_in">console</span>.log(a);</div><div class="line">  <span class="built_in">console</span>.log(foo());</div><div class="line">  a = <span class="number">1</span>;</div><div class="line">  foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    return2;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">test();</div></pre></td></tr></table></figure>
+<p>这样也就可以解释，为什么在函数表达式之前调用函数，会返回错误了，因为它还没有被赋值，只是一个未定义变量，当然无法被执行。</p>
+<p>变量声明被提到最前（所以不会报出变量不存在的错误），但赋值没有被提前，所以第一句的输出结果是undefined。</p>
+<h4 id="可能的问题"><a href="#可能的问题" class="headerlink" title="可能的问题"></a>可能的问题</h4><p>由于函数声明会被预解析，所以不要使用此种方法来声明不同函数。尝试猜想下面例子的输出结果：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">aaa</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    alert(<span class="string">'1'</span>);</div><div class="line">  &#125;  </div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span>&#123;</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">aaa</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    alert(<span class="string">'2'</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">aaa();</div></pre></td></tr></table></figure>
+<p>与我们预想的不同，该段代码弹出的是“2”.这是因为两个函数声明在if语句被执行之前就被预解析了，所以if语句根本没有用，调用aaa()的时候直接执行了下面的函数。</p>
+<h4 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h4><ul>
+<li>变量和函数声明一定要放在作用域/函数的开头。</li>
+<li>函数表达式在赋值后再去使用。</li>
+</ul>
+<h3 id="二、作用域"><a href="#二、作用域" class="headerlink" title="二、作用域"></a>二、作用域</h3><p>看一下下面的代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> a = b = <span class="number">5</span>;</div><div class="line">&#125;)();</div><div class="line"><span class="built_in">console</span>.log(b);</div></pre></td></tr></table></figure>
+<blockquote>
+<p>5</p>
+</blockquote>
+<p>这个问题考查的要点是两个不同的作用域，’a’被var声明成了一个局部变量，但是’b’实际上没有被定义，所以它是一个全局变量。<br>如果你选择了strict mode，上面的代码就会报Uncaught ReferenceError，因为b没有被定义，它可以帮你检查出代码的一些问题：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="meta">  'use strict'</span>;</div><div class="line">  <span class="keyword">var</span> a = <span class="built_in">window</span>.b = <span class="number">5</span>;</div><div class="line">&#125;)();</div><div class="line"><span class="built_in">console</span>.log(b);</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;“坑”也就是“陷阱”。由于JavaScript“弱语言”的性质，使得其在使用过程中异常的宽松灵活，但也极为容易“中招”。这些坑往往隐藏着，只有亲自尝试并爬坑，才能在学习与应用的道路上走的一帆风顺。&lt;br&gt;平时积累一些觉得比较有意思或是比较有难度的JavaScript题目，顺便附上理解和心得。既是为了将来的面试做准备，也增强印象以防自己掉进坑里。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript Learning - Promise入门</title>
     <link href="http://littlewin.info/2016/01/20/JavaScript%20Learning%20-%20Promise%E5%85%A5%E9%97%A8/"/>
     <id>http://littlewin.info/2016/01/20/JavaScript Learning - Promise入门/</id>
@@ -348,9 +407,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -445,9 +504,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -623,9 +682,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -680,9 +739,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -769,9 +828,9 @@
     </summary>
     
     
-      <category term="HTML" scheme="http://littlewin.info/tags/HTML/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="http://littlewin.info/tags/HTML/"/>
     
   </entry>
   
