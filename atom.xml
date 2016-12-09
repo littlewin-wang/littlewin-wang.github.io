@@ -268,6 +268,68 @@
   </entry>
   
   <entry>
+    <title>JavaScript爬坑笔记（三）</title>
+    <link href="http://littlewin.info/2016/03/22/JavaScript%E7%88%AC%E5%9D%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/"/>
+    <id>http://littlewin.info/2016/03/22/JavaScript爬坑笔记（三）/</id>
+    <published>2016-03-22T08:44:09.000Z</published>
+    <updated>2016-12-09T03:01:57.561Z</updated>
+    
+    <content type="html"><![CDATA[<p>这一节介绍一些<strong>JavaScript</strong>的<strong>setTimeout</strong>和<strong>setInterval</strong>方法，以及事件循环处理中的“坑”。</p>
+<p><img src="http://7xpot0.com1.z0.glb.clouddn.com/public/16-12-8/34326467.jpg" alt=""></p>
+<a id="more"></a>
+<h3 id="1-setTimeout和setInterval"><a href="#1-setTimeout和setInterval" class="headerlink" title="1 setTimeout和setInterval"></a>1 setTimeout和setInterval</h3><p>setTimeout和setInterval方法都是浏览器对象，即BOM提供的方法。这两个方法分别用来进行延时执行，和设置时间间隔执行代码。</p>
+<h4 id="1-1-基本用法"><a href="#1-1-基本用法" class="headerlink" title="1.1 基本用法"></a>1.1 基本用法</h4><p>setTimeout用来对代码进行一个延时执行，定义为：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.setTimeout(<span class="string">"javascript function"</span>, milliseconds);</div></pre></td></tr></table></figure>
+<p>两个参数分别是执行代码和延时时间，可以用<code>clearTimeout</code>来取消定时：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> timer=setTimeout(<span class="string">"alert('hello world')"</span>, <span class="number">5000</span>);</div><div class="line">clearTimeout(timer);</div></pre></td></tr></table></figure>
+<p>setInterval方法用来设定一个时间间隔来执行代码，其定义方式和setTimeout方法类似:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.setInterval(<span class="string">'javascript function'</span>, milliseconds)</div></pre></td></tr></table></figure>
+<p>同样的，可以用clearInterval方法来取消setInterval。</p>
+<h4 id="1-2-深入原理"><a href="#1-2-深入原理" class="headerlink" title="1.2 深入原理"></a>1.2 深入原理</h4><p>举个简单的例子</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  setTimeout(<span class="string">'console.log(1)'</span>,<span class="number">0</span>);</div><div class="line">  <span class="built_in">console</span>.log(<span class="number">2</span>);</div><div class="line">&#125;</div><div class="line">test();</div></pre></td></tr></table></figure>
+<p>结果是先打印2，再打印1，这不难理解。</p>
+<blockquote>
+<p>setTimeout中的代码会在单独的线程中执行，不同的线程有优先级的区别。</p>
+</blockquote>
+<p>再看一个特殊的例子</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">setTimeout( <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; <span class="keyword">while</span>(<span class="literal">true</span>)&#123;&#125; &#125; , <span class="number">100</span>);</div><div class="line">setTimeout( <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; <span class="built_in">console</span>.log(’你好!’); &#125; , <span class="number">200</span>);</div></pre></td></tr></table></figure>
+<p>这段代码不会打印“你好!”了。</p>
+<blockquote>
+<p>这表明js是单线程的运行在浏览器引擎中，只要上面代码没有执行完，下面代码是永远不会执行的。而实际上浏览器提供的两个计时函数，只是告诉浏览器，我要插入回调函数到待执行队列的时间点，而不是执行的时间点。而什么时候执行，则取决于当前执行队列是否空闲。</p>
+</blockquote>
+<h4 id="1-3-一些例子"><a href="#1-3-一些例子" class="headerlink" title="1.3 一些例子"></a>1.3 一些例子</h4><p>看下面的例子，</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</div><div class="line">  setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(i);</div><div class="line">  &#125;, <span class="number">0</span>);</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>结果是：0 1 2 3 3 3</p>
+<p>这个例子中体现了“异步、作用域、闭包”等内容，其实上面的代码等价于：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> i = <span class="number">0</span>;</div><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;, <span class="number">0</span>);</div><div class="line"><span class="built_in">console</span>.log(i);</div><div class="line">i++;</div><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;, <span class="number">0</span>);</div><div class="line"><span class="built_in">console</span>.log(i);</div><div class="line">i++;</div><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;, <span class="number">0</span>);</div><div class="line"><span class="built_in">console</span>.log(i);</div><div class="line">i++;</div></pre></td></tr></table></figure>
+<p>又因为setTimeout是单独的线程，需要等待前面的代码执行完成后再执行，继续等价：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> i = <span class="number">0</span>;</div><div class="line"><span class="built_in">console</span>.log(i);</div><div class="line">i++;</div><div class="line"><span class="built_in">console</span>.log(i);</div><div class="line">i++;</div><div class="line"><span class="built_in">console</span>.log(i);</div><div class="line">i++;</div><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;, <span class="number">0</span>);</div><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;, <span class="number">0</span>);</div><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;, <span class="number">0</span>);  </div><div class="line"><span class="comment">//弹出 0 1 2 3 3 3</span></div></pre></td></tr></table></figure>
+<p>再举个例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Obj</span>(<span class="params">msg</span>)</span>&#123;  </div><div class="line">  <span class="keyword">this</span>.msg=msg;  </div><div class="line">  <span class="keyword">this</span>.shout=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </div><div class="line">    alert(<span class="keyword">this</span>.msg);  </div><div class="line">  &#125;  </div><div class="line">  <span class="keyword">this</span>.waitAndShout=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </div><div class="line">    setTimeout(<span class="keyword">this</span>.shout, <span class="number">2000</span>);  </div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> aa = <span class="keyword">new</span> Obj(<span class="string">"xixi"</span>);  </div><div class="line">aa.waitAndShout();</div></pre></td></tr></table></figure>
+<p>结果为undefined，这个例子说明是setTimeout里面函数的内部，也就是第一个参数的内部指向window，所以弹出了undefined。</p>
+<p>解决的方式也很简单，利用<code>var that = this</code>做一下this的绑定即可</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Obj</span>(<span class="params">msg</span>)</span>&#123;  </div><div class="line">  <span class="keyword">this</span>.msg = msg;  </div><div class="line">  <span class="keyword">var</span> that = <span class="keyword">this</span>;  </div><div class="line">  <span class="keyword">this</span>.shout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </div><div class="line">    alert(that.msg);  </div><div class="line">  &#125;  </div><div class="line">  <span class="keyword">this</span>.waitAndShout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </div><div class="line">  setTimeout(<span class="keyword">this</span>.shout,<span class="number">5000</span>);  </div><div class="line">  &#125;  </div><div class="line">&#125;  </div><div class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> Obj(<span class="string">'xixi'</span>);  </div><div class="line">obj.waitAndShout();</div></pre></td></tr></table></figure>
+<h3 id="2-EVENT-LOOP"><a href="#2-EVENT-LOOP" class="headerlink" title="2 EVENT LOOP"></a>2 EVENT LOOP</h3><p>JavaScript的时间循环机制就是主线程在执行间隙去“任务队列”中读取之前添加好的时间，循环往复。</p>
+<p>摘张经典大图<a href="http://vimeo.com/96425312" title="event-loop" target="_blank" rel="external">《Help, I’m stuck in an event-loop》</a> </p>
+<p><img src="http://7xpot0.com1.z0.glb.clouddn.com/public/16-12-9/98423029.jpg" alt=""></p>
+<p>如上图所示，主线程开启堆和栈区，在栈中执行代码，同时调用外部API在“任务队列”中添加各种事件。栈中的代码执行完毕后，主线程去读取任务队列，依次执行相应的回调函数。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这一节介绍一些&lt;strong&gt;JavaScript&lt;/strong&gt;的&lt;strong&gt;setTimeout&lt;/strong&gt;和&lt;strong&gt;setInterval&lt;/strong&gt;方法，以及事件循环处理中的“坑”。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xpot0.com1.z0.glb.clouddn.com/public/16-12-8/34326467.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript爬坑笔记（二）</title>
     <link href="http://littlewin.info/2016/03/10/JavaScript%E7%88%AC%E5%9D%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
     <id>http://littlewin.info/2016/03/10/JavaScript爬坑笔记（二）/</id>
@@ -362,9 +424,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -373,17 +435,17 @@
     <link href="http://littlewin.info/2016/02/28/JavaScript%E7%88%AC%E5%9D%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://littlewin.info/2016/02/28/JavaScript爬坑笔记（一）/</id>
     <published>2016-02-28T02:26:10.000Z</published>
-    <updated>2016-12-01T04:08:42.249Z</updated>
+    <updated>2016-12-09T03:01:53.781Z</updated>
     
     <content type="html"><![CDATA[<p>“坑”也就是“陷阱”。由于JavaScript“弱语言”的性质，使得其在使用过程中异常的宽松灵活，但也极为容易“中招”。这些坑往往隐藏着，只有亲自尝试并爬坑，才能在学习与应用的道路上走的一帆风顺。<br>平时积累一些觉得比较有意思或是比较有难度的JavaScript题目，顺便附上理解和心得。既是为了将来的面试做准备，也增强印象以防自己掉进坑里。<br><a id="more"></a></p>
-<h3 id="一、-函数声明的预解析"><a href="#一、-函数声明的预解析" class="headerlink" title="一、 函数声明的预解析"></a>一、 函数声明的预解析</h3><h4 id="函数的声明方式"><a href="#函数的声明方式" class="headerlink" title="函数的声明方式"></a>函数的声明方式</h4><p>定义一个函数有两种方式：</p>
+<h3 id="一、-函数声明的预解析"><a href="#一、-函数声明的预解析" class="headerlink" title="一、 函数声明的预解析"></a>一、 函数声明的预解析</h3><h4 id="1-1-函数的声明方式"><a href="#1-1-函数的声明方式" class="headerlink" title="1.1 函数的声明方式"></a>1.1 函数的声明方式</h4><p>定义一个函数有两种方式：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">foo() &#123;&#125;;                   <span class="comment">// 函数声明</span></div><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;;    <span class="comment">// 函数表达式</span></div></pre></td></tr></table></figure>
 <p>不同之处 - </p>
 <ol>
 <li>函数表达式后面加括号可以直接执行</li>
 <li>函数声明会提前预解析</li>
 </ol>
-<h4 id="预解析"><a href="#预解析" class="headerlink" title="预解析"></a>预解析</h4><p>下面这段代码的输出结果是什么？</p>
+<h4 id="1-2-预解析"><a href="#1-2-预解析" class="headerlink" title="1.2 预解析"></a>1.2 预解析</h4><p>下面这段代码的输出结果是什么？</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(a);</div><div class="line">  <span class="built_in">console</span>.log(foo());</div><div class="line">  <span class="keyword">var</span> a =<span class="number">1</span>;</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="number">2</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">test();</div></pre></td></tr></table></figure>
 <blockquote>
 <p>undefined和2</p>
@@ -392,17 +454,17 @@
 <blockquote>
 <p>undefined<br>第二条打印会报错 - TypeError: foo is not a function</p>
 </blockquote>
-<h4 id="变量提升"><a href="#变量提升" class="headerlink" title="变量提升"></a>变量提升</h4><blockquote>
+<h4 id="1-3-变量提升"><a href="#1-3-变量提升" class="headerlink" title="1.3 变量提升"></a>1.3 变量提升</h4><blockquote>
 <p>JavaScript解析器会在自身作用域内将变量和函数声明提前(hoist)。</p>
 </blockquote>
 <p>也就是说，上面的例子其实被解析器理解解析成了以下形式：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> a;</div><div class="line">  <span class="keyword">var</span> foo;</div><div class="line">  <span class="built_in">console</span>.log(a);</div><div class="line">  <span class="built_in">console</span>.log(foo());</div><div class="line">  a = <span class="number">1</span>;</div><div class="line">  foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    return2;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">test();</div></pre></td></tr></table></figure>
 <p>这样也就可以解释，为什么在函数表达式之前调用函数，会返回错误了，因为它还没有被赋值，只是一个未定义变量，当然无法被执行。</p>
 <p>变量声明被提到最前（所以不会报出变量不存在的错误），但赋值没有被提前，所以第一句的输出结果是undefined。</p>
-<h4 id="可能的问题"><a href="#可能的问题" class="headerlink" title="可能的问题"></a>可能的问题</h4><p>由于函数声明会被预解析，所以不要使用此种方法来声明不同函数。尝试猜想下面例子的输出结果：</p>
+<h4 id="1-4-可能的问题"><a href="#1-4-可能的问题" class="headerlink" title="1.4 可能的问题"></a>1.4 可能的问题</h4><p>由于函数声明会被预解析，所以不要使用此种方法来声明不同函数。尝试猜想下面例子的输出结果：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">aaa</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    alert(<span class="string">'1'</span>);</div><div class="line">  &#125;  </div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span>&#123;</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">aaa</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    alert(<span class="string">'2'</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">aaa();</div></pre></td></tr></table></figure>
 <p>与我们预想的不同，该段代码弹出的是“2”.这是因为两个函数声明在if语句被执行之前就被预解析了，所以if语句根本没有用，调用aaa()的时候直接执行了下面的函数。</p>
-<h4 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h4><ul>
+<h4 id="1-5-最佳实践"><a href="#1-5-最佳实践" class="headerlink" title="1.5 最佳实践"></a>1.5 最佳实践</h4><ul>
 <li>变量和函数声明一定要放在作用域/函数的开头。</li>
 <li>函数表达式在赋值后再去使用。</li>
 </ul>
@@ -415,12 +477,12 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="meta">  'use strict'</span>;</div><div class="line">  <span class="keyword">var</span> a = <span class="built_in">window</span>.b = <span class="number">5</span>;</div><div class="line">&#125;)();</div><div class="line"><span class="built_in">console</span>.log(b);</div></pre></td></tr></table></figure>
 <h3 id="三、继承问题"><a href="#三、继承问题" class="headerlink" title="三、继承问题"></a>三、继承问题</h3><p>JavaScript是基于对象和实例的语言，它没有类的概念。所以，要想实现继承，必须熟练应用其<code>prototype</code>机制、函数构造以及<code>call</code>，<code>apply</code>等特殊方法。</p>
 <p>可以简单的把<code>prototype</code>看做是一个模板，新创建的自定义对象都是这个模板（<code>prototype</code>）的一个拷贝（实际上不是拷贝而是链接，只不过这种链接是不可见，新实例化的对象内部有一个看不见的<code>__proto__</code>指针，指向原型对象）。</p>
-<h4 id="1-原型链继承"><a href="#1-原型链继承" class="headerlink" title="1. 原型链继承"></a>1. 原型链继承</h4><p>为了让子类继承父类的属性（也包括方法），首先需要定义一个构造函数。然后，将父类的新实例赋值给构造函数的原型。</p>
+<h4 id="3-1-原型链继承"><a href="#3-1-原型链继承" class="headerlink" title="3.1 原型链继承"></a>3.1 原型链继承</h4><p>为了让子类继承父类的属性（也包括方法），首先需要定义一个构造函数。然后，将父类的新实例赋值给构造函数的原型。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Super</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">this</span>.belong = <span class="string">"human"</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Sub</span>(<span class="params">age</span>) </span>&#123;</div><div class="line">  <span class="keyword">this</span>.age = age;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Sub.prototype = <span class="keyword">new</span> Super();</div></pre></td></tr></table></figure>
 <p>简单的说法就是拿父类的实例来充当子类的原型对象。</p>
 <p>优点是实现方式相当简单，易于实现。</p>
 <p>缺点之一是来自原型对象的引用属性是所有实例共享的，会导致覆盖的属性篡改；二是创建子类实例时，无法向父类构造函数传参。</p>
-<h4 id="2-借用构造函数"><a href="#2-借用构造函数" class="headerlink" title="2. 借用构造函数"></a>2. 借用构造函数</h4><p>原型链够简单，但缺点也很明显。于是出现了借用构造函数的方式。</p>
+<h4 id="3-2-借用构造函数"><a href="#3-2-借用构造函数" class="headerlink" title="3.2 借用构造函数"></a>3.2 借用构造函数</h4><p>原型链够简单，但缺点也很明显。于是出现了借用构造函数的方式。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Super</span>(<span class="params">val</span>)</span>&#123;</div><div class="line">  <span class="keyword">this</span>.val = val;</div><div class="line">  <span class="keyword">this</span>.arr = [<span class="number">1</span>];</div><div class="line">  </div><div class="line">  <span class="keyword">this</span>.fun = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="comment">// ...</span></div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Sub</span>(<span class="params">val</span>)</span>&#123;</div><div class="line">  Super.call(<span class="keyword">this</span>, val);   <span class="comment">// 核心</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> sub1 = <span class="keyword">new</span> Sub(<span class="number">1</span>);</div><div class="line"><span class="keyword">var</span> sub2 = <span class="keyword">new</span> Sub(<span class="number">2</span>);</div><div class="line">sub1.arr.push(<span class="number">2</span>);</div><div class="line">alert(sub1.val);    <span class="comment">// 1</span></div><div class="line">alert(sub2.val);    <span class="comment">// 2</span></div><div class="line"></div><div class="line">alert(sub1.arr);    <span class="comment">// 1, 2</span></div><div class="line">alert(sub2.arr);    <span class="comment">// 1</span></div><div class="line"></div><div class="line">alert(sub1.fun === sub2.fun);   <span class="comment">// false</span></div></pre></td></tr></table></figure>
 <p>借父类的构造函数来增强子类实例，等于是把父类的实例属性复制了一份给子类实例装上了（完全没有用到原型）。</p>
 <p>优点：</p>
@@ -432,7 +494,7 @@
 <ul>
 <li>无法实现函数复用，每个子类实例都持有一个新的fun函数，太多了就会影响性能，内存溢出。</li>
 </ul>
-<h4 id="3-组合继承"><a href="#3-组合继承" class="headerlink" title="3. 组合继承"></a>3. 组合继承</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Super</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// 只在此处声明基本属性和引用属性</span></div><div class="line">  <span class="keyword">this</span>.val = <span class="number">1</span>;</div><div class="line">  <span class="keyword">this</span>.arr = [<span class="number">1</span>];</div><div class="line">&#125;</div><div class="line"><span class="comment">//  在此处声明函数</span></div><div class="line">Super.prototype.fun1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">Super.prototype.fun2 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line"><span class="comment">//Super.prototype.fun3...</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Sub</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  Super.call(<span class="keyword">this</span>);   <span class="comment">// 核心</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">Sub.prototype = <span class="keyword">new</span> Super();    <span class="comment">// 核心</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> sub1 = <span class="keyword">new</span> Sub(<span class="number">1</span>);</div><div class="line"><span class="keyword">var</span> sub2 = <span class="keyword">new</span> Sub(<span class="number">2</span>);</div><div class="line">alert(sub1.fun === sub2.fun);   <span class="comment">// true</span></div></pre></td></tr></table></figure>
+<h4 id="3-3-组合继承"><a href="#3-3-组合继承" class="headerlink" title="3.3 组合继承"></a>3.3 组合继承</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Super</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// 只在此处声明基本属性和引用属性</span></div><div class="line">  <span class="keyword">this</span>.val = <span class="number">1</span>;</div><div class="line">  <span class="keyword">this</span>.arr = [<span class="number">1</span>];</div><div class="line">&#125;</div><div class="line"><span class="comment">//  在此处声明函数</span></div><div class="line">Super.prototype.fun1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">Super.prototype.fun2 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line"><span class="comment">//Super.prototype.fun3...</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Sub</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  Super.call(<span class="keyword">this</span>);   <span class="comment">// 核心</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">Sub.prototype = <span class="keyword">new</span> Super();    <span class="comment">// 核心</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> sub1 = <span class="keyword">new</span> Sub(<span class="number">1</span>);</div><div class="line"><span class="keyword">var</span> sub2 = <span class="keyword">new</span> Sub(<span class="number">2</span>);</div><div class="line">alert(sub1.fun === sub2.fun);   <span class="comment">// true</span></div></pre></td></tr></table></figure>
 <p>把实例函数都放在原型对象上，以实现函数复用。同时还要保留借用构造函数方式的优点，通过<code>Super.call(this)</code>;继承父类的基本属性和引用属性并保留能传参的优点；通过<code>Sub.prototype = new Super()</code>;继承父类函数，实现函数复用。</p>
 <p>优点：</p>
 <ul>
@@ -443,9 +505,9 @@
 <ul>
 <li>子类原型上有一份多余的父类实例属性，因为父类构造函数被调用了两次，生成了两份，而子类实例上的那一份屏蔽了子类原型上的。。。</li>
 </ul>
-<h4 id="4-寄生组合继承"><a href="#4-寄生组合继承" class="headerlink" title="4. 寄生组合继承"></a>4. 寄生组合继承</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">beget</span>(<span class="params">obj</span>)</span>&#123;   <span class="comment">// 其实只需要原型的一份copy</span></div><div class="line">  <span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">  F.prototype = obj;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">new</span> F();</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Super</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// 只在此处声明基本属性和引用属性</span></div><div class="line">  <span class="keyword">this</span>.val = <span class="number">1</span>;</div><div class="line">  <span class="keyword">this</span>.arr = [<span class="number">1</span>];</div><div class="line">&#125;</div><div class="line"><span class="comment">//  在此处声明函数</span></div><div class="line">Super.prototype.fun1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">Super.prototype.fun2 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line"><span class="comment">//Super.prototype.fun3...</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Sub</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  Super.call(<span class="keyword">this</span>);   <span class="comment">// 核心</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> proto = beget(Super.prototype); <span class="comment">// 核心</span></div><div class="line">proto.constructor = Sub;            <span class="comment">// 核心</span></div><div class="line">Sub.prototype = proto;              <span class="comment">// 核心</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> sub = <span class="keyword">new</span> Sub();</div><div class="line">alert(sub.val);</div><div class="line">alert(sub.arr);</div></pre></td></tr></table></figure>
+<h4 id="3-4-寄生组合继承"><a href="#3-4-寄生组合继承" class="headerlink" title="3.4 寄生组合继承"></a>3.4 寄生组合继承</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">beget</span>(<span class="params">obj</span>)</span>&#123;   <span class="comment">// 其实只需要原型的一份copy</span></div><div class="line">  <span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">  F.prototype = obj;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">new</span> F();</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Super</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// 只在此处声明基本属性和引用属性</span></div><div class="line">  <span class="keyword">this</span>.val = <span class="number">1</span>;</div><div class="line">  <span class="keyword">this</span>.arr = [<span class="number">1</span>];</div><div class="line">&#125;</div><div class="line"><span class="comment">//  在此处声明函数</span></div><div class="line">Super.prototype.fun1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">Super.prototype.fun2 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line"><span class="comment">//Super.prototype.fun3...</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Sub</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  Super.call(<span class="keyword">this</span>);   <span class="comment">// 核心</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> proto = beget(Super.prototype); <span class="comment">// 核心</span></div><div class="line">proto.constructor = Sub;            <span class="comment">// 核心</span></div><div class="line">Sub.prototype = proto;              <span class="comment">// 核心</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> sub = <span class="keyword">new</span> Sub();</div><div class="line">alert(sub.val);</div><div class="line">alert(sub.arr);</div></pre></td></tr></table></figure>
 <p>用beget(Super.prototype)切掉了原型对象上多余的那份父类实例属性。<br>暂时看起来是集合了上述几种方法的优点，使用起来会稍微麻烦一点。</p>
-<h4 id="关于beget函数"><a href="#关于beget函数" class="headerlink" title="关于beget函数"></a>关于<code>beget</code>函数</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">beget</span>(<span class="params">obj</span>)</span>&#123;   <span class="comment">// 其实只需要原型的一份copy</span></div><div class="line">  <span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">  F.prototype = obj;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">new</span> F();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="3-5-关于beget函数"><a href="#3-5-关于beget函数" class="headerlink" title="3.5 关于beget函数"></a>3.5 关于<code>beget</code>函数</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">beget</span>(<span class="params">obj</span>)</span>&#123;   <span class="comment">// 其实只需要原型的一份copy</span></div><div class="line">  <span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">  F.prototype = obj;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">new</span> F();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>beget函数的意义在于不必为了指定子类型的原型而调用超类型的构造函数，我们所需要的无非就是超类型原型的一个副本而已。<br>这个函数其实在IE9+、Firefox 4+、Safari 5+、Opera 12+和Chrome中就是<code>Object.create()</code>方法。</p>
 <p>此外JS中还有原型式继承和寄生式继承，它们也有明显的缺点，适用于特点的场景，使用不频繁，在此不赘述了。</p>
 ]]></content>
@@ -457,9 +519,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -544,9 +606,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -596,7 +658,7 @@
 </ul>
 <p>JSONP实现原理是 - <code>&lt;script&gt;</code>标签可以有来自不同域的资源，当浏览器解析<code>&lt;script&gt;</code>标签，它会GET请求脚本内容（来自任何源）并在当前的页面中执行。通常，服务器会返回HTML或一些XML或JSON数据。有时向一个启用JSONP的服务器请求时，它会返回一个脚本块，这个脚本块执行一个在页面中定义好的回调函数，并提供参数。以下举例：</p>
 <p>源3000的页面想要获取存储在源3001的资源。源3000页面包含下面的script标签：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
 <p>当浏览器解析这个script标签，它将正常的发出GET请求：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /?callback=myCallbackFunction HTTP/1.1</div></pre></td></tr></table></figure>
 <p>服务器没法返回原生JSON，而是返回一个脚本块，包含函数的调用，函数名在URL中指定，输出的数据作为参数传递。</p>
@@ -641,9 +703,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -819,9 +881,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -876,9 +938,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -965,9 +1027,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="HTML" scheme="http://littlewin.info/tags/HTML/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
