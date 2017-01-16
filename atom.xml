@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://littlewin.info/"/>
-  <updated>2016-12-22T07:47:52.624Z</updated>
+  <updated>2017-01-16T09:13:01.404Z</updated>
   <id>http://littlewin.info/</id>
   
   <author>
@@ -14,6 +14,188 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>假如雨天也要唱歌的话</title>
+    <link href="http://littlewin.info/2017/01/15/%E5%81%87%E5%A6%82%E9%9B%A8%E5%A4%A9%E4%B9%9F%E8%A6%81%E5%94%B1%E6%AD%8C%E7%9A%84%E8%AF%9D/"/>
+    <id>http://littlewin.info/2017/01/15/假如雨天也要唱歌的话/</id>
+    <published>2017-01-15T08:26:29.000Z</published>
+    <updated>2017-01-16T09:13:01.404Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>为什么要立Flag的时候总是控几不住基几<br>假如雨天也要唱歌的话，需要带伞么</p>
+</blockquote>
+<p><img src="http://7xpot0.com1.z0.glb.clouddn.com/17-1-15/46660399-file_1484467558362_47d8.jpg" width="60%" height="60%"></p>
+<a id="more"></a>
+<blockquote>
+<p>还是敌不过心里每一坎</p>
+<p>还是会，害怕</p>
+<p>羁绊带来了牵挂，牵挂深化着羁绊</p>
+<p>蜷缩着也许能守着小小的自我</p>
+<p>假如雨天也要唱歌的话，那就展开身体吧</p>
+<p>最多也就是任性到下一个天亮而已</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;为什么要立Flag的时候总是控几不住基几&lt;br&gt;假如雨天也要唱歌的话，需要带伞么&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xpot0.com1.z0.glb.clouddn.com/17-1-15/46660399-file_1484467558362_47d8.jpg&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
+    
+      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2016年终总结</title>
+    <link href="http://littlewin.info/2016/12/30/2016%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://littlewin.info/2016/12/30/2016年终总结/</id>
+    <published>2016-12-30T09:10:05.000Z</published>
+    <updated>2016-12-30T11:17:10.151Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天是2016年度的倒数第二天，再不做总结连明年flag也立不了啦</p>
+<p><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-12-30/56791254-file_1483089490389_a429.jpg" width="70%" height="70%"></p>
+<a id="more"></a>
+<p>一年的时间回想起来过得飞快，但自从脱离学校之后，就开始适应外部环境快速切换的状态。因此，围绕着自己的目标，事业，计划，个人状态发生了很多事情，<del>我觉得还是像个小学生一样提笔写一篇流水账吧</del></p>
+<h3 id="Timeline"><a href="#Timeline" class="headerlink" title="Timeline"></a>Timeline</h3><ul>
+<li><p>1-2月，迷茫期，萌生了做移动端应用级开发的想法，初步摄入IOS开发学习，公司项目进入研发尾期</p>
+</li>
+<li><p>3-4月，被周围IOS妖风四起的氛围带入一种诡异的情绪，开始了解前端技术</p>
+</li>
+<li><p>5-6月，忙于公司项目，同时入门学习三大件-html，css，javascript，终于开始用github积累代码</p>
+</li>
+<li><p>7-8月，忙于公司项目后期trouble-shooting，开始摸索完成百度前端学院的task，同时报名参加网易前端微专业，初步接触vue.js</p>
+</li>
+<li><p>9-10月，开始学习vue全家桶，学习webpack构建工具，学习vue-cli脚手架；同时利用hexo和semantic-UI搭建了自己的博客模板</p>
+</li>
+<li><p>11月，<del>我有一个大目标啊大呀大目标</del></p>
+</li>
+<li><p>12月，利用vue.js全家桶 + vue-cli脚手架复刻外卖web app和知乎日报</p>
+</li>
+</ul>
+<h2 id="What-I-achieved"><a href="#What-I-achieved" class="headerlink" title="What I achieved"></a>What I achieved</h2><h3 id="In-Job"><a href="#In-Job" class="headerlink" title="In Job"></a>In Job</h3><p>  坦白讲我对本职工作的兴趣不大，这一年也基本上为了一个项目的部署忙前忙后，最后达成的效果一般吧，后期进行了FTL方面的学习和开发工作</p>
+<ul>
+<li><p>对基于状态机的固件架构设计有了一些感觉</p>
+</li>
+<li><p>对Flash接口命令调试有了一些经验</p>
+</li>
+<li><p><del>对生活有了全新的期待，(￣ˇ￣) 你们懂得</del></p>
+</li>
+</ul>
+<h3 id="In-FrontEnd"><a href="#In-FrontEnd" class="headerlink" title="In FrontEnd"></a>In FrontEnd</h3><p>  前端的发展速度实在是太快了，我这接近一年的积累也感觉仅仅是入门而已，但是感觉前端的门槛已经迈入，后面积累经验的过程我很有信心。</p>
+<ul>
+<li>三大法宝：html和css只是看到了都认识，常用的比较溜，但对于HTML5的CSS3的理解和细节调试仍旧不够充实，需要再接再厉；对JavaScript的学习投入时间较多，大概有三个阶段：</li>
+</ul>
+<ol>
+<li><p>掌握常用API - 应该是刷了两遍《JavaScript高级程序设计》，觉得对常用API的掌握不错，刷了百度前端学院的task，虽然部分任务比较磕绊，但是自我感觉良好，然并卵，<del>JS的坑太多了，后期准备面试包括代码调试遇到的问题让我又一次too naive</del></p>
+</li>
+<li><p>看一些JavaScript精华类的书籍和参考资料，有汤姆大叔的 JS总结博客，也有《JavaScript语言精粹》、《高性能JavaScript》等，学习基础知识是个升温过程，有了基础才能进入编程技巧的新世界。对于JavaScript的知识点，和每个新规范的要点，都值得反复阅读、总结。这门语言不简单，但请不要从入门到放弃。</p>
+</li>
+<li><p>由于后期开始使用vue.js + vue-cli搭建一些web app，因此学习了一些ES6的语言特性和Node.js的入门知识，然后还远远不够，未来对JavaScript的学习将在很长一段时间处于重点投入的阶段，真心感觉实践出真知，多看多想多总结才是门路。</p>
+</li>
+</ol>
+<ul>
+<li>各种工具<br>围绕前端开发接触了很多工具，目前形成基本战斗力的技术栈是：</li>
+</ul>
+<ol>
+<li><p>vue全家桶2.0豪华套餐 <a href="https://github.com/vuejs/vue" target="_blank" rel="external">vue 2.0</a> + <a href="https://github.com/vuejs/vue-router" target="_blank" rel="external">vue-router 2.0</a> + <a href="https://github.com/vuejs/vuex" target="_blank" rel="external">vuex 2.0</a> + <a href="https://github.com/pagekit/vue-resource" target="_blank" rel="external">vue-resource</a><br>对vue的学习仅限于使用水平，了解基本API的使用，未来将深入研究其源码和每次版本改动点</p>
+</li>
+<li><p>Webpack + vue-cli，看过文档，有一些实践经验</p>
+</li>
+<li><p>Node.js + Express, 浅薄啊，需要深入</p>
+</li>
+<li><p>老马车 jQuery + BootStrap， 前面学过一段时间，但后来用的比较少</p>
+</li>
+<li><p>Etc. 伴随着学习和实践类项目接触了很对，gulp - compass - sass - stylus等等，还是那句话，“技多不压身，但技能要玩6了才能献丑啊”，但不一定都要深入研究，因为这些工具上手都比较快</p>
+</li>
+</ol>
+<ul>
+<li>github + 博客<br>继续使用github培养自己良好的编程和阅读源码的习惯，博客之前的记录略过平庸，记录内容除自己的一些心声外，技术类的分享内容太肤浅了。</li>
+</ul>
+<h3 id="In-大目标-♡♡♡♡"><a href="#In-大目标-♡♡♡♡" class="headerlink" title="In 大目标 ♡♡♡♡"></a>In 大目标 ♡♡♡♡</h3><p>  <img src="http://7xpot0.com1.z0.glb.clouddn.com/16-12-30/26732276-file_1483095468759_8893.jpg" width="70%" height="70%"></p>
+<ul>
+<li><p>Heart beats -&gt; I say “when I see you face…”</p>
+</li>
+<li><p>Join the way to office -&gt; What a warm winter</p>
+</li>
+<li><p>Love life &amp; foods, running &amp; climbing, sharing and enjoying together</p>
+</li>
+<li><p>Build the ability to care/ to cover/ to help with ♡♡♡♡</p>
+</li>
+<li><p>To be continued and with 200% energy</p>
+</li>
+</ul>
+<h3 id="In-Spirit"><a href="#In-Spirit" class="headerlink" title="In Spirit"></a>In Spirit</h3><h4 id="1-看过有影响意义的书籍"><a href="#1-看过有影响意义的书籍" class="headerlink" title="1. 看过有影响意义的书籍"></a>1. 看过有影响意义的书籍</h4><ul>
+<li><p><strong>《月亮与六便士》</strong>：什么是信仰？什么又是真正的幸福？</p>
+<p><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-12-30/19417061-file_1483094816684_a064.jpg" width="20%" height="20%"></p>
+<p>难道做自己最想做的事，生活在让你感到舒服的环境里，让你的内心得到安宁是糟践自己吗？难道成为年入上万英镑的外科医生、娶得如花美眷就算是成功吗？我想这取决于你如何看待生活的意义，取决于你认为你应该对社会做出什么贡献，应该对自己有什么要求。</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>《每个人都会死，但我总以为自己不会》</strong></p>
+<p><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-12-30/81638632-file_1483094983932_6f8.jpg" width="20%" height="20%"></p>
+<p>生与死是每个人都会思考的问题，尤其是死亡，经常会在你的大脑中不期而至。对死亡的恐惧笼罩着我们，怎样面对？<br>这本小册子探讨了死亡和永生，让我们正视生与死，在各种诙谐幽默的小故事中思考死亡。</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>《质数的孤独》</strong></p>
+<p><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-12-30/2488053-file_1483095462235_5f7a.jpg" width="20%" height="20%"></p>
+<p>两个孤独的灵魂，在人海中独自漂浮，命运让他们相遇，让他们走出内心的牢笼，然而他们相爱却不能在一起，注定继续孤独……每次看到这样的介绍，我就忍不住摇头叹息。然而《质数的孤独》却写出了不同的境界，用简洁的文字，用探进灵魂深处的灯光，将孤独和爱情写出亮度和高度。</p>
+</li>
+</ul>
+<h4 id="2-看过有影响意义的电影电视"><a href="#2-看过有影响意义的电影电视" class="headerlink" title="2. 看过有影响意义的电影电视"></a>2. 看过有影响意义的电影电视</h4><ul>
+<li><p><strong>《惊天盗魔团2》</strong></p>
+<p>口碑很烂，好吧，我就是喜欢看5毛特效装酷</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>《驴得水》</strong></p>
+<p>知识分子在高压下开始妥协由小骗子晋身为大骗子再亲手塑造出悲剧的载体，进而毁掉了自己为之奋斗的理想主义。</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>《你的名字》</strong></p>
+<p>画风暖，剧情暖，有人一起看更暖 <del>再次手动捂脸</del></p>
+</li>
+</ul>
+<ul>
+<li><p><strong>《纸牌屋第四季》</strong></p>
+<p>好吧，好像现实中美国大叔和大妈的撕X更好看些</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>《权力的游戏第六季》</strong></p>
+<p>灵魂愈见丰满厚重的囧雪、彻悟后骨骼渐趋强韧的席恩、硬颈刚烈的黑鱼、勇谋初露端倪的熊岛萝莉、感化猎狗的睿智传教士、宅心仁厚的洋葱骑士，忠勇耿直、永远不忘骑士荣誉的布蕾妮、原力觉醒找回初心的二丫…我为他们追剧不辍。</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>《指定幸存者》</strong></p>
+<p>情节紧凑，逻辑比较严密，还在追</p>
+</li>
+</ul>
+<h4 id="3-推荐音乐"><a href="#3-推荐音乐" class="headerlink" title="3. 推荐音乐"></a>3. 推荐音乐</h4><p>  太多了，我下次写个音乐专题分享好不好</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天是2016年度的倒数第二天，再不做总结连明年flag也立不了啦&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xpot0.com1.z0.glb.clouddn.com/16-12-30/56791254-file_1483089490389_a429.jpg&quot; width=&quot;70%&quot; height=&quot;70%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
+    
+      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>To be 27</title>
@@ -430,9 +612,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -531,9 +713,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -626,9 +808,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -713,9 +895,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -810,9 +992,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -988,9 +1170,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -1045,9 +1227,9 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
     
   </entry>
   
@@ -1134,36 +1316,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="HTML" scheme="http://littlewin.info/tags/HTML/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Hello, new transform</title>
-    <link href="http://littlewin.info/2015/09/08/Hello-new-transform/"/>
-    <id>http://littlewin.info/2015/09/08/Hello-new-transform/</id>
-    <published>2015-09-08T14:51:36.000Z</published>
-    <updated>2016-09-06T11:32:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>来到深圳参加工作已经快到俩月，工作和生活基本进入了一个新的稳态，这个阶段最应该放下之前的波折，重新审视内心，制定计划。</p>
-<a id="more"></a> 
-<p><em>ABOUT WORK</em><br>以前基本是在写嵌入式硬件上的驱动和系统应用代码，实习过程也是在从事持续集成系统后台的脚本的开发，前端的东西在持续的了解，但从未深入学习过。前端涵盖的知识面非常广，既有具体的技术，又有抽象的理念。简单地说，它的主要职能就是把各个终端界面更好地呈现给用户。于我而言，这是一件很屌的事情，于是，我要转型，并且开启了这个<a href="http://littlewin.info" title="Littlewin&#39;s blog">blog</a>来记录这个过程的点滴。</p>
-<p><em>ABOUT LIFE</em><br>－ 刚参加工作就想着转型的确是一件很荒唐的事情，我愿意为此付出很多时间的经济上的支出，有目标驱动，有挤出来的资源支持，最终还希望有能力去重新选择。<br>－ 执行力在某些方面的体现已经不错了，其他方面仍需补齐，这最终将一一被时间和记录所检验。<br>－ 在很远的地方打通一处心扉是件不太容易的事情，我是一个结果导向的人，希望一点一滴的煎熬和坚持最终能换来终点的释怀。</p>
-<p>其实汇总之后就是一句话，不服就干！</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;来到深圳参加工作已经快到俩月，工作和生活基本进入了一个新的稳态，这个阶段最应该放下之前的波折，重新审视内心，制定计划。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
-    
-      <category term="工作" scheme="http://littlewin.info/tags/%E5%B7%A5%E4%BD%9C/"/>
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
