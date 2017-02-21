@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Littlewin&#39;s blog</title>
+<search>
   
-  <link href="/atom.xml" rel="self"/>
   
-  <link href="http://littlewin.info/"/>
-  <updated>2017-02-15T08:26:35.832Z</updated>
-  <id>http://littlewin.info/</id>
-  
-  <author>
-    <name>Littlewin</name>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>假如雨天也要唱歌的话</title>
-    <link href="http://littlewin.info/2017/01/15/%E5%81%87%E5%A6%82%E9%9B%A8%E5%A4%A9%E4%B9%9F%E8%A6%81%E5%94%B1%E6%AD%8C%E7%9A%84%E8%AF%9D/"/>
-    <id>http://littlewin.info/2017/01/15/假如雨天也要唱歌的话/</id>
-    <published>2017-01-15T08:26:29.000Z</published>
-    <updated>2017-02-15T08:26:35.832Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
+    <entry>
+      <title><![CDATA[假如雨天也要唱歌的话]]></title>
+      <url>http://littlewin.info/2017/01/15/%E5%81%87%E5%A6%82%E9%9B%A8%E5%A4%A9%E4%B9%9F%E8%A6%81%E5%94%B1%E6%AD%8C%E7%9A%84%E8%AF%9D/</url>
+      <content type="html"><![CDATA[<blockquote>
 <p>为什么要立Flag的时候总是控几不住基几<br>假如雨天也要唱歌的话，需要带伞么</p>
 </blockquote>
 <a id="more"></a>
@@ -35,30 +19,22 @@
 <p>最多也就是任性到下一个天亮而已</p>
 </blockquote>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 感言 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;为什么要立Flag的时候总是控几不住基几&lt;br&gt;假如雨天也要唱歌的话，需要带伞么&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
-    
-      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2016年终总结</title>
-    <link href="http://littlewin.info/2016/12/30/2016%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
-    <id>http://littlewin.info/2016/12/30/2016年终总结/</id>
-    <published>2016-12-30T09:10:05.000Z</published>
-    <updated>2017-02-15T08:26:35.818Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天是2016年度的倒数第二天，再不做总结连明年flag也立不了啦</p>
+    <entry>
+      <title><![CDATA[2016年终总结]]></title>
+      <url>http://littlewin.info/2016/12/30/2016%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</url>
+      <content type="html"><![CDATA[<p>今天是2016年度的倒数第二天，再不做总结连明年flag也立不了啦</p>
 <a id="more"></a>
 <p>一年的时间回想起来过得飞快，但自从脱离学校之后，就开始适应外部环境快速切换的状态。因此，围绕着自己的目标，事业，计划，个人状态发生了很多事情，<del>我觉得还是像个小学生一样提笔写一篇流水账吧</del></p>
 <h3 id="Timeline"><a href="#Timeline" class="headerlink" title="Timeline"></a>Timeline</h3><ul>
@@ -179,28 +155,22 @@
 </ul>
 <h4 id="3-推荐音乐"><a href="#3-推荐音乐" class="headerlink" title="3. 推荐音乐"></a>3. 推荐音乐</h4><p>  太多了，我下次写个音乐专题分享好不好</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 感言 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;今天是2016年度的倒数第二天，再不做总结连明年flag也立不了啦&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
-    
-      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>To be 27</title>
-    <link href="http://littlewin.info/2016/12/22/To%20be%2027/"/>
-    <id>http://littlewin.info/2016/12/22/To be 27/</id>
-    <published>2016-12-22T01:10:01.000Z</published>
-    <updated>2017-02-15T08:23:30.950Z</updated>
-    
-    <content type="html"><![CDATA[<p>26岁的最后一天，我还是想让自己完成这件事情。<br>不作总结，不立flag，只想谈谈<br><a id="more"></a></p>
+    <entry>
+      <title><![CDATA[To be 27]]></title>
+      <url>http://littlewin.info/2016/12/22/To%20be%2027/</url>
+      <content type="html"><![CDATA[<p>26岁的最后一天，我还是想让自己完成这件事情。<br>不作总结，不立flag，只想谈谈<br><a id="more"></a></p>
 <blockquote>
 <p>我今年二十七八岁，<br>每天起床的时间从中午12点变成了早上7点，睡觉的时间从凌晨变成了晚上11点。<br>我今年二十七八岁，<br>工作中开始接触形形色色的人，<br>我今年二十七八岁，<br>见到亲戚朋友，他们不再问你考试考了几分，更多的是问现在一个月工资是多少，结婚没有哇…<br>我今年二十七八岁，<br>聊天的话题从各种网络游戏变成汽车，房子…<br>吃饭的时候，讨论的往往是他准备结婚，她哪年结婚了…<br>…</p>
 </blockquote>
@@ -246,28 +216,22 @@
 </blockquote>
 <p> #Oops 怎么写到最后还去继承儒家意志了，大清亡了啊#</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 感言 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;26岁的最后一天，我还是想让自己完成这件事情。&lt;br&gt;不作总结，不立flag，只想谈谈&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
-    
-      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>再谈Littlewin</title>
-    <link href="http://littlewin.info/2016/12/09/%E5%86%8D%E8%B0%88Littlewin/"/>
-    <id>http://littlewin.info/2016/12/09/再谈Littlewin/</id>
-    <published>2016-12-09T03:28:05.000Z</published>
-    <updated>2016-12-09T06:22:20.271Z</updated>
-    
-    <content type="html"><![CDATA[<p>第一次开始用这个名字，已经是大龄青年了。<br>常看的一本杂志有个编辑笔名叫Littlewing，也不知道是不是受此灵感。</p>
+    <entry>
+      <title><![CDATA[再谈Littlewin]]></title>
+      <url>http://littlewin.info/2016/12/09/%E5%86%8D%E8%B0%88Littlewin/</url>
+      <content type="html"><![CDATA[<p>第一次开始用这个名字，已经是大龄青年了。<br>常看的一本杂志有个编辑笔名叫Littlewing，也不知道是不是受此灵感。</p>
 <a id="more"></a>
 <p>如果有机会再回顾过往，是否要认真看看另一种模态。</p>
 <p><img src="http://7xpot0.com1.z0.glb.clouddn.com/public/16-12-9/76266723.jpg" width="70%" height="70%"></p>
@@ -284,28 +248,22 @@
 <p>Oh her eyes’ her eyes<br>Make the stars look like they’re not shining<br>Her hair’ her hair<br>Falls perfectly without her trying<br>She’s so beautiful<br>And I tell her every day</p>
 </blockquote>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=5093684&auto=1&height=66"></iframe>]]></content>
+      
+        
+        <tags>
+            
+            <tag> 感言 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;第一次开始用这个名字，已经是大龄青年了。&lt;br&gt;常看的一本杂志有个编辑笔名叫Littlewing，也不知道是不是受此灵感。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
-    
-      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11月的Littlewin</title>
-    <link href="http://littlewin.info/2016/11/20/11%E6%9C%88%E7%9A%84Littlewin/"/>
-    <id>http://littlewin.info/2016/11/20/11月的Littlewin/</id>
-    <published>2016-11-20T08:01:50.000Z</published>
-    <updated>2016-11-21T04:06:16.384Z</updated>
-    
-    <content type="html"><![CDATA[<p>以前的想法是拿博客来当笔记本用了，专注于技术分享，但实际想想便觉得除了公司的内部技术之外，自己可拿出手的干货实在不多，技术文章也就是做做笔记，做做翻译。笔过留痕，敲出来的字难以形成记忆。</p>
+    <entry>
+      <title><![CDATA[11月的Littlewin]]></title>
+      <url>http://littlewin.info/2016/11/20/11%E6%9C%88%E7%9A%84Littlewin/</url>
+      <content type="html"><![CDATA[<p>以前的想法是拿博客来当笔记本用了，专注于技术分享，但实际想想便觉得除了公司的内部技术之外，自己可拿出手的干货实在不多，技术文章也就是做做笔记，做做翻译。笔过留痕，敲出来的字难以形成记忆。</p>
 <p>所以还是专注于深度分享，把不愿意或者不甘心po在朋友圈的内容保留起来吧，至少还能有些care的人看一看。</p>
 <a id="more"></a>
 <p>面对正反两难的选择，有些人会选择抛硬币，不只是因为硬币总能给出单一的答案，而是当你决定要做一个决定的时候，你的心中已经有了一个答案，硬币只是过渡这一秒的一格动画。</p>
@@ -323,29 +281,22 @@
 <p>用心经营的，怎么会是绝路。</p>
 </blockquote>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 感言 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;以前的想法是拿博客来当笔记本用了，专注于技术分享，但实际想想便觉得除了公司的内部技术之外，自己可拿出手的干货实在不多，技术文章也就是做做笔记，做做翻译。笔过留痕，敲出来的字难以形成记忆。&lt;/p&gt;
-&lt;p&gt;所以还是专注于深度分享，把不愿意或者不甘心po在朋友圈的内容保留起来吧，至少还能有些care的人看一看。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
-    
-      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello, 大目标</title>
-    <link href="http://littlewin.info/2016/11/07/Hello,%20%E5%A4%A7%E7%9B%AE%E6%A0%87/"/>
-    <id>http://littlewin.info/2016/11/07/Hello, 大目标/</id>
-    <published>2016-11-07T06:58:52.000Z</published>
-    <updated>2017-02-15T08:26:35.814Z</updated>
-    
-    <content type="html"><![CDATA[<p>小幸运，大目标，此刻晴朗<br>小指勾，咧嘴笑，悠哉悠哉</p>
+    <entry>
+      <title><![CDATA[Hello, 大目标]]></title>
+      <url>http://littlewin.info/2016/11/07/Hello,%20%E5%A4%A7%E7%9B%AE%E6%A0%87/</url>
+      <content type="html"><![CDATA[<p>小幸运，大目标，此刻晴朗<br>小指勾，咧嘴笑，悠哉悠哉</p>
 <a id="more"></a> 
 <p>最初的诗，无尽的冗长，<br>看似轻浮的文字，有满身紫荆和木棉的清香，<br>没调整好的眼神，角度凄美，于他乡。</p>
 <p>后青春期的坚守，不肯凋谢，<br>虔诚的想象，执着的泪痕，<br>天空之所以放晴，是有关地球自转的360度。</p>
@@ -364,28 +315,22 @@
 <p><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-11-8/65019381.jpg" alt=""></p>
 <p>And从未像现在这般期待早晨，以上。</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 感言 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;小幸运，大目标，此刻晴朗&lt;br&gt;小指勾，咧嘴笑，悠哉悠哉&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
-    
-      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>何以驴得水</title>
-    <link href="http://littlewin.info/2016/10/30/%E4%BD%95%E4%BB%A5%E9%A9%B4%E5%BE%97%E6%B0%B4/"/>
-    <id>http://littlewin.info/2016/10/30/何以驴得水/</id>
-    <published>2016-10-30T08:04:50.000Z</published>
-    <updated>2017-02-15T08:26:35.836Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
+    <entry>
+      <title><![CDATA[何以驴得水]]></title>
+      <url>http://littlewin.info/2016/10/30/%E4%BD%95%E4%BB%A5%E9%A9%B4%E5%BE%97%E6%B0%B4/</url>
+      <content type="html"><![CDATA[<blockquote>
 <p>生存压力以外的理想主义到底是不是耍流氓<br>脱离知识分子的气韵来黑知识分子的虚伪外表是不是耍流氓<br>抛弃雅俗共赏的勇气勾勒出一个不完整的人性思考轴是不是耍流氓</p>
 </blockquote>
 <a id="more"></a> 
@@ -399,30 +344,22 @@
 <p>没有答案告诉我们知识分子可不可以轻易的谈起理想。</p>
 <p>我讲个笑话，你可别哭啊。</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 感言 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;生存压力以外的理想主义到底是不是耍流氓&lt;br&gt;脱离知识分子的气韵来黑知识分子的虚伪外表是不是耍流氓&lt;br&gt;抛弃雅俗共赏的勇气勾勒出一个不完整的人性思考轴是不是耍流氓&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
-    
-      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小任性大男孩</title>
-    <link href="http://littlewin.info/2016/10/17/%E5%B0%8F%E4%BB%BB%E6%80%A7%E5%A4%A7%E7%94%B7%E5%AD%A9/"/>
-    <id>http://littlewin.info/2016/10/17/小任性大男孩/</id>
-    <published>2016-10-17T07:47:06.000Z</published>
-    <updated>2017-02-15T08:26:35.827Z</updated>
-    
-    <content type="html"><![CDATA[<p>致一个长得像ALEX SANCHEZ的枪手球迷 &amp; 朋友</p>
+    <entry>
+      <title><![CDATA[小任性大男孩]]></title>
+      <url>http://littlewin.info/2016/10/17/%E5%B0%8F%E4%BB%BB%E6%80%A7%E5%A4%A7%E7%94%B7%E5%AD%A9/</url>
+      <content type="html"><![CDATA[<p>致一个长得像ALEX SANCHEZ的枪手球迷 &amp; 朋友</p>
 <a id="more"></a> 
 <p>从儿时希望 有面包跟牛奶当早餐<br>而立前也想 留青春和热血不言弃</p>
 <p>小任性 一时之快 姿态甩向世界 以便巩固和强化 仅能扮演的角色<br>大实话 余音绕梁 没有任何形状 终究自由而如愿 恰似山间的清风</p>
@@ -431,28 +368,22 @@
 <p>经过岁月筛选后 还能完整保留在沙滩上<br>一定是 具备了某种特质的形状<br>譬如 用报纸褶皱后准备 起航<br>孩童时期 那一艘 日益膨胀的想象</p>
 <p>原谅我 如此大费周章 写下这些 素颜非韵脚<br>只因 我和你一样 都愿做个 半大不小的孩子</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 感言 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;致一个长得像ALEX SANCHEZ的枪手球迷 &amp;amp; 朋友&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
-    
-      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我理解的有效沟通</title>
-    <link href="http://littlewin.info/2016/09/30/%E6%88%91%E7%90%86%E8%A7%A3%E7%9A%84%E6%9C%89%E6%95%88%E6%B2%9F%E9%80%9A/"/>
-    <id>http://littlewin.info/2016/09/30/我理解的有效沟通/</id>
-    <published>2016-09-30T11:34:18.000Z</published>
-    <updated>2017-02-15T08:26:35.821Z</updated>
-    
-    <content type="html"><![CDATA[<p>沟通的目的是进行信息交互，那么参与者一定是信息get和post的双重收益者，至于信息交互后的化学反应，头脑风暴，那是有效沟通的高阶方式了，小生我在日常中也很难遇到。</p>
+    <entry>
+      <title><![CDATA[我理解的有效沟通]]></title>
+      <url>http://littlewin.info/2016/09/30/%E6%88%91%E7%90%86%E8%A7%A3%E7%9A%84%E6%9C%89%E6%95%88%E6%B2%9F%E9%80%9A/</url>
+      <content type="html"><![CDATA[<p>沟通的目的是进行信息交互，那么参与者一定是信息get和post的双重收益者，至于信息交互后的化学反应，头脑风暴，那是有效沟通的高阶方式了，小生我在日常中也很难遇到。</p>
 <p>总结一句话，我认为有效沟通的基础就是“I have post and I have got”。</p>
 <a id="more"></a> 
 <h3 id="What-are-you-talking-about"><a href="#What-are-you-talking-about" class="headerlink" title="What are you talking about"></a>What are you talking about</h3><p>基于我们沟通的第一选择是张嘴，那么讲话也就成为沟通中至关重要的一环。声调，语气和颜值不在本文的讨论范围，暂且假设这几维度我们都达标了。接下来考虑几种情况吧，</p>
@@ -496,29 +427,22 @@
 <h3 id="You-should"><a href="#You-should" class="headerlink" title="You should"></a>You should</h3><p><del>在下方评论写下你们的观点与我交流，我也需要反馈呀</del></p>
 <p>如果有必要进行沟通，请让其升级为有效沟通。</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 感言 </tag>
+            
+            <tag> 工作 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;沟通的目的是进行信息交互，那么参与者一定是信息get和post的双重收益者，至于信息交互后的化学反应，头脑风暴，那是有效沟通的高阶方式了，小生我在日常中也很难遇到。&lt;/p&gt;
-&lt;p&gt;总结一句话，我认为有效沟通的基础就是“I have post and I have got”。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
-    
-      <category term="工作" scheme="http://littlewin.info/tags/%E5%B7%A5%E4%BD%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>乍暖还寒时候，最难将息</title>
-    <link href="http://littlewin.info/2016/09/18/%E4%B9%8D%E6%9A%96%E8%BF%98%E5%AF%92%E6%97%B6%E5%80%99%EF%BC%8C%E6%9C%80%E9%9A%BE%E5%B0%86%E6%81%AF/"/>
-    <id>http://littlewin.info/2016/09/18/乍暖还寒时候，最难将息/</id>
-    <published>2016-09-18T13:01:31.000Z</published>
-    <updated>2017-02-15T08:26:35.840Z</updated>
-    
-    <content type="html"><![CDATA[<p>很久没执笔写下一些有关心情和感悟的文字，总觉得现在没有消化不了的情绪，没有抑制不住的情感。</p>
+    <entry>
+      <title><![CDATA[乍暖还寒时候，最难将息]]></title>
+      <url>http://littlewin.info/2016/09/18/%E4%B9%8D%E6%9A%96%E8%BF%98%E5%AF%92%E6%97%B6%E5%80%99%EF%BC%8C%E6%9C%80%E9%9A%BE%E5%B0%86%E6%81%AF/</url>
+      <content type="html"><![CDATA[<p>很久没执笔写下一些有关心情和感悟的文字，总觉得现在没有消化不了的情绪，没有抑制不住的情感。</p>
 <a id="more"></a> 
 <p>对于自己的目标也就不紧不慢的追着，过得有些过度平凡。</p>
 <p>来深圳之后经历过几个阶段，初来对本地环境的排斥和对一段不深厚的异地恋的紧紧依恋，异地恋崩盘之后的无奈和放纵，和有一个平淡无喜报的跨年。</p>
@@ -529,28 +453,22 @@
 <p>在每日面向谷歌编程的过程中，也翻阅了一些小牛们的blog，一方面悔悟自己当初不能，二来也重新给自己树立一些方法和习惯，在中国，能进入BAT这个level的公司起码证明一个人在自己的专业领域做到了80分以上，而从他们blog可以清晰的看到自本科起就开始积累的技术路线和项目，不一定所产出的项目一定是耳目一新的idea，但他们会长期维护，利用积累的技能去更新和推进，同样会在git上得到很高的认可。</p>
 <p>此时应是故乡乍暖还寒，此时应是故乡近中秋，先定个小目标，约个年轻的小美女一起爬山？本月累积跑掉100公里？快点把自己的hexo主题弄好？快点把今年的BAIDU IFE的最后一道大题刷完？在找工作前完成俩成熟的project？</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 感言 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;很久没执笔写下一些有关心情和感悟的文字，总觉得现在没有消化不了的情绪，没有抑制不住的情感。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
-    
-      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript爬坑笔记（三）</title>
-    <link href="http://littlewin.info/2016/03/22/JavaScript%E7%88%AC%E5%9D%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/"/>
-    <id>http://littlewin.info/2016/03/22/JavaScript爬坑笔记（三）/</id>
-    <published>2016-03-22T08:44:09.000Z</published>
-    <updated>2017-02-15T08:26:35.810Z</updated>
-    
-    <content type="html"><![CDATA[<p>这一节介绍一些<strong>JavaScript</strong>的<strong>setTimeout</strong>和<strong>setInterval</strong>方法，以及事件循环处理中的“坑”。</p>
+    <entry>
+      <title><![CDATA[JavaScript爬坑笔记（三）]]></title>
+      <url>http://littlewin.info/2016/03/22/JavaScript%E7%88%AC%E5%9D%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</url>
+      <content type="html"><![CDATA[<p>这一节介绍一些<strong>JavaScript</strong>的<strong>setTimeout</strong>和<strong>setInterval</strong>方法，以及事件循环处理中的“坑”。</p>
 <a id="more"></a>
 <h3 id="1-setTimeout和setInterval"><a href="#1-setTimeout和setInterval" class="headerlink" title="1 setTimeout和setInterval"></a>1 setTimeout和setInterval</h3><p>setTimeout和setInterval方法都是浏览器对象，即BOM提供的方法。这两个方法分别用来进行延时执行，和设置时间间隔执行代码。</p>
 <h4 id="1-1-基本用法"><a href="#1-1-基本用法" class="headerlink" title="1.1 基本用法"></a>1.1 基本用法</h4><p>setTimeout用来对代码进行一个延时执行，定义为：</p>
@@ -589,28 +507,22 @@
 <p><img src="http://7xpot0.com1.z0.glb.clouddn.com/public/16-12-9/98423029.jpg" alt=""></p>
 <p>如上图所示，主线程开启堆和栈区，在栈中执行代码，同时调用外部API在“任务队列”中添加各种事件。栈中的代码执行完毕后，主线程去读取任务队列，依次执行相应的回调函数。</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;这一节介绍一些&lt;strong&gt;JavaScript&lt;/strong&gt;的&lt;strong&gt;setTimeout&lt;/strong&gt;和&lt;strong&gt;setInterval&lt;/strong&gt;方法，以及事件循环处理中的“坑”。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript爬坑笔记（二）</title>
-    <link href="http://littlewin.info/2016/03/10/JavaScript%E7%88%AC%E5%9D%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
-    <id>http://littlewin.info/2016/03/10/JavaScript爬坑笔记（二）/</id>
-    <published>2016-03-10T01:16:16.000Z</published>
-    <updated>2017-02-15T08:26:35.805Z</updated>
-    
-    <content type="html"><![CDATA[<p>接着前面的路继续“爬坑”，希望能将JS中更多典型的问题分享出来。<br><a id="more"></a></p>
+    <entry>
+      <title><![CDATA[JavaScript爬坑笔记（二）]]></title>
+      <url>http://littlewin.info/2016/03/10/JavaScript%E7%88%AC%E5%9D%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
+      <content type="html"><![CDATA[<p>接着前面的路继续“爬坑”，希望能将JS中更多典型的问题分享出来。<br><a id="more"></a></p>
 <h3 id="一、数据类型判断"><a href="#一、数据类型判断" class="headerlink" title="一、数据类型判断"></a>一、数据类型判断</h3><p>JavaScript中有5种基本数据类型和一种复杂数据类型。</p>
 <ul>
 <li><strong>Null</strong>, <strong>Undefined</strong><br>特殊值</li>
@@ -690,28 +602,22 @@
 <p>参考<a href="#在闭包中的使用" title="在闭包中的使用">在闭包中的使用</a>，返回闭包时牢记的一点就是：返回函数不要引用任何循环变量，或者后续会发生变化的变量。如果一定要引用循环变量怎么办？方法是再创建一个函数，用该函数的参数绑定循环变量当前的值，无论该循环变量后续如何更改，已绑定到函数参数的值不变。</p>
 <p>本文完，以上。</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;接着前面的路继续“爬坑”，希望能将JS中更多典型的问题分享出来。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript爬坑笔记（一）</title>
-    <link href="http://littlewin.info/2016/02/28/JavaScript%E7%88%AC%E5%9D%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://littlewin.info/2016/02/28/JavaScript爬坑笔记（一）/</id>
-    <published>2016-02-28T02:26:10.000Z</published>
-    <updated>2016-12-09T03:01:53.781Z</updated>
-    
-    <content type="html"><![CDATA[<p>“坑”也就是“陷阱”。由于JavaScript“弱语言”的性质，使得其在使用过程中异常的宽松灵活，但也极为容易“中招”。这些坑往往隐藏着，只有亲自尝试并爬坑，才能在学习与应用的道路上走的一帆风顺。<br>平时积累一些觉得比较有意思或是比较有难度的JavaScript题目，顺便附上理解和心得。既是为了将来的面试做准备，也增强印象以防自己掉进坑里。<br><a id="more"></a></p>
+    <entry>
+      <title><![CDATA[JavaScript爬坑笔记（一）]]></title>
+      <url>http://littlewin.info/2016/02/28/JavaScript%E7%88%AC%E5%9D%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+      <content type="html"><![CDATA[<p>“坑”也就是“陷阱”。由于JavaScript“弱语言”的性质，使得其在使用过程中异常的宽松灵活，但也极为容易“中招”。这些坑往往隐藏着，只有亲自尝试并爬坑，才能在学习与应用的道路上走的一帆风顺。<br>平时积累一些觉得比较有意思或是比较有难度的JavaScript题目，顺便附上理解和心得。既是为了将来的面试做准备，也增强印象以防自己掉进坑里。<br><a id="more"></a></p>
 <h3 id="一、-函数声明的预解析"><a href="#一、-函数声明的预解析" class="headerlink" title="一、 函数声明的预解析"></a>一、 函数声明的预解析</h3><h4 id="1-1-函数的声明方式"><a href="#1-1-函数的声明方式" class="headerlink" title="1.1 函数的声明方式"></a>1.1 函数的声明方式</h4><p>定义一个函数有两种方式：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">foo() &#123;&#125;;                   <span class="comment">// 函数声明</span></div><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;;    <span class="comment">// 函数表达式</span></div></pre></td></tr></table></figure>
 <p>不同之处 - </p>
@@ -785,28 +691,22 @@
 <p>beget函数的意义在于不必为了指定子类型的原型而调用超类型的构造函数，我们所需要的无非就是超类型原型的一个副本而已。<br>这个函数其实在IE9+、Firefox 4+、Safari 5+、Opera 12+和Chrome中就是<code>Object.create()</code>方法。</p>
 <p>此外JS中还有原型式继承和寄生式继承，它们也有明显的缺点，适用于特点的场景，使用不频繁，在此不赘述了。</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;“坑”也就是“陷阱”。由于JavaScript“弱语言”的性质，使得其在使用过程中异常的宽松灵活，但也极为容易“中招”。这些坑往往隐藏着，只有亲自尝试并爬坑，才能在学习与应用的道路上走的一帆风顺。&lt;br&gt;平时积累一些觉得比较有意思或是比较有难度的JavaScript题目，顺便附上理解和心得。既是为了将来的面试做准备，也增强印象以防自己掉进坑里。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript Learning - Promise入门</title>
-    <link href="http://littlewin.info/2016/01/20/JavaScript%20Learning%20-%20Promise%E5%85%A5%E9%97%A8/"/>
-    <id>http://littlewin.info/2016/01/20/JavaScript Learning - Promise入门/</id>
-    <published>2016-01-20T10:15:03.000Z</published>
-    <updated>2016-10-24T01:39:20.570Z</updated>
-    
-    <content type="html"><![CDATA[<p>在很多需要与数据打交道的场合下，我们会遇到很多异步的情况,在异步操作的时候，我们还需要处理成功和失败两种情况，并且成功的时候，还可能需要把结果传递给下一个Ajax调用，从而形成”函数嵌套”的情况。callback是编写Javascript异步代码最最最简单的机制。可用这种原始的callback必须以牺牲控制流、异常处理和函数语义为代价。<br><a id="more"></a></p>
+    <entry>
+      <title><![CDATA[JavaScript Learning - Promise入门]]></title>
+      <url>http://littlewin.info/2016/01/20/JavaScript%20Learning%20-%20Promise%E5%85%A5%E9%97%A8/</url>
+      <content type="html"><![CDATA[<p>在很多需要与数据打交道的场合下，我们会遇到很多异步的情况,在异步操作的时候，我们还需要处理成功和失败两种情况，并且成功的时候，还可能需要把结果传递给下一个Ajax调用，从而形成”函数嵌套”的情况。callback是编写Javascript异步代码最最最简单的机制。可用这种原始的callback必须以牺牲控制流、异常处理和函数语义为代价。<br><a id="more"></a></p>
 <h3 id="具体实现的库"><a href="#具体实现的库" class="headerlink" title="具体实现的库"></a>具体实现的库</h3><h4 id="Polyfill"><a href="#Polyfill" class="headerlink" title="Polyfill"></a>Polyfill</h4><p>只需要在浏览器中加载Polyfill类库，就能使用IE10等或者还没有提供对Promise支持的浏览器中使用Promise里规定的方法。</p>
 <ul>
 <li><a href="https://github.com/jakearchibald/es6-promise" target="_blank" rel="external">jakearchibald/es6-promise</a>：一个兼容 ES6 Promises 的Polyfill类库。它基于RSVP.js这个兼容Promises/A+ 的类库，它只是RSVP.js的一个子集，只实现了Promises 规定的API。</li>
@@ -872,28 +772,22 @@
 <h4 id="Promise-race"><a href="#Promise-race" class="headerlink" title="Promise.race"></a>Promise.race</h4><p>它的使用方法和Promise.all一样，接收一个promise对象数组为参数。与all的区别就是：race只要有一个promise对象进入 FulFilled 或者 Rejected 状态的话，就会继续进行后面的处理。但是Promise中的数组也还是会继续执行。但是then只接受第一个完成的Promise返回对象。</p>
 <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="http://www.infoq.com/cn/news/2011/09/js-promise/" target="_blank" rel="external">JavaScript异步编程的Promise模式</a></p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;在很多需要与数据打交道的场合下，我们会遇到很多异步的情况,在异步操作的时候，我们还需要处理成功和失败两种情况，并且成功的时候，还可能需要把结果传递给下一个Ajax调用，从而形成”函数嵌套”的情况。callback是编写Javascript异步代码最最最简单的机制。可用这种原始的callback必须以牺牲控制流、异常处理和函数语义为代价。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WEB跨域的实现</title>
-    <link href="http://littlewin.info/2016/01/08/WEB%E8%B7%A8%E5%9F%9F%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
-    <id>http://littlewin.info/2016/01/08/WEB跨域的实现/</id>
-    <published>2016-01-08T03:27:43.000Z</published>
-    <updated>2017-02-15T08:23:34.416Z</updated>
-    
-    <content type="html"><![CDATA[<p>在开发现代WEB应用时，常常会遇到以下情形：</p>
+    <entry>
+      <title><![CDATA[WEB跨域的实现]]></title>
+      <url>http://littlewin.info/2016/01/08/WEB%E8%B7%A8%E5%9F%9F%E7%9A%84%E5%AE%9E%E7%8E%B0/</url>
+      <content type="html"><![CDATA[<p>在开发现代WEB应用时，常常会遇到以下情形：</p>
 <ol>
 <li>客户端使用JavaScript</li>
 <li>需要跨域加载服务</li>
@@ -960,35 +854,22 @@
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>对比以上三种方法 - </p>
 <p>JSONP只支持GET请求，服务器代理和CORS支持所有类型的HTTP请求。JSONP的优势在于支持老式浏览器，以及可以向不支持CORS的网站请求数据。Proxy方式，通过强大的后端应用可以提供更灵活更能发挥想象力的服务。CORS是目前W3C支持的方式，在新浏览器上体验更好。</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;在开发现代WEB应用时，常常会遇到以下情形：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;客户端使用JavaScript&lt;/li&gt;
-&lt;li&gt;需要跨域加载服务&lt;/li&gt;
-&lt;li&gt;如果采用常规的XMLHttpRequest方法，最终会在浏览器终端里显示&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;XMLHttpRequest cannot load [http://external.service/](http://external.service/).&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;No &amp;apos;Access-Control-Allow-Origin&amp;apos; header is present on the requested resource.&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Origin &amp;apos;[http://my.app](http://my.app/)&amp;apos; is therefore not allowed access.&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;每当WEB应用需要跨域加载API时，往往会遇到这种错误，本文就以此问题入手，记录下WEB跨域的学习笔记。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Objective-C学习之ARC</title>
-    <link href="http://littlewin.info/2016/01/03/Objective-C%E5%AD%A6%E4%B9%A0%E4%B9%8BARC/"/>
-    <id>http://littlewin.info/2016/01/03/Objective-C学习之ARC/</id>
-    <published>2016-01-03T13:27:33.000Z</published>
-    <updated>2016-09-06T11:31:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>内存管理在程序开发中有着至关重要的作用，基本上每个C系的程序员都会遇到与内存相关的错误，这种错误是灾难性的。Java或脚本语言的内存管理是自动进行的，就像父母会给孩子打扫房间一样。对于C系程序开发，我们必须合理分配内存，在内存结束使用后释放它们，避免内存泄漏（leak memory）。</p>
+    <entry>
+      <title><![CDATA[Objective-C学习之ARC]]></title>
+      <url>http://littlewin.info/2016/01/03/Objective-C%E5%AD%A6%E4%B9%A0%E4%B9%8BARC/</url>
+      <content type="html"><![CDATA[<p>内存管理在程序开发中有着至关重要的作用，基本上每个C系的程序员都会遇到与内存相关的错误，这种错误是灾难性的。Java或脚本语言的内存管理是自动进行的，就像父母会给孩子打扫房间一样。对于C系程序开发，我们必须合理分配内存，在内存结束使用后释放它们，避免内存泄漏（leak memory）。</p>
 <a id="more"></a> 
 <h5 id="iOS内存管理机制"><a href="#iOS内存管理机制" class="headerlink" title="iOS内存管理机制"></a>iOS内存管理机制</h5><p>iOS开发中，内存中的对象主要有两类，一类是值类型，比如<code>int</code>、<code>float</code>、<code>struct</code>等基本数据类型；另一类是引用类型，也就是继承自NSObject类的所有的OC对象。</p>
 <p>值类型会被放入栈中，他们依次紧密排列，在内存中占有一块连续的内存空间，遵循先进后出的原则。栈内存中的值类型系统会随着其生命周期自动管理。</p>
@@ -1013,28 +894,22 @@
 <li>当指针变量指向另一个对象时<br><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-1-3/11277658.jpg" alt=""></li>
 </ul>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> Objective-C </tag>
+            
+            <tag> iOS </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;内存管理在程序开发中有着至关重要的作用，基本上每个C系的程序员都会遇到与内存相关的错误，这种错误是灾难性的。Java或脚本语言的内存管理是自动进行的，就像父母会给孩子打扫房间一样。对于C系程序开发，我们必须合理分配内存，在内存结束使用后释放它们，避免内存泄漏（leak memory）。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Objective-C" scheme="http://littlewin.info/tags/Objective-C/"/>
-    
-      <category term="iOS" scheme="http://littlewin.info/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Objective-C学习之OOP</title>
-    <link href="http://littlewin.info/2016/01/01/Objective-C%E5%AD%A6%E4%B9%A0%E4%B9%8BOOP/"/>
-    <id>http://littlewin.info/2016/01/01/Objective-C学习之OOP/</id>
-    <published>2016-01-01T07:02:41.000Z</published>
-    <updated>2016-09-06T11:31:52.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><em>最近元旦无事在家休息，将这半年来所学记录于此。以后无论事情再多，也要力争在短周期内通过blog上update自己的学习记录和心得，一来督促自己，二来方便日后查阅。</em></p>
+    <entry>
+      <title><![CDATA[Objective-C学习之OOP]]></title>
+      <url>http://littlewin.info/2016/01/01/Objective-C%E5%AD%A6%E4%B9%A0%E4%B9%8BOOP/</url>
+      <content type="html"><![CDATA[<p><em>最近元旦无事在家休息，将这半年来所学记录于此。以后无论事情再多，也要力争在短周期内通过blog上update自己的学习记录和心得，一来督促自己，二来方便日后查阅。</em></p>
 <p>开发iOS应用需要使用Objective-C语言和Cocoa Touch框架。Objective-C源自C语言，是C语言的扩展。Cocoa Touch框架则是一个Objective-C类的集合。<br><a id="more"></a> </p>
 <h5 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h5><p>Objective-C的类与其他OOP语言基本类似，是一种表示对象类型的结构体。对象通过它隶属的类来获取自身的各种信息，尤其是执行每个操作所要运行的代码。<br><code>@interface</code>指令将类所提供的数据结构成员告知Objective-C编译器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@interface NewClass : NSObject  </div><div class="line">&#123;</div><div class="line">//fill in instance variable</div><div class="line">&#125;</div><div class="line">//fill in method declaration</div><div class="line">@end</div></pre></td></tr></table></figure></p>
 <p><code>@implementation</code>部分提供各个数据接口的功能代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@implementation NewClass</div><div class="line">//fill in implementation</div><div class="line">@end</div></pre></td></tr></table></figure></p>
@@ -1066,29 +941,22 @@
 <li><code>nil</code><br>定义为一个常量，如果一个指针的值为<code>nil</code>,代表这个指针没有指向任何对象。</li>
 </ul>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> Objective-C </tag>
+            
+            <tag> iOS </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;最近元旦无事在家休息，将这半年来所学记录于此。以后无论事情再多，也要力争在短周期内通过blog上update自己的学习记录和心得，一来督促自己，二来方便日后查阅。&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;开发iOS应用需要使用Objective-C语言和Cocoa Touch框架。Objective-C源自C语言，是C语言的扩展。Cocoa Touch框架则是一个Objective-C类的集合。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Objective-C" scheme="http://littlewin.info/tags/Objective-C/"/>
-    
-      <category term="iOS" scheme="http://littlewin.info/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript Learning - 回调函数的理解和使用</title>
-    <link href="http://littlewin.info/2015/12/06/JavaScript%20Learning%20-%20%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8C%E4%BD%BF%E7%94%A8/"/>
-    <id>http://littlewin.info/2015/12/06/JavaScript Learning - 回调函数的理解和使用/</id>
-    <published>2015-12-06T06:35:20.000Z</published>
-    <updated>2016-09-30T06:37:56.723Z</updated>
-    
-    <content type="html"><![CDATA[<p>回调函数主要体现在函数式编程的编程方式，即使用函数作为参数。函数式编程在编程的进阶领域会有充分的体现，需要进行一段时间的学习和练习。<br>所幸函数式编程在很多语言规范里都有明确的定义和解释，而函数式编程中主要用到的方法就是回调函数。回调函数的在进阶的JavaScript中常有用到，但其实有一些理解之后，用法和传入普通参数并无太大差异。<br><a id="more"></a></p>
+    <entry>
+      <title><![CDATA[JavaScript Learning - 回调函数的理解和使用]]></title>
+      <url>http://littlewin.info/2015/12/06/JavaScript%20Learning%20-%20%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8C%E4%BD%BF%E7%94%A8/</url>
+      <content type="html"><![CDATA[<p>回调函数主要体现在函数式编程的编程方式，即使用函数作为参数。函数式编程在编程的进阶领域会有充分的体现，需要进行一段时间的学习和练习。<br>所幸函数式编程在很多语言规范里都有明确的定义和解释，而函数式编程中主要用到的方法就是回调函数。回调函数的在进阶的JavaScript中常有用到，但其实有一些理解之后，用法和传入普通参数并无太大差异。<br><a id="more"></a></p>
 <h3 id="1-回调函数"><a href="#1-回调函数" class="headerlink" title="1. 回调函数"></a>1. 回调函数</h3><blockquote>
 <p>回调函数，是将一个函数作为参数传入另一个函数，并且在这个函数中进行调用的编程方式。回调函数本身是一种编程模式，因此使用回调函数的方式也被称为回调模式。</p>
 </blockquote>
@@ -1145,28 +1013,22 @@
 </li>
 </ul>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;回调函数主要体现在函数式编程的编程方式，即使用函数作为参数。函数式编程在编程的进阶领域会有充分的体现，需要进行一段时间的学习和练习。&lt;br&gt;所幸函数式编程在很多语言规范里都有明确的定义和解释，而函数式编程中主要用到的方法就是回调函数。回调函数的在进阶的JavaScript中常有用到，但其实有一些理解之后，用法和传入普通参数并无太大差异。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript Learning - apply，call和bind浅析</title>
-    <link href="http://littlewin.info/2015/11/29/JavaScript%20Learning%20-%20apply%EF%BC%8Ccall%E5%92%8Cbind%E6%B5%85%E6%9E%90/"/>
-    <id>http://littlewin.info/2015/11/29/JavaScript Learning - apply，call和bind浅析/</id>
-    <published>2015-11-29T09:06:33.000Z</published>
-    <updated>2016-09-29T09:11:26.425Z</updated>
-    
-    <content type="html"><![CDATA[<p>对于Javascript开发者而言，<code>apply</code>，<code>call</code>和<code>bind</code>这三个方法极其重要，因此需要对其形成更深刻的理解。而现实中感觉这三个方法的使用深度较浅，在此稍作深入学习加以记录吧。<br><a id="more"></a> </p>
+    <entry>
+      <title><![CDATA[JavaScript Learning - apply，call和bind浅析]]></title>
+      <url>http://littlewin.info/2015/11/29/JavaScript%20Learning%20-%20apply%EF%BC%8Ccall%E5%92%8Cbind%E6%B5%85%E6%9E%90/</url>
+      <content type="html"><![CDATA[<p>对于Javascript开发者而言，<code>apply</code>，<code>call</code>和<code>bind</code>这三个方法极其重要，因此需要对其形成更深刻的理解。而现实中感觉这三个方法的使用深度较浅，在此稍作深入学习加以记录吧。<br><a id="more"></a> </p>
 <h3 id="1-共性"><a href="#1-共性" class="headerlink" title="1. 共性"></a>1. 共性</h3><p><code>apply</code>，<code>call</code>和<code>bind</code>方法的共同点是它们的第一个参数都是想将方法赋予给的对象。</p>
 <h3 id="2-apply和call"><a href="#2-apply和call" class="headerlink" title="2. apply和call"></a>2. apply和call</h3><p><code>apply</code>和<code>call</code>将方法绑定到具体的对象并执行，它们的区别在于第二个参数 - <code>call</code>需要把参数按顺序传递进去，而<code>apply</code>则是把参数放在数组里。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">func.call(<span class="keyword">this</span>, arg1, arg2);</div><div class="line">func.apply(<span class="keyword">this</span>, [arg1, arg2])</div></pre></td></tr></table></figure></p>
 <h4 id="2-1-绑定对象"><a href="#2-1-绑定对象" class="headerlink" title="2.1 绑定对象"></a>2.1 绑定对象</h4><p>先来一个简单的例子<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 全局变量​</span></div><div class="line"><span class="keyword">var</span> avgScore = <span class="string">"global avgScore"</span>;</div><div class="line"><span class="comment">// 全局函数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">avg</span> (<span class="params">arrayOfScores</span>) </span>&#123;</div><div class="line">  <span class="comment">// 统计score值得总和</span></div><div class="line">  <span class="keyword">var</span> sumOfScores = arrayOfScores.reduce (<span class="function"><span class="keyword">function</span> (<span class="params">prev, cur, index, array</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> prev + cur;</div><div class="line">  &#125;);</div><div class="line">  <span class="comment">// 这里this会绑定到全局对象，除非使用apply或call</span></div><div class="line">  <span class="keyword">this</span>.avgScore = sumOfScores / arrayOfScores.length;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> gameController = &#123;</div><div class="line">  scores :[<span class="number">20</span>, <span class="number">34</span>, <span class="number">55</span>, <span class="number">46</span>, <span class="number">77</span>],</div><div class="line">  avgScore:<span class="literal">null</span>​</div><div class="line">&#125;</div><div class="line"></div><div class="line">avg (gameController.scores);</div><div class="line"><span class="built_in">console</span>.log (<span class="built_in">window</span>.avgScore); <span class="comment">// 46.4​</span></div><div class="line"><span class="built_in">console</span>.log (gameController.avgScore); <span class="comment">// null​</span></div><div class="line"></div><div class="line"><span class="comment">// 重置全局变量​</span></div><div class="line">avgScore = <span class="string">"global avgScore"</span>;</div><div class="line"><span class="comment">// 使用call绑定对象gameController</span></div><div class="line">avg.call (gameController, gameController.scores);</div><div class="line"><span class="built_in">console</span>.log (<span class="built_in">window</span>.avgScore); <span class="comment">//global avgScore</span></div><div class="line"><span class="built_in">console</span>.log (gameController.avgScore); <span class="comment">// 46.4​</span></div></pre></td></tr></table></figure></p>
@@ -1202,28 +1064,22 @@
 <h3 id="4-区别"><a href="#4-区别" class="headerlink" title="4.区别"></a>4.区别</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">    x: <span class="number">81</span>,</div><div class="line">&#125;;</div><div class="line"> </div><div class="line"><span class="keyword">var</span> foo = &#123;</div><div class="line">    getX: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.x;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"> </div><div class="line"><span class="built_in">console</span>.log(foo.getX.bind(obj)());    <span class="comment">//Note the () after bind</span></div><div class="line"><span class="built_in">console</span>.log(foo.getX.call(obj));</div><div class="line"><span class="built_in">console</span>.log(foo.getX.apply(obj));</div></pre></td></tr></table></figure>
 <p>当你希望改变上下文环境之后并非立即执行，而是回调执行的时候，使用bind() 方法；而 apply/call 则会立即执行函数。</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;p&gt;对于Javascript开发者而言，&lt;code&gt;apply&lt;/code&gt;，&lt;code&gt;call&lt;/code&gt;和&lt;code&gt;bind&lt;/code&gt;这三个方法极其重要，因此需要对其形成更深刻的理解。而现实中感觉这三个方法的使用深度较浅，在此稍作深入学习加以记录吧。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML进阶-优化设计</title>
-    <link href="http://littlewin.info/2015/09/24/HTML%E8%BF%9B%E9%98%B6-%E4%BC%98%E5%8C%96%E8%AE%BE%E8%AE%A1/"/>
-    <id>http://littlewin.info/2015/09/24/HTML进阶-优化设计/</id>
-    <published>2015-09-24T15:26:42.000Z</published>
-    <updated>2016-09-27T03:45:03.614Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h5><p>时至今日，网页加载的性能已经很大程度影响了网页的体验效果。而提到加载性能的提升点，大部分人会想到<code>图片优化</code>、<code>JavaScript优化</code>、<code>服务器配置升级</code>、<code>文件压缩</code>甚至是<code>CSS压缩</code>这些方式。反而在前端初学阶段接触的HTML代码的质量，容易被忽视。<br>网页内容的丰富离不开页面元素的快速累积，举一个典型值，YouTube的首页元素大概有3500个。网页性能的提升无法靠精简元素来实现，特别是HTML5还在多媒体方面增加了更多的标签。但是如果在页面开发之初，就注重HTML代码的清晰，干净，整洁，对提升网页性能十分有益。在初学阶段，就培养良好的开发习惯，不仅能够让你的网页在许多设备上都能快速正常的加载运行，而且会另你的项目易于debug和维护。</p>
+    <entry>
+      <title><![CDATA[HTML进阶-优化设计]]></title>
+      <url>http://littlewin.info/2015/09/24/HTML%E8%BF%9B%E9%98%B6-%E4%BC%98%E5%8C%96%E8%AE%BE%E8%AE%A1/</url>
+      <content type="html"><![CDATA[<h5 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h5><p>时至今日，网页加载的性能已经很大程度影响了网页的体验效果。而提到加载性能的提升点，大部分人会想到<code>图片优化</code>、<code>JavaScript优化</code>、<code>服务器配置升级</code>、<code>文件压缩</code>甚至是<code>CSS压缩</code>这些方式。反而在前端初学阶段接触的HTML代码的质量，容易被忽视。<br>网页内容的丰富离不开页面元素的快速累积，举一个典型值，YouTube的首页元素大概有3500个。网页性能的提升无法靠精简元素来实现，特别是HTML5还在多媒体方面增加了更多的标签。但是如果在页面开发之初，就注重HTML代码的清晰，干净，整洁，对提升网页性能十分有益。在初学阶段，就培养良好的开发习惯，不仅能够让你的网页在许多设备上都能快速正常的加载运行，而且会另你的项目易于debug和维护。</p>
 <blockquote>
 <p>HTML用于搭建架构，至少要保证脱离CSS和JavaScript之后页面可基本呈现。<br>CSS用于美化样式，尽可能在完成需求的前提下精简。<br>JavaScript用于控制行为，完成上述二者无法完成的附加功能</p>
 </blockquote>
@@ -1288,21 +1144,48 @@
 </ol>
 <h5 id="五、其它、"><a href="#五、其它、" class="headerlink" title="五、其它、"></a>五、其它、</h5><p>本文主要给予前端初学者在设计之初的一些借鉴之处，在页面设计的后期工作中，测试特别是对不同屏幕和使用环境的适配也是值得注重的问题，这部分内容会在引入调试和打包工具的介绍之后再进行探讨。</p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> HTML </tag>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
+    <entry>
+      <title><![CDATA[Hello, new transform]]></title>
+      <url>http://littlewin.info/2015/09/08/Hello-new-transform/</url>
+      <content type="html"><![CDATA[<p>来到深圳参加工作已经快到俩月，工作和生活基本进入了一个新的稳态，这个阶段最应该放下之前的波折，重新审视内心，制定计划。</p>
+<a id="more"></a> 
+<p><em>ABOUT WORK</em><br>以前基本是在写嵌入式硬件上的驱动和系统应用代码，实习过程也是在从事持续集成系统后台的脚本的开发，前端的东西在持续的了解，但从未深入学习过。前端涵盖的知识面非常广，既有具体的技术，又有抽象的理念。简单地说，它的主要职能就是把各个终端界面更好地呈现给用户。于我而言，这是一件很屌的事情，于是，我要转型，并且开启了这个<a href="http://littlewin.info" title="Littlewin&#39;s blog">blog</a>来记录这个过程的点滴。</p>
+<p><em>ABOUT LIFE</em><br>－ 刚参加工作就想着转型的确是一件很荒唐的事情，我愿意为此付出很多时间的经济上的支出，有目标驱动，有挤出来的资源支持，最终还希望有能力去重新选择。<br>－ 执行力在某些方面的体现已经不错了，其他方面仍需补齐，这最终将一一被时间和记录所检验。<br>－ 在很远的地方打通一处心扉是件不太容易的事情，我是一个结果导向的人，希望一点一滴的煎熬和坚持最终能换来终点的释怀。</p>
+<p>其实汇总之后就是一句话，不服就干！</p>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> 感言 </tag>
+            
+            <tag> 工作 </tag>
+            
+        </tags>
+        
+    </entry>
     
-      &lt;h5 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h5&gt;&lt;p&gt;时至今日，网页加载的性能已经很大程度影响了网页的体验效果。而提到加载性能的提升点，大部分人会想到&lt;code&gt;图片优化&lt;/code&gt;、&lt;code&gt;JavaScript优化&lt;/code&gt;、&lt;code&gt;服务器配置升级&lt;/code&gt;、&lt;code&gt;文件压缩&lt;/code&gt;甚至是&lt;code&gt;CSS压缩&lt;/code&gt;这些方式。反而在前端初学阶段接触的HTML代码的质量，容易被忽视。&lt;br&gt;网页内容的丰富离不开页面元素的快速累积，举一个典型值，YouTube的首页元素大概有3500个。网页性能的提升无法靠精简元素来实现，特别是HTML5还在多媒体方面增加了更多的标签。但是如果在页面开发之初，就注重HTML代码的清晰，干净，整洁，对提升网页性能十分有益。在初学阶段，就培养良好的开发习惯，不仅能够让你的网页在许多设备上都能快速正常的加载运行，而且会另你的项目易于debug和维护。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;HTML用于搭建架构，至少要保证脱离CSS和JavaScript之后页面可基本呈现。&lt;br&gt;CSS用于美化样式，尽可能在完成需求的前提下精简。&lt;br&gt;JavaScript用于控制行为，完成上述二者无法完成的附加功能&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML" scheme="http://littlewin.info/tags/HTML/"/>
-    
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
   
-</feed>
+  
+    
+    <entry>
+      <title><![CDATA[About me]]></title>
+      <url>http://littlewin.info/about/index.html</url>
+      <content type="html"><![CDATA[<p>目前负责SSD FW开发工作，忙里偷闲转向前端。<br>Like making cool things and making cool things with cool guys.<br>编程之外，热爱运动，一生多特死忠。</p>
+]]></content>
+    </entry>
+    
+  
+</search>
