@@ -1183,7 +1183,7 @@
     <entry>
       <title><![CDATA[About me]]></title>
       <url>http://littlewin.info/about/index.html</url>
-      <content type="html"><![CDATA[<p>Littlewin，本名「王琪」，89年摩羯男<del>伪90后</del><br><strong>寻找靠谱的前端Team中，进来的瞅一眼<a href="http://littlewin.info">简历</a></strong></p>
+      <content type="html"><![CDATA[<p>Littlewin，本名「王琪」，89年摩羯男<del>伪90后</del><br><strong>寻找靠谱的前端Team中，进来的瞅一眼<a href="/resume">简历</a></strong></p>
 <blockquote>
 <p>Littlewin是一个 <a href="http://littlewin.info">独立博客</a> 的Owner<br>Littlewin目前热情集中在与 <a href="http://littlewin.info/2016/11/07/Hello,%20%E5%A4%A7%E7%9B%AE%E6%A0%87/">大目标</a> 携手并进和在 <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a> 上积极垒砖<br>Littlewin目前负责SSD FW开发工作，忙里偷闲转向前端</p>
 </blockquote>
@@ -1197,10 +1197,39 @@
 <p>本站所有文章均为本人原创，仅代表个人在撰文时刻的观点和想法<br>内容转载请保留署名<strong>Littlewin</strong>或指向该原文(<a href="https://jysperm.me" target="_blank" rel="external">https://jysperm.me</a>)的链接，请勿用于商业用途</p>
 </blockquote>
 <h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><ul>
-<li>邮箱: <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#108;&#x69;&#x74;&#x74;&#x6c;&#101;&#119;&#105;&#x6e;&#46;&#119;&#97;&#110;&#x67;&#64;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#x6d;">&#108;&#x69;&#x74;&#x74;&#x6c;&#101;&#119;&#105;&#x6e;&#46;&#119;&#97;&#110;&#x67;&#64;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a></li>
+<li>邮箱: <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#108;&#x69;&#x74;&#x74;&#108;&#x65;&#x77;&#x69;&#x6e;&#x2e;&#119;&#97;&#x6e;&#x67;&#64;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;">&#108;&#x69;&#x74;&#x74;&#108;&#x65;&#x77;&#x69;&#x6e;&#x2e;&#119;&#97;&#x6e;&#x67;&#64;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;</a></li>
 <li>微信: wxoffred</li>
 <li>Github: <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a></li>
 </ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[resume]]></title>
+      <url>http://littlewin.info/resume/index.html</url>
+      <content type="html"><![CDATA[<h3 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h3><blockquote>
+<p>基本: 王琪 | 27 | 男 | 硕士 | 深圳<br>工作年限: 1.5<br>博客: <a href="http://littlewin.info">http://littlewin.info</a><br>Github: <a href="https://github.com/littlewin-wang" target="_blank" rel="external">https://github.com/littlewin-wang</a><br>期望职位: 前端工程师 | 成都(重庆) </p>
+</blockquote>
+<h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><ul>
+<li><p><a href="https://github.com/littlewin-wang/vue-images" target="_blank" rel="external">vue-images</a> <a href="https://littlewin-wang.github.io/vue-images/example/" class="demo" target="_blank" rel="external">Demo</a><a class="github-button" href="https://github.com/littlewin-wang/vue-images/fork" data-icon="octicon-repo-forked" data-count-href="/littlewin-wang/vue-images/network" data-count-api="/repos/littlewin-wang/vue-images#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork littlewin-wang/vue-images on GitHub" target="_blank" rel="external">Fork</a><a class="github-button" href="https://github.com/littlewin-wang/vue-images" data-icon="octicon-star" data-count-href="/littlewin-wang/vue-images/stargazers" data-count-api="/repos/littlewin-wang/vue-images#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/vue-images on GitHub" target="_blank" rel="external">Star</a><br>采用Vue2.0设计的图片显示播放工具，响应式设计，支持导航条、全屏显示和自动播放功能，接口方便，已发布至<a href="https://www.npmjs.com/package/vue-images" target="_blank" rel="external">npm</a>。<br><img src="https://cloud.githubusercontent.com/assets/14028075/22059135/9a633f74-dda6-11e6-8314-3b745801b4e1.gif" alt=""></p>
+</li>
+<li><p><a href="https://github.com/littlewin-wang/Zhihu_Daily" target="_blank" rel="external">Zhihu_Daily</a> <a href="http://zhihudaily.littlewin.info:5555/" class="demo" target="_blank" rel="external">Demo</a><a class="github-button" href="https://github.com/littlewin-wang/Zhihu_Daily/fork" data-icon="octicon-repo-forked" data-count-href="/littlewin-wang/Zhihu_Daily/network" data-count-api="/repos/littlewin-wang/Zhihu_Daily#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork littlewin-wang/Zhihu_Daily on GitHub" target="_blank" rel="external">Fork</a><a class="github-button" href="https://github.com/littlewin-wang/Zhihu_Daily" data-icon="octicon-star" data-count-href="/littlewin-wang/Zhihu_Daily/stargazers" data-count-api="/repos/littlewin-wang/Zhihu_Daily#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/Zhihu_Daily on GitHub" target="_blank" rel="external">Star</a><br>采用vue 2.0 + vue-router 2.0 + vuex 2.0 + axios实现的知乎日报Web，支持每日热门话题/专栏/主题日报等页面。项目采用中转服务器转发API并开启跨域支持，使用v-lazyload插件实现图片懒加载，使用vuex结合本地存储管理状态信息，增加过渡动画优化数据加载过程。<br><img src="https://cloud.githubusercontent.com/assets/14028075/21759136/eb939fd2-d67c-11e6-811f-4bdf67f67c73.gif" alt=""></p>
+</li>
+</ul>
+<h3 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h3><ol>
+<li><p>HTML / CSS</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">能够编写语义化的 HTML，模块化的 CSS，完成较复杂的布局</div><div class="line">熟悉 Less / Sass / Autoprefixer 等CSS预处理和后处理方法、工具</div></pre></td></tr></table></figure>
+</li>
+<li><p>JavaScript</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">熟悉原生Javascript，能脱离jQuery等类库编码</div><div class="line">能运用模块化、面向对象的方式编程</div><div class="line">了解 RequireJS jQuery VueJS 的使用</div></pre></td></tr></table></figure>
+</li>
+<li><p>其他</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">熟悉 Yeoman Bower Grunt Gulp 前端自动化工具</div><div class="line">了解前端安全、性能优化方面的一些知识</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><blockquote>
+<p>严重强迫症，不能忍受界面一个像素的偏差，同样不能忍受代码格式一个空格的偏差<br>学习能力强，以上绝大多数的技能都是工作之后自学修得的<br>掌握 Vim Git 等开发工具的使用<br>能够熟练使用 Markdown 进行写作</p>
+</blockquote>
 ]]></content>
     </entry>
     
