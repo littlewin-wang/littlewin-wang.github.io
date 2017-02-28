@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title><![CDATA[应该是展望]]></title>
+      <url>http://littlewin.info/2017/02/28/%E5%BA%94%E8%AF%A5%E6%98%AF%E5%B1%95%E6%9C%9B/</url>
+      <content type="html"><![CDATA[<p>前进之路就像海绵一样，上段路程起点处设立好的本以为是厚积薄发的目标却在终点处总是显得刚好而已，好吧，再立小目标。<br><a id="more"></a> </p>
+<p>找工作之前渐渐地开始梳理之前准备的项目，学习心得和一些经验分享。<br>也更新了博客主题和简历，看着是舒服一些了。</p>
+<p>伴大目标而行的路途也逐渐明朗而清晰，我心甚欢。<br>程序员的追求挺简单的，写代码-写喜欢的代码-写喜欢的代码给喜欢的人看</p>
+<blockquote>
+<p>好吧，我要梳理一下<del>立FLAG</del></p>
+</blockquote>
+<h3 id="带领大目标"><a href="#带领大目标" class="headerlink" title="带领大目标"></a>带领大目标</h3><blockquote>
+<p>进入下班后的提升状态</p>
+<ol>
+<li>男耕女织<i class="icon icon-heart"></i>就是♂coding + ♀CPA|总结的状态</li>
+<li>一起跑步( &gt;2 * 5km/week )</li>
+</ol>
+<p>若干次计划好的旅行<br>健康膳食，规律作息</p>
+</blockquote>
+<h3 id="那些还没覆盖到简历的努力"><a href="#那些还没覆盖到简历的努力" class="headerlink" title="那些还没覆盖到简历的努力"></a>那些还没覆盖到简历的努力</h3><ul>
+<li><p><a href="https://github.com/littlewin-wang/vue-images" target="_blank" rel="external"><strong>vue-images</strong></a><br>1 优化动画效果<br>2 优化图片加载<br>3 用在自己的博客里</p>
+</li>
+<li><p><a href="https://github.com/littlewin-wang/hexo-theme-casual" target="_blank" rel="external"><strong>hexo-theme-casual</strong></a><br>1 增加多种评论模块(Disqus, 多说和友言评论)支持<br>2 完善Google Analytics和不蒜子统计功能<br>3 增加颜色主题切换功能</p>
+</li>
+<li><p><a href="https://github.com/littlewin-wang/vue-sellapp" target="_blank" rel="external"><strong>vue-sellapp</strong></a><br>1 用Vue2.0重构<br>2 增加一些简单的后台功能(登陆，订单管理)</p>
+</li>
+<li><p><a href="https://github.com/littlewin-wang/react-zhihudaily" target="_blank" rel="external"><strong>react-zhihudaily</strong></a><br>1 完成React版的知乎日报</p>
+</li>
+<li><p><a href="https://github.com/littlewin-wang/html5_web_reader" target="_blank" rel="external"><strong>html5_web_reader</strong></a><br>1 完成项目重构<br>2 思考优化点</p>
+</li>
+<li><p>微信公众号开发 + React-Native学习<br>待补充</p>
+</li>
+<li><p><a href="http://ife.baidu.com/course/all" target="_blank" rel="external"><strong>百度前端学院-ECharts &amp; WebVR学院</strong></a><br>完成ECharts &amp; WebVR学院的全部课程学习</p>
+</li>
+</ul>
+<h3 id="基础出发，不止面试"><a href="#基础出发，不止面试" class="headerlink" title="基础出发，不止面试"></a>基础出发，不止面试</h3><ul>
+<li>完成JS 30 days</li>
+<li>结合自身项目巩固前端基础</li>
+</ul>
+<h3 id="第一步，总得走出去"><a href="#第一步，总得走出去" class="headerlink" title="第一步，总得走出去"></a>第一步，总得走出去</h3><ul>
+<li>找到效率更高的简历递达方式</li>
+<li>去面试，找更好的公司去面试，<del>人总是需要近乎无耻的自信</del></li>
+</ul>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[假如雨天也要唱歌的话]]></title>
       <url>http://littlewin.info/2017/01/15/%E5%81%87%E5%A6%82%E9%9B%A8%E5%A4%A9%E4%B9%9F%E8%A6%81%E5%94%B1%E6%AD%8C%E7%9A%84%E8%AF%9D/</url>
       <content type="html"><![CDATA[<blockquote>
@@ -1197,7 +1251,7 @@
 <p>本站所有文章均为本人原创，仅代表个人在撰文时刻的观点和想法<br>内容转载请保留署名<strong>Littlewin</strong>或指向该原文(<a href="https://jysperm.me" target="_blank" rel="external">https://jysperm.me</a>)的链接，请勿用于商业用途</p>
 </blockquote>
 <h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><ul>
-<li>邮箱: <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#58;&#108;&#105;&#116;&#116;&#x6c;&#x65;&#x77;&#x69;&#x6e;&#46;&#119;&#97;&#110;&#103;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;">&#108;&#105;&#116;&#116;&#x6c;&#x65;&#x77;&#x69;&#x6e;&#46;&#119;&#97;&#110;&#103;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;</a></li>
+<li>邮箱: <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#x6c;&#105;&#116;&#116;&#108;&#101;&#x77;&#105;&#110;&#46;&#119;&#x61;&#x6e;&#x67;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#109;">&#x6c;&#105;&#116;&#116;&#108;&#101;&#x77;&#105;&#110;&#46;&#119;&#x61;&#x6e;&#x67;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#109;</a></li>
 <li>微信: wxoffred</li>
 <li>Github: <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a></li>
 </ul>
