@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -983,63 +984,45 @@ img.bgimage {
       color: #e54e53; }
 
 .article-post-list {
-  margin-left: 8em;
   margin-bottom: 2em; }
   .article-post-list .archive-year {
-    padding-left: 1em;
-    border-left: 5px solid #e54e53;
-    border-bottom: none; }
+    border-bottom: none;
+    margin: 1em 0 0 0; }
   .article-post-list .post-list-article {
     position: relative;
-    margin-bottom: 0;
-    padding: 1em 0;
-    border-left: 2px solid #999;
+    margin: 0.2em 0;
     overflow: visible; }
-    .article-post-list .post-list-article:hover .post-date,
-    .article-post-list .post-list-article:hover .post-title:before {
-      background-color: #e54e53; }
-    .article-post-list .post-list-article:hover .post-date:before {
-      border-color: transparent transparent transparent #e54e53; }
     .article-post-list .post-list-article:hover .post-title a {
-      color: #e54e53;
       text-decoration: underline; }
   .article-post-list .post-date {
-    position: absolute;
-    top: 1em;
-    left: -9em;
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
     width: 6em;
-    height: 30px;
-    line-height: 30px;
-    background-color: #666;
-    color: #FFF;
-    text-align: center; }
+    height: 1.5em;
+    line-height: 1.5em; }
     .article-post-list .post-date:before {
       position: absolute;
-      top: 13px;
-      right: -12px;
-      width: 0;
-      height: 0;
-      border-color: transparent transparent transparent #666;
-      border-style: solid;
-      border-width: 0 0 15px 17px;
+      top: 0.5em;
+      left: 0;
+      width: 0.4em;
+      height: 0.4em;
+      background-color: #666;
       content: ""; }
   .article-post-list .post-title {
     position: relative;
-    margin-left: 2em;
+    display: inline-block;
+    padding-left: 1em;
     font-weight: 400;
-    height: 30px;
-    line-height: 30px; }
+    height: 1.5em;
+    line-height: 1.5em; }
+    .article-post-list .post-title a {
+      color: #e54e53; }
     .article-post-list .post-title:before {
       position: absolute;
-      top: -0.2em;
-      left: -2.7em;
-      display: block;
-      width: 1em;
-      height: 1em;
-      border: 0.2em solid #fff;
-      border-radius: 50%;
-      background-color: #666;
-      content: ""; }
+      top: 0;
+      left: 0;
+      content: "»"; }
 
 #mask {
   position: fixed;
