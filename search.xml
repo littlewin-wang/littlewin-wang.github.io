@@ -1235,6 +1235,56 @@
   
     
     <entry>
+      <title><![CDATA[resume]]></title>
+      <url>http://littlewin.info/resume/index.html</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>基本: <strong>王琪 - 27 - 男 - 硕士 - 深圳</strong><br>联系方式: <strong>18048580219</strong> || <strong><a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#108;&#x69;&#x74;&#116;&#108;&#x65;&#x77;&#x69;&#110;&#x2e;&#x77;&#97;&#110;&#103;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#109;">&#108;&#x69;&#x74;&#116;&#108;&#x65;&#x77;&#x69;&#110;&#x2e;&#x77;&#97;&#110;&#103;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#109;</a></strong><br>工作年限: <strong>1.5 Year</strong><br>博客: <strong><a href="http://littlewin.info">http://littlewin.info</a></strong><br>Github: <strong><a href="https://github.com/littlewin-wang" target="_blank" rel="external">https://github.com/littlewin-wang</a></strong><br>期望职位: <strong>前端工程师 &amp;&amp; 深圳(成都)</strong> </p>
+</blockquote>
+<h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><h4 id="vue-images-Demo-Star"><a href="#vue-images-Demo-Star" class="headerlink" title="vue-images Demo Star"></a><a href="https://github.com/littlewin-wang/vue-images" target="_blank" rel="external"><strong>vue-images</strong></a> <a href="https://littlewin-wang.github.io/vue-images/example/" class="demo" target="_blank" rel="external">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/vue-images" data-icon="octicon-star" data-count-href="/littlewin-wang/vue-images/stargazers" data-count-api="/repos/littlewin-wang/vue-images#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/vue-images on GitHub" target="_blank" rel="external">Star</a></h4><ul>
+<li>采用Vue2.0设计的图片显示播放工具。</li>
+<li>响应式设计，支持导航条、全屏显示和自动播放功能。</li>
+<li>接口方便，已发布至<a href="https://www.npmjs.com/package/vue-images" target="_blank" rel="external">npm</a>。</li>
+</ul>
+<h4 id="Zhihu-Daily-Demo-Star"><a href="#Zhihu-Daily-Demo-Star" class="headerlink" title="Zhihu_Daily Demo Star"></a><a href="https://github.com/littlewin-wang/Zhihu_Daily" target="_blank" rel="external"><strong>Zhihu_Daily</strong></a> <a href="http://zhihudaily.littlewin.info:5555/" class="demo" target="_blank" rel="external">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/Zhihu_Daily" data-icon="octicon-star" data-count-href="/littlewin-wang/Zhihu_Daily/stargazers" data-count-api="/repos/littlewin-wang/Zhihu_Daily#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/Zhihu_Daily on GitHub" target="_blank" rel="external">Star</a></h4><ul>
+<li>采用vue 2.0 + vue-router 2.0 + vuex 2.0 + axios实现的知乎日报Web，支持每日热门话题/专栏/主题日报等页面。</li>
+<li>项目采用中转服务器转发API并开启跨域支持，使用v-lazyload插件实现图片懒加载，使用vuex结合本地存储管理状态信息，增加过渡动画优化数据加载过程。</li>
+</ul>
+<h4 id="hexo-theme-casual-Demo-Star"><a href="#hexo-theme-casual-Demo-Star" class="headerlink" title="hexo-theme-casual Demo Star"></a><a href="https://github.com/littlewin-wang/hexo-theme-casual" target="_blank" rel="external"><strong>hexo-theme-casual</strong></a> <a href="http://littlewin.info" class="demo">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/hexo-theme-casual" data-icon="octicon-star" data-count-href="/littlewin-wang/hexo-theme-casual/stargazers" data-count-api="/repos/littlewin-wang/hexo-theme-casual#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/hexo-theme-casual on GitHub" target="_blank" rel="external">Star</a></h4><ul>
+<li>自己设计并实现的hexo博客主题，基于Jade + SASS + jQuery开发</li>
+<li>设计简洁，引入本地搜索，评论等功能</li>
+</ul>
+<h5 id="vue-sellapp-Demo-Star"><a href="#vue-sellapp-Demo-Star" class="headerlink" title="vue-sellapp Demo Star"></a><a href="https://github.com/littlewin-wang/vue-sellapp" target="_blank" rel="external"><strong>vue-sellapp</strong></a> <a href="http://sellapp.littlewin.info:4444" class="demo" target="_blank" rel="external">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/vue-sellapp" data-icon="octicon-star" data-count-href="/littlewin-wang/vue-sellapp/stargazers" data-count-api="/repos/littlewin-wang/vue-sellapp#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/vue-sellapp on GitHub" target="_blank" rel="external">Star</a></h5><ul>
+<li>基于Vue和Node.js的仿移动端外卖web app</li>
+<li>采用Vue2.0对原项目进行重构</li>
+</ul>
+<h4 id="Baidu-IFE-2016"><a href="#Baidu-IFE-2016" class="headerlink" title="Baidu_IFE_2016"></a><a href="https://github.com/littlewin-wang/Baidu_IFE_2016" target="_blank" rel="external"><strong>Baidu_IFE_2016</strong></a></h4><ul>
+<li>学习百度IFE前端技术学院春季班课程，并独立完成其中的任务</li>
+</ul>
+<h3 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h3><h4 id="HTML-CSS"><a href="#HTML-CSS" class="headerlink" title="HTML / CSS"></a><strong>HTML / CSS</strong></h4><ul>
+<li>能够编写语义化的 HTML，模块化的 CSS，完成较复杂的布局</li>
+<li>熟悉 Stylus / Sass / Autoprefixer 等CSS预处理和后处理方法、工具</li>
+</ul>
+<h4 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a><strong>JavaScript</strong></h4><ul>
+<li>熟悉原生Javascript，能脱离jQuery等类库编码</li>
+<li>能运用模块化、面向对象的方式编程</li>
+<li>了解 RequireJS jQuery VueJS 的使用</li>
+</ul>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a><strong>其他</strong></h4><ul>
+<li>熟悉 Webpack Gulp 前端自动化工具</li>
+<li>了解前端安全、性能优化方面的一些知识</li>
+</ul>
+<h4 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a><strong>Node.js</strong></h4><ul>
+<li>了解 JavaScript 异步模式</li>
+<li>能够使用 http 模块构造简单的请求</li>
+<li>能够编写基于 Node.js 的脚本改善 workflow</li>
+</ul>
+<h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><blockquote>
+<p>会强迫到界面一个像素的偏差，和代码格式一个空格的偏差<br>学习能力强，以上绝大多数的技能都是工作之后自学修得的<br>熟练使用 Git、Markdown，常用IDE为WebStorm</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[About me]]></title>
       <url>http://littlewin.info/about/index.html</url>
       <content type="html"><![CDATA[<p>Littlewin，本名「王琪」，89年摩羯男<del>伪90后</del><br><strong>寻找靠谱的前端Team中，进来的瞅一眼<a href="/resume">简历</a></strong></p>
@@ -1251,44 +1301,10 @@
 <p>本站所有文章均为本人原创，仅代表个人在撰文时刻的观点和想法<br>内容转载请保留署名<strong>Littlewin</strong>或指向该原文(<a href="https://jysperm.me" target="_blank" rel="external">https://jysperm.me</a>)的链接，请勿用于商业用途</p>
 </blockquote>
 <h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><ul>
-<li>邮箱: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#x3a;&#108;&#105;&#x74;&#x74;&#108;&#x65;&#119;&#105;&#110;&#x2e;&#x77;&#x61;&#110;&#103;&#64;&#x67;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;">&#108;&#105;&#x74;&#x74;&#108;&#x65;&#119;&#105;&#110;&#x2e;&#x77;&#x61;&#110;&#103;&#64;&#x67;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a></li>
+<li>邮箱: <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x6c;&#x69;&#x74;&#x74;&#108;&#x65;&#119;&#105;&#110;&#x2e;&#x77;&#x61;&#110;&#x67;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#x6c;&#x69;&#x74;&#x74;&#108;&#x65;&#119;&#105;&#110;&#x2e;&#x77;&#x61;&#110;&#x67;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;</a></li>
 <li>微信: wxoffred</li>
 <li>Github: <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a></li>
 </ul>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[resume]]></title>
-      <url>http://littlewin.info/resume/index.html</url>
-      <content type="html"><![CDATA[<h3 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h3><blockquote>
-<p>基本: 王琪 | 27 | 男 | 硕士 | 深圳<br>工作年限: 1.5<br>博客: <a href="http://littlewin.info">http://littlewin.info</a><br>Github: <a href="https://github.com/littlewin-wang" target="_blank" rel="external">https://github.com/littlewin-wang</a><br>期望职位: 前端工程师 | 成都(重庆) </p>
-</blockquote>
-<h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><ul>
-<li><p><a href="https://github.com/littlewin-wang/vue-images" target="_blank" rel="external"><strong>vue-images</strong></a> <a href="https://littlewin-wang.github.io/vue-images/example/" class="demo" target="_blank" rel="external">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/vue-images" data-icon="octicon-star" data-count-href="/littlewin-wang/vue-images/stargazers" data-count-api="/repos/littlewin-wang/vue-images#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/vue-images on GitHub" target="_blank" rel="external">Star</a><br>采用Vue2.0设计的图片显示播放工具。<br>响应式设计，支持导航条、全屏显示和自动播放功能。<br>接口方便，已发布至<a href="https://www.npmjs.com/package/vue-images" target="_blank" rel="external">npm</a>。<br><img src="https://cloud.githubusercontent.com/assets/14028075/22059135/9a633f74-dda6-11e6-8314-3b745801b4e1.gif" alt=""></p>
-</li>
-<li><p><a href="https://github.com/littlewin-wang/Zhihu_Daily" target="_blank" rel="external"><strong>Zhihu_Daily</strong></a> <a href="http://zhihudaily.littlewin.info:5555/" class="demo" target="_blank" rel="external">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/Zhihu_Daily" data-icon="octicon-star" data-count-href="/littlewin-wang/Zhihu_Daily/stargazers" data-count-api="/repos/littlewin-wang/Zhihu_Daily#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/Zhihu_Daily on GitHub" target="_blank" rel="external">Star</a><br>采用vue 2.0 + vue-router 2.0 + vuex 2.0 + axios实现的知乎日报Web，支持每日热门话题/专栏/主题日报等页面。<br>项目采用中转服务器转发API并开启跨域支持，使用v-lazyload插件实现图片懒加载，使用vuex结合本地存储管理状态信息，增加过渡动画优化数据加载过程。<br><img src="https://cloud.githubusercontent.com/assets/14028075/21759136/eb939fd2-d67c-11e6-811f-4bdf67f67c73.gif" alt=""></p>
-</li>
-<li><p><a href="https://github.com/littlewin-wang/hexo-theme-casual" target="_blank" rel="external"><strong>hexo-theme-casual</strong></a> <a href="http://littlewin.info" class="demo">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/hexo-theme-casual" data-icon="octicon-star" data-count-href="/littlewin-wang/hexo-theme-casual/stargazers" data-count-api="/repos/littlewin-wang/hexo-theme-casual#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/hexo-theme-casual on GitHub" target="_blank" rel="external">Star</a><br>自己设计并实现的hexo博客主题，基于Jade + SASS + jQuery开发<br>设计简洁，引入本地搜索，评论等功能<br><img src="https://cloud.githubusercontent.com/assets/14028075/23158188/2bc394ba-f859-11e6-8453-3c78ecfa61fa.JPG" alt=""></p>
-</li>
-<li><p><a href="https://github.com/littlewin-wang/vue-sellapp" target="_blank" rel="external"><strong>vue-sellapp</strong></a> <a href="http://sellapp.littlewin.info:4444" class="demo" target="_blank" rel="external">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/vue-sellapp" data-icon="octicon-star" data-count-href="/littlewin-wang/vue-sellapp/stargazers" data-count-api="/repos/littlewin-wang/vue-sellapp#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/vue-sellapp on GitHub" target="_blank" rel="external">Star</a><br>基于Vue和Node.js的仿移动端外卖web app<br>采用Vue2.0对原项目进行重构<br><img src="https://cloud.githubusercontent.com/assets/14028075/21790600/6c6101ea-d718-11e6-8c75-6a7c1e86202d.gif" alt=""></p>
-</li>
-<li><p><a href="https://github.com/littlewin-wang/Baidu_IFE_2016" target="_blank" rel="external"><strong>Baidu_IFE_2016</strong></a><br>学习百度IFE前端技术学院春季班课程，并独立完成其中的任务</p>
-</li>
-</ul>
-<h3 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h3><ol>
-<li><p><strong>HTML / CSS</strong><br>能够编写语义化的 HTML，模块化的 CSS，完成较复杂的布局<br>熟悉 Stylus / Sass / Autoprefixer 等CSS预处理和后处理方法、工具</p>
-</li>
-<li><p><strong>JavaScript</strong><br>熟悉原生Javascript，能脱离jQuery等类库编码<br>能运用模块化、面向对象的方式编程<br>了解 RequireJS jQuery VueJS 的使用</p>
-</li>
-<li><p><strong>其他</strong><br>熟悉 Webpack Gulp 前端自动化工具<br>了解前端安全、性能优化方面的一些知识</p>
-</li>
-<li><p><strong>Node.js</strong><br>了解 JavaScript 异步模式<br>能够使用 http 模块构造简单的请求<br>能够编写基于 Node.js 的脚本改善 workflow</p>
-</li>
-</ol>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><blockquote>
-<p>会强迫到界面一个像素的偏差，和代码格式一个空格的偏差<br>学习能力强，以上绝大多数的技能都是工作之后自学修得的<br>熟练使用 Git、Markdown，常用IDE为WebStorm</p>
-</blockquote>
 ]]></content>
     </entry>
     
