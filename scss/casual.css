@@ -1537,6 +1537,8 @@ footer .copyright {
         border: none;
         background: transparent;
         color: #fff; }
+        .right-sticky ul li input:focus {
+          outline: none; }
       .right-sticky ul li:hover img {
         display: block; }
 
