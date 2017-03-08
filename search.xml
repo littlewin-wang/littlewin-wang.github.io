@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title><![CDATA[「casual」主题更新记录]]></title>
+      <url>http://littlewin.info/2017/03/08/%E3%80%8Ccasual%E3%80%8D%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/</url>
+      <content type="html"><![CDATA[<p>年初看到之前的博客主题有了修改的念头，究其缘由</p>
+<blockquote>
+<p>背着重重的<a href="http://semantic-ui.com/" target="_blank" rel="external">Semantic UI</a><br>整体设计缺乏简洁明快的风格</p>
+</blockquote>
+<a id="more"></a> 
+<p>v2.0之后的更新记录都放在这里吧</p>
+<h2 id="v2-0"><a href="#v2-0" class="headerlink" title="v2.0"></a>v2.0</h2><ul>
+<li><p>页面模板<br>增加了banner (大图宣告自己是来自南看台的黄皮肤)<br>改善了双栏布局效果<br>侧边栏加入了[个人链接]，[近期文章]，[近期评论]，[标签]和[归档]<br>改善了一些显示效果和功能，导航条固定 | 返回顶部 | 优化了页脚 | 优化了页码条</p>
+</li>
+<li><p>主页<br>优化了文章列表的显示效果，增加了文章thumbnail图</p>
+</li>
+<li><p>归档<br>优化了归档页面的显示效果</p>
+</li>
+<li><p>标签<br>取消了标签页，标签集中一个widget放在边栏里</p>
+</li>
+<li><p>关于<br>增加了关于页面</p>
+</li>
+<li><p>简历<br>增加了简历页面的功能<br>可以在主题的<strong>_config.yml*</strong>中配置开启</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Resume related</div><div class="line">resume: true</div></pre></td></tr></table></figure>
+<p>优化了简历页面样式</p>
+</li>
+<li><p>文章<br>优化了[前一篇]，[后一篇]导航的显示效果</p>
+</li>
+<li><p>其他功能<br>增加了本地搜索功能((<a href="https://github.com/PaicHyperionDev/hexo-generator-search" target="_blank" rel="external">hexo-generator-search</a>))<br>优化了搜索框样式<br>增加了文章浏览统计量显示<br>增加了一些闪电字体，醒目字体的显示效果</p>
+</li>
+</ul>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[应该是展望]]></title>
       <url>http://littlewin.info/2017/02/28/%E5%BA%94%E8%AF%A5%E6%98%AF%E5%B1%95%E6%9C%9B/</url>
       <content type="html"><![CDATA[<p>前进之路就像海绵一样，上段路程起点处设立好的本以为是厚积薄发的目标却在终点处总是显得刚好而已，好吧，再立小目标。<br><a id="more"></a> </p>
@@ -1235,34 +1275,10 @@
   
     
     <entry>
-      <title><![CDATA[About me]]></title>
-      <url>http://littlewin.info/about/index.html</url>
-      <content type="html"><![CDATA[<p>Littlewin，本名「王琪」，89年摩羯男<del>伪90后</del><br><strong>寻找靠谱的前端Team中，进来的瞅一眼<a href="/resume">简历</a></strong></p>
-<blockquote>
-<p>Littlewin是一个 <a href="http://littlewin.info">独立博客</a> 的Owner<br>Littlewin目前热情集中在与 <a href="http://littlewin.info/2016/11/07/Hello,%20%E5%A4%A7%E7%9B%AE%E6%A0%87/">大目标</a> 携手并进和在 <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a> 上积极垒砖<br>Littlewin目前负责SSD FW开发工作，忙里偷闲转向前端</p>
-</blockquote>
-<h3 id="个人特点"><a href="#个人特点" class="headerlink" title="个人特点"></a>个人特点</h3><blockquote>
-<p>Littlewin看重总结 <a href="http://littlewin.info/2016/12/30/2016%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">2016年终总结</a> ， <a href="http://littlewin.info/2016/12/22/To%20be%2027/">To be 27</a> 和立FLAG<br>Littlewin有时会写诗 <a href="http://littlewin.info/2016/10/17/%E5%B0%8F%E4%BB%BB%E6%80%A7%E5%A4%A7%E7%94%B7%E5%AD%A9/">小任性大男孩</a> ， <a href="http://littlewin.info/2016/11/07/Hello,%20%E5%A4%A7%E7%9B%AE%E6%A0%87/">Hello, 大目标</a><br>Littlewin向往单纯和善美，相信 <strong>生活会孕育每一个为之付出了努力的可能</strong><br>Littlewin热情不张扬，相信 <strong>生活也需要近乎无耻的自信</strong></p>
-</blockquote>
-<h3 id="个人爱好"><a href="#个人爱好" class="headerlink" title="个人爱好"></a>个人爱好</h3><blockquote>
-<p>Littlewin Like making cool things and making cool things with cool guys<br>Littlewin是多特死忠，期待有日去威斯特法伦坐在南看台看球<br>Littlewin经常参加足球和篮球运动<br>Littlewin也喜欢玩游戏：FIFA17、NBA2K17</p>
-</blockquote>
-<h3 id="一些声明"><a href="#一些声明" class="headerlink" title="一些声明"></a>一些声明</h3><blockquote>
-<p>本站所有文章均为本人原创，仅代表个人在撰文时刻的观点和想法<br>内容转载请保留署名<strong>Littlewin</strong>或指向该原文(<a href="https://jysperm.me" target="_blank" rel="external">https://jysperm.me</a>)的链接，请勿用于商业用途</p>
-</blockquote>
-<h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><ul>
-<li>邮箱: <a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#x6c;&#105;&#x74;&#x74;&#108;&#101;&#x77;&#105;&#110;&#x2e;&#x77;&#x61;&#x6e;&#x67;&#64;&#103;&#109;&#x61;&#x69;&#108;&#46;&#99;&#111;&#x6d;">&#x6c;&#105;&#x74;&#x74;&#108;&#101;&#x77;&#105;&#110;&#x2e;&#x77;&#x61;&#x6e;&#x67;&#64;&#103;&#109;&#x61;&#x69;&#108;&#46;&#99;&#111;&#x6d;</a></li>
-<li>微信: wxoffred</li>
-<li>Github: <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a></li>
-</ul>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[resume]]></title>
       <url>http://littlewin.info/resume/index.html</url>
       <content type="html"><![CDATA[<blockquote>
-<p>基本: <strong>王琪 - 27 - 男 - 硕士 - 深圳</strong><br>联系方式: <strong>18048580219</strong> || <strong><a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#58;&#108;&#105;&#x74;&#116;&#108;&#101;&#119;&#x69;&#x6e;&#x2e;&#119;&#97;&#110;&#x67;&#x40;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;">&#108;&#105;&#x74;&#116;&#108;&#101;&#119;&#x69;&#x6e;&#x2e;&#119;&#97;&#110;&#x67;&#x40;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;</a></strong><br>工作年限: <strong>1.5 Year</strong><br>博客: <strong><a href="http://littlewin.info">http://littlewin.info</a></strong><br>Github: <strong><a href="https://github.com/littlewin-wang" target="_blank" rel="external">https://github.com/littlewin-wang</a></strong><br>期望职位: <strong>前端工程师 &amp;&amp; 深圳(成都)</strong> </p>
+<p>基本: <strong>王琪 - 27 - 男 - 硕士 - 深圳</strong><br>联系方式: <strong>18048580219</strong> || <strong><a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#108;&#x69;&#x74;&#x74;&#x6c;&#x65;&#x77;&#x69;&#110;&#x2e;&#x77;&#97;&#110;&#x67;&#64;&#x67;&#109;&#97;&#105;&#108;&#46;&#99;&#x6f;&#109;">&#108;&#x69;&#x74;&#x74;&#x6c;&#x65;&#x77;&#x69;&#110;&#x2e;&#x77;&#97;&#110;&#x67;&#64;&#x67;&#109;&#97;&#105;&#108;&#46;&#99;&#x6f;&#109;</a></strong><br>工作年限: <strong>1.5 Year</strong><br>博客: <strong><a href="http://littlewin.info">http://littlewin.info</a></strong><br>Github: <strong><a href="https://github.com/littlewin-wang" target="_blank" rel="external">https://github.com/littlewin-wang</a></strong><br>期望职位: <strong>前端工程师 &amp;&amp; 深圳(成都)</strong> </p>
 </blockquote>
 <h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><h4 id="vue-images-Demo-Star"><a href="#vue-images-Demo-Star" class="headerlink" title="vue-images Demo Star"></a><a href="https://github.com/littlewin-wang/vue-images" target="_blank" rel="external"><strong>vue-images</strong></a> <a href="https://littlewin-wang.github.io/vue-images/example/" class="demo" target="_blank" rel="external">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/vue-images" data-icon="octicon-star" data-count-href="/littlewin-wang/vue-images/stargazers" data-count-api="/repos/littlewin-wang/vue-images#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/vue-images on GitHub" target="_blank" rel="external">Star</a></h4><ul>
 <li>采用Vue2.0设计的图片显示播放工具。</li>
@@ -1305,6 +1321,30 @@
 <h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><blockquote>
 <p>会强迫到界面一个像素的偏差，和代码格式一个空格的偏差<br>学习能力强，以上绝大多数的技能都是工作之后自学修得的<br>熟练使用 Git、Markdown，常用IDE为WebStorm</p>
 </blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[About me]]></title>
+      <url>http://littlewin.info/about/index.html</url>
+      <content type="html"><![CDATA[<p>Littlewin，本名「王琪」，89年摩羯男<del>伪90后</del><br><strong>寻找靠谱的前端Team中，进来的瞅一眼<a href="/resume">简历</a></strong></p>
+<blockquote>
+<p>Littlewin是一个 <a href="http://littlewin.info">独立博客</a> 的Owner<br>Littlewin目前热情集中在与 <a href="http://littlewin.info/2016/11/07/Hello,%20%E5%A4%A7%E7%9B%AE%E6%A0%87/">大目标</a> 携手并进和在 <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a> 上积极垒砖<br>Littlewin目前负责SSD FW开发工作，忙里偷闲转向前端</p>
+</blockquote>
+<h3 id="个人特点"><a href="#个人特点" class="headerlink" title="个人特点"></a>个人特点</h3><blockquote>
+<p>Littlewin看重总结 <a href="http://littlewin.info/2016/12/30/2016%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">2016年终总结</a> ， <a href="http://littlewin.info/2016/12/22/To%20be%2027/">To be 27</a> 和立FLAG<br>Littlewin有时会写诗 <a href="http://littlewin.info/2016/10/17/%E5%B0%8F%E4%BB%BB%E6%80%A7%E5%A4%A7%E7%94%B7%E5%AD%A9/">小任性大男孩</a> ， <a href="http://littlewin.info/2016/11/07/Hello,%20%E5%A4%A7%E7%9B%AE%E6%A0%87/">Hello, 大目标</a><br>Littlewin向往单纯和善美，相信 <strong>生活会孕育每一个为之付出了努力的可能</strong><br>Littlewin热情不张扬，相信 <strong>生活也需要近乎无耻的自信</strong></p>
+</blockquote>
+<h3 id="个人爱好"><a href="#个人爱好" class="headerlink" title="个人爱好"></a>个人爱好</h3><blockquote>
+<p>Littlewin Like making cool things and making cool things with cool guys<br>Littlewin是多特死忠，期待有日去威斯特法伦坐在南看台看球<br>Littlewin经常参加足球和篮球运动<br>Littlewin也喜欢玩游戏：FIFA17、NBA2K17</p>
+</blockquote>
+<h3 id="一些声明"><a href="#一些声明" class="headerlink" title="一些声明"></a>一些声明</h3><blockquote>
+<p>本站所有文章均为本人原创，仅代表个人在撰文时刻的观点和想法<br>内容转载请保留署名<strong>Littlewin</strong>或指向该原文(<a href="https://jysperm.me" target="_blank" rel="external">https://jysperm.me</a>)的链接，请勿用于商业用途</p>
+</blockquote>
+<h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><ul>
+<li>邮箱: <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#108;&#x69;&#x74;&#116;&#x6c;&#101;&#x77;&#x69;&#110;&#46;&#x77;&#x61;&#x6e;&#103;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;">&#108;&#x69;&#x74;&#116;&#x6c;&#101;&#x77;&#x69;&#110;&#46;&#x77;&#x61;&#x6e;&#103;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;</a></li>
+<li>微信: wxoffred</li>
+<li>Github: <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a></li>
+</ul>
 ]]></content>
     </entry>
     
