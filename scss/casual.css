@@ -1312,6 +1312,13 @@ footer .copyright {
   .post-excerpt {
     margin-left: calc(30% + 20px); } }
 
+@media screen and (max-width: 480px) {
+  .post-thumbnail {
+    display: none; }
+  .post-header,
+  .post-excerpt {
+    margin-left: 0; } }
+
 @media screen and (max-width: 360px) {
   .post-excerpt {
     display: none; } }
