@@ -1,7 +1,6 @@
 ---
 title: 「casual」主题更新记录
 date: 2017-03-08 14:34:11
-tags: ["前端"]
 bgimage: http://7xpot0.com1.z0.glb.clouddn.com/17-3-8/99520617-file_1488955072521_84f3.png
 ---
 
