@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://littlewin.info/"/>
-  <updated>2017-04-07T07:37:35.881Z</updated>
+  <updated>2017-05-23T10:38:42.771Z</updated>
   <id>http://littlewin.info/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>又过五月天</title>
+    <link href="http://littlewin.info/2017/05/23/%E5%8F%88%E8%BF%87%E4%BA%94%E6%9C%88%E5%A4%A9/"/>
+    <id>http://littlewin.info/2017/05/23/又过五月天/</id>
+    <published>2017-05-23T08:48:00.000Z</published>
+    <updated>2017-05-23T10:38:42.771Z</updated>
+    
+    <content type="html"><![CDATA[<p>这篇背图颁给上周末拿到小钢炮的美羊羊<br>And一个赛季又快要结束了<br>望这周末我小破多拿下德国杯，快三年没捧过杯了(ÒωÓױ)</p>
+<p>那么，就算简简单单的活着<br>也要坚持一种风格吧</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇背图颁给上周末拿到小钢炮的美羊羊&lt;br&gt;And一个赛季又快要结束了&lt;br&gt;望这周末我小破多拿下德国杯，快三年没捧过杯了(ÒωÓױ)&lt;/p&gt;
+&lt;p&gt;那么，就算简简单单的活着&lt;br&gt;也要坚持一种风格吧&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="感言" scheme="http://littlewin.info/tags/%E6%84%9F%E8%A8%80/"/>
+    
+      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>致阿土姑娘</title>
@@ -150,9 +176,9 @@
     </summary>
     
     
-      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
-    
       <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="生活" scheme="http://littlewin.info/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -738,9 +764,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -839,9 +865,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -934,9 +960,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -1021,9 +1047,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -1072,7 +1098,7 @@
 </ul>
 <p>JSONP实现原理是 - <code>&lt;script&gt;</code>标签可以有来自不同域的资源，当浏览器解析<code>&lt;script&gt;</code>标签，它会GET请求脚本内容（来自任何源）并在当前的页面中执行。通常，服务器会返回HTML或一些XML或JSON数据。有时向一个启用JSONP的服务器请求时，它会返回一个脚本块，这个脚本块执行一个在页面中定义好的回调函数，并提供参数。以下举例：</p>
 <p>源3000的页面想要获取存储在源3001的资源。源3000页面包含下面的script标签：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
 <p>当浏览器解析这个script标签，它将正常的发出GET请求：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /?callback=myCallbackFunction HTTP/1.1</div></pre></td></tr></table></figure>
 <p>服务器没法返回原生JSON，而是返回一个脚本块，包含函数的调用，函数名在URL中指定，输出的数据作为参数传递。</p>
@@ -1116,9 +1142,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="JavaScript" scheme="http://littlewin.info/tags/JavaScript/"/>
+    
+      <category term="前端" scheme="http://littlewin.info/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -1158,60 +1184,6 @@
     <summary type="html">
     
       &lt;p&gt;内存管理在程序开发中有着至关重要的作用，基本上每个C系的程序员都会遇到与内存相关的错误，这种错误是灾难性的。Java或脚本语言的内存管理是自动进行的，就像父母会给孩子打扫房间一样。对于C系程序开发，我们必须合理分配内存，在内存结束使用后释放它们，避免内存泄漏（leak memory）。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Objective-C" scheme="http://littlewin.info/tags/Objective-C/"/>
-    
-      <category term="iOS" scheme="http://littlewin.info/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Objective-C学习之OOP</title>
-    <link href="http://littlewin.info/2016/01/01/Objective-C%E5%AD%A6%E4%B9%A0%E4%B9%8BOOP/"/>
-    <id>http://littlewin.info/2016/01/01/Objective-C学习之OOP/</id>
-    <published>2016-01-01T07:02:41.000Z</published>
-    <updated>2016-09-06T11:31:52.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><em>最近元旦无事在家休息，将这半年来所学记录于此。以后无论事情再多，也要力争在短周期内通过blog上update自己的学习记录和心得，一来督促自己，二来方便日后查阅。</em></p>
-<p>开发iOS应用需要使用Objective-C语言和Cocoa Touch框架。Objective-C源自C语言，是C语言的扩展。Cocoa Touch框架则是一个Objective-C类的集合。<br><a id="more"></a> </p>
-<h5 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h5><p>Objective-C的类与其他OOP语言基本类似，是一种表示对象类型的结构体。对象通过它隶属的类来获取自身的各种信息，尤其是执行每个操作所要运行的代码。<br><code>@interface</code>指令将类所提供的数据结构成员告知Objective-C编译器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@interface NewClass : NSObject  </div><div class="line">&#123;</div><div class="line">//fill in instance variable</div><div class="line">&#125;</div><div class="line">//fill in method declaration</div><div class="line">@end</div></pre></td></tr></table></figure></p>
-<p><code>@implementation</code>部分提供各个数据接口的功能代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@implementation NewClass</div><div class="line">//fill in implementation</div><div class="line">@end</div></pre></td></tr></table></figure></p>
-<p>在Objective-C中，几乎所有的类都是NSObject类的子类，因此，可以将这些类也看为对象，对象能够接收的消息列表是保存在它所对应的类中。每一个对象都有一个名为 isa 的指针，指向该对象的类。</p>
-<p>NSObject 就是一个包含 isa 指针的结构体，它的定义如下所示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@interface NSObject  &#123; </div><div class="line">    Class isa; </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>类是元类(metaclass)的实例，元类的isa指针指向根元类（root metaclass），根元类 (root metaclass) 本身的 isa 指针指向自己，形成一个闭环的继承路径。<br><img src="http://7xpot0.com1.z0.glb.clouddn.com/16-1-1/48692569.jpg" alt=""><br>对象是类的实例，其本身是分配在内存中的一块数据。对象是有生命周期的，首先被创建，然后接受消息，最后在不需要时被释放。向类发alloc消息，会在内存中创建对象并返回对象指针。对新创建的对象，必须先向其发送一个初始化消息，然后它才能正常工作。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">NewClass *newClass = [NewClass alloc];</div><div class="line">[newClass init];</div></pre></td></tr></table></figure></p>
-<p>在对象完成使命后，可以要求程序释放对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">newClass=nil;</div></pre></td></tr></table></figure></p>
-<h5 id="实例变量和属性"><a href="#实例变量和属性" class="headerlink" title="实例变量和属性"></a>实例变量和属性</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@interface NewClass : NSObject</div><div class="line">&#123;</div><div class="line">    NSString *newString;</div><div class="line">&#125;</div><div class="line">@property (nonatomic, retain) NSString *newString;</div><div class="line">@end</div></pre></td></tr></table></figure>
-<p>声明类的实例变量时，需要将相应的声明写在花括号里，并紧跟在类声明的后面。为类添加实例变量后，还要定义存取方法（accessor method），否则无法访问对象的实例变量。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- (void)setNewString:(NSString *)str;</div><div class="line">- (NSString *)newString;</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">- (void)setNewString:(NSString *)str</div><div class="line">&#123;</div><div class="line">    _newString = str;</div><div class="line">&#125;</div><div class="line"></div><div class="line">- (NSString *)newString</div><div class="line">&#123;</div><div class="line">    return _newString;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><code>@Property</code>是声明属性的语法，它可以快速方便的为实例变量创建存取器，并允许我们通过点语法使用存取器。</p>
-<p>它们的区别有以下几点</p>
-<ul>
-<li>直接操作实例变量明显更快。因为不需要经过OC的方法分发，直接从内存中读取。</li>
-<li>直接写实例变量会绕过属性的内存管理声明，假如你的属性声明为 <code>copy</code>，直接写入它的实例变量将不会产生copy操作。</li>
-<li>直接操作实例变量，不会发送KVO通知。</li>
-<li>操作属性方便调试，你可以给get/set方法加断点，就能知道谁在什么时候进行了读写操作。</li>
-</ul>
-<h5 id="类方法和实例方法"><a href="#类方法和实例方法" class="headerlink" title="类方法和实例方法"></a>类方法和实例方法</h5><p>类方法的作用通常是创建对象，或者获取类的某些全局属性。<strong>类方法不会作用在在对象上，也不能存取实例变量</strong>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">+ (void)toNewString</div><div class="line">&#123;</div><div class="line">    NSLog(@&quot;this is a class method of NewString&quot;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>实例方法则用来操作类的对象（对象有时也可称为类的一个实例）例如上述存取方法。</p>
-<p>在创建一个NewClass对象时，首先向NewClass类发送<code>alloc</code>（类方法）消息，然后向使用alloc方法创建的对象newClass发送<code>init</code>（实例方法）消息。</p>
-<h5 id="继承与复合"><a href="#继承与复合" class="headerlink" title="继承与复合"></a>继承与复合</h5><p>继承（is-a关系）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@interface NewClass : NSObject</div></pre></td></tr></table></figure></p>
-<p>Objective-c不支持多继承。<br>Objective-c支持重写方法，同时仍然调用超类的实现方式，这时需要使用<code>super</code>关键词来调用父类方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[super init]；</div></pre></td></tr></table></figure></p>
-<p>复合（has-a关系）<br>在objective-c中，复合是通过包含作为实例变量的对象指针实现的，如NewClass可以包含newString和oldString。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@interface NewClass : NSObject </div><div class="line">&#123; </div><div class="line">    NSString *newString; </div><div class="line">    NSString *oldString;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>严格来讲，只有对象间的组合才能叫复合，而基本类型都被认为是对象的一部分。</p>
-<h5 id="一些没提到的关键字"><a href="#一些没提到的关键字" class="headerlink" title="一些没提到的关键字"></a>一些没提到的关键字</h5><ul>
-<li><code>self</code> 与 <code>super</code><br><code>self</code> 是一个隐含的指针，指向接收消息的对象的指针。<br><code>super</code>既不是参数也不是实例变量。向<code>super</code>发消息时，实际上是在请求Objective-C向该类的超类发送消息。如果超类中没有定义的消息，Objective-C将按照继承的通常规则在继承链中查找。例如<code>[super init]</code>用于向超类的<code>init</code>方法发送消息。</li>
-<li><code>id</code><br><code>id</code>是指向Objective-C类对象的指针，它可以声明为任何类对象的指针，当在Objective-C中使用id时，编译器会假定你知道，<code>id</code>指向哪个类的对象。与<code>void*</code>是不同的是，<code>void*</code>编译器不知道也不假定指向任何类型的指针。</li>
-<li><code>nil</code><br>定义为一个常量，如果一个指针的值为<code>nil</code>,代表这个指针没有指向任何对象。</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;最近元旦无事在家休息，将这半年来所学记录于此。以后无论事情再多，也要力争在短周期内通过blog上update自己的学习记录和心得，一来督促自己，二来方便日后查阅。&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;开发iOS应用需要使用Objective-C语言和Cocoa Touch框架。Objective-C源自C语言，是C语言的扩展。Cocoa Touch框架则是一个Objective-C类的集合。&lt;br&gt;
     
     </summary>
     
