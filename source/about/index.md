@@ -24,7 +24,7 @@ Littlewin，本名「王琪」，89年摩羯男~~伪90后~~
 
 ### 一些声明
 > 本站所有文章均为本人原创，仅代表个人在撰文时刻的观点和想法
-> 内容转载请保留署名**Littlewin**或指向该原文([https://jysperm.me](https://jysperm.me))的链接，请勿用于商业用途
+> 内容转载请保留署名**Littlewin**或指向该原文([http://littlewin.info](http://littlewin.info))的链接，请勿用于商业用途
 
 ### 联系方式
 - 邮箱: <littlewin.wang@gmail.com>
