@@ -109,9 +109,9 @@
         
         <tags>
             
-            <tag> 前端 </tag>
-            
             <tag> 生活 </tag>
+            
+            <tag> 前端 </tag>
             
         </tags>
         
@@ -625,9 +625,9 @@
         
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
         
@@ -720,9 +720,9 @@
         
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
         
@@ -809,9 +809,9 @@
         
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
         
@@ -890,9 +890,9 @@
         
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
         
@@ -939,7 +939,7 @@
 </ul>
 <p>JSONP实现原理是 - <code>&lt;script&gt;</code>标签可以有来自不同域的资源，当浏览器解析<code>&lt;script&gt;</code>标签，它会GET请求脚本内容（来自任何源）并在当前的页面中执行。通常，服务器会返回HTML或一些XML或JSON数据。有时向一个启用JSONP的服务器请求时，它会返回一个脚本块，这个脚本块执行一个在页面中定义好的回调函数，并提供参数。以下举例：</p>
 <p>源3000的页面想要获取存储在源3001的资源。源3000页面包含下面的script标签：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">'http://localhost:3001?callback=myCallbackFunction'</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
 <p>当浏览器解析这个script标签，它将正常的发出GET请求：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /?callback=myCallbackFunction HTTP/1.1</div></pre></td></tr></table></figure>
 <p>服务器没法返回原生JSON，而是返回一个脚本块，包含函数的调用，函数名在URL中指定，输出的数据作为参数传递。</p>
@@ -972,9 +972,9 @@
         
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
         
@@ -1131,9 +1131,9 @@
         
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
         
@@ -1182,9 +1182,9 @@
         
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
         
@@ -1262,9 +1262,9 @@
         
         <tags>
             
-            <tag> 前端 </tag>
-            
             <tag> HTML </tag>
+            
+            <tag> 前端 </tag>
             
         </tags>
         
@@ -1295,10 +1295,34 @@
   
     
     <entry>
+      <title><![CDATA[About me]]></title>
+      <url>http://littlewin.info/about/index.html</url>
+      <content type="html"><![CDATA[<p>Littlewin，本名「王琪」，89年摩羯男<del>伪90后</del><br><strong>寻找靠谱的前端Team中，进来的瞅一眼<a href="/resume">简历</a></strong></p>
+<blockquote>
+<p>Littlewin是一个 <a href="http://littlewin.info">独立博客</a> 的Owner<br>Littlewin目前热情集中在与 <a href="http://littlewin.info/2016/11/07/Hello,%20%E5%A4%A7%E7%9B%AE%E6%A0%87/">大目标</a> 携手并进和在 <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a> 上积极垒砖<br>Littlewin目前负责SSD FW开发工作，忙里偷闲转向前端</p>
+</blockquote>
+<h3 id="个人特点"><a href="#个人特点" class="headerlink" title="个人特点"></a>个人特点</h3><blockquote>
+<p>Littlewin看重总结 <a href="http://littlewin.info/2016/12/30/2016%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">2016年终总结</a> ， <a href="http://littlewin.info/2016/12/22/To%20be%2027/">To be 27</a> 和立FLAG<br>Littlewin有时会写诗 <a href="http://littlewin.info/2016/10/17/%E5%B0%8F%E4%BB%BB%E6%80%A7%E5%A4%A7%E7%94%B7%E5%AD%A9/">小任性大男孩</a> ， <a href="http://littlewin.info/2016/11/07/Hello,%20%E5%A4%A7%E7%9B%AE%E6%A0%87/">Hello, 大目标</a><br>Littlewin向往单纯和善美，相信 <strong>生活会孕育每一个为之付出了努力的可能</strong><br>Littlewin热情不张扬，相信 <strong>生活也需要近乎无耻的自信</strong></p>
+</blockquote>
+<h3 id="个人爱好"><a href="#个人爱好" class="headerlink" title="个人爱好"></a>个人爱好</h3><blockquote>
+<p>Littlewin Like making cool things and making cool things with cool guys<br>Littlewin是多特死忠，期待有日去威斯特法伦坐在南看台看球<br>Littlewin经常参加足球和篮球运动<br>Littlewin也喜欢玩游戏：FIFA17、NBA2K17</p>
+</blockquote>
+<h3 id="一些声明"><a href="#一些声明" class="headerlink" title="一些声明"></a>一些声明</h3><blockquote>
+<p>本站所有文章均为本人原创，仅代表个人在撰文时刻的观点和想法<br>内容转载请保留署名<strong>Littlewin</strong>或指向该原文(<a href="http://littlewin.info">http://littlewin.info</a>)的链接，请勿用于商业用途</p>
+</blockquote>
+<h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><ul>
+<li>邮箱: <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x6c;&#x69;&#x74;&#116;&#x6c;&#101;&#119;&#105;&#x6e;&#x2e;&#x77;&#x61;&#110;&#103;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#x6d;">&#x6c;&#x69;&#x74;&#116;&#x6c;&#101;&#119;&#105;&#x6e;&#x2e;&#x77;&#x61;&#110;&#103;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#x6d;</a></li>
+<li>微信: wxoffred</li>
+<li>Github: <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[resume]]></title>
       <url>http://littlewin.info/resume/index.html</url>
       <content type="html"><![CDATA[<blockquote>
-<p>基本: <strong>王琪 - 27 - 男 - 硕士(四川大学) - 深圳</strong><br>联系方式: <strong>18048580219</strong> || <strong><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#x69;&#x74;&#x74;&#108;&#x65;&#x77;&#x69;&#110;&#46;&#x77;&#x61;&#110;&#x67;&#x40;&#x67;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;">&#108;&#x69;&#x74;&#x74;&#108;&#x65;&#x77;&#x69;&#110;&#46;&#x77;&#x61;&#110;&#x67;&#x40;&#x67;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;</a></strong><br>工作年限: <strong>Almost 2 Year</strong><br>博客: <strong><a href="http://littlewin.info">http://littlewin.info</a></strong><br>Github: <strong><a href="https://github.com/littlewin-wang" target="_blank" rel="external">https://github.com/littlewin-wang</a></strong><br>期望职位: <strong>前端工程师 &amp;&amp; 深圳(成都)</strong> </p>
+<p>基本: <strong>王琪 - 27 - 男 - 硕士(四川大学) - 深圳</strong><br>联系方式: <strong>18048580219</strong> || <strong><a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#105;&#116;&#116;&#108;&#x65;&#x77;&#105;&#x6e;&#x2e;&#x77;&#97;&#x6e;&#103;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;">&#108;&#105;&#116;&#116;&#108;&#x65;&#x77;&#105;&#x6e;&#x2e;&#x77;&#97;&#x6e;&#103;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;</a></strong><br>工作年限: <strong>Almost 2 Year</strong><br>博客: <strong><a href="http://littlewin.info">http://littlewin.info</a></strong><br>Github: <strong><a href="https://github.com/littlewin-wang" target="_blank" rel="external">https://github.com/littlewin-wang</a></strong><br>期望职位: <strong>前端工程师 &amp;&amp; 深圳(成都)</strong> </p>
 </blockquote>
 <h3 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h3><blockquote>
 <p>Nokia公司成都研发中心 （ 2014年2月 ~ 2014年11月 ）</p>
@@ -1311,7 +1335,7 @@
 <li>SSD, eMMC产品固件开发，量产工具开发。</li>
 </ul>
 </blockquote>
-<h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><h4 id="mufly-Ongoing"><a href="#mufly-Ongoing" class="headerlink" title="mufly [Ongoing]"></a><a href="https://github.com/littlewin-wang/mufly" target="_blank" rel="external"><strong>mufly</strong></a> [Ongoing]</h4><ul>
+<h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><h4 id="muflyDemo-Star-Ongoing"><a href="#muflyDemo-Star-Ongoing" class="headerlink" title="muflyDemo Star [Ongoing]"></a><a href="https://github.com/littlewin-wang/mufly" target="_blank" rel="external"><strong>mufly</strong></a><a href="http://mufly.littlewin.info:7777" class="demo" target="_blank" rel="external">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/mufly" data-icon="octicon-star" data-count-href="/littlewin-wang/mufly/stargazers" data-count-api="/repos/littlewin-wang/mufly#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/mufly on GitHub" target="_blank" rel="external">Star</a> [Ongoing]</h4><ul>
 <li>歌手爬取Web应用，根据Spotify提供的API在一个树状节点网络里找到相似的歌手。</li>
 <li>采用React全家桶设计，过渡动画优化，树状节点网络的前进/后退的动画序列实现。</li>
 </ul>
@@ -1331,7 +1355,7 @@
 <li>自己设计并实现的hexo博客主题，基于Jade + SASS + jQuery开发</li>
 <li>设计简洁，引入本地搜索，评论等功能</li>
 </ul>
-<h5 id="vue-sellapp-Demo-Star"><a href="#vue-sellapp-Demo-Star" class="headerlink" title="vue-sellapp Demo Star"></a><a href="https://github.com/littlewin-wang/vue-sellapp" target="_blank" rel="external"><strong>vue-sellapp</strong></a> <a href="http://sellapp.littlewin.info:4444" class="demo" target="_blank" rel="external">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/vue-sellapp" data-icon="octicon-star" data-count-href="/littlewin-wang/vue-sellapp/stargazers" data-count-api="/repos/littlewin-wang/vue-sellapp#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/vue-sellapp on GitHub" target="_blank" rel="external">Star</a></h5><ul>
+<h5 id="vue-sellapp-Demo-Star"><a href="#vue-sellapp-Demo-Star" class="headerlink" title="vue-sellapp Demo Star"></a><a href="https://github.com/littlewin-wang/vue-sellapp" target="_blank" rel="external"><strong>vue-sellapp</strong></a> <a href="http://sellapp.littlewin.info:3333" class="demo" target="_blank" rel="external">Demo</a> <a class="github-button" href="https://github.com/littlewin-wang/vue-sellapp" data-icon="octicon-star" data-count-href="/littlewin-wang/vue-sellapp/stargazers" data-count-api="/repos/littlewin-wang/vue-sellapp#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star littlewin-wang/vue-sellapp on GitHub" target="_blank" rel="external">Star</a></h5><ul>
 <li>基于Vue和Node.js的仿移动端外卖web app</li>
 <li>采用Vue2.0对原项目进行重构</li>
 </ul>
@@ -1362,30 +1386,6 @@
 <h3 id="P-S-关于加分项"><a href="#P-S-关于加分项" class="headerlink" title="P.S 关于加分项"></a>P.S 关于加分项</h3><blockquote>
 <p>自认颜值未满，打个六折可否<br>JavaScript常伴手，Node.js常折腾<br>Github重度用户<br>王者荣耀虽菜，FIFA17 666</p>
 </blockquote>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[About me]]></title>
-      <url>http://littlewin.info/about/index.html</url>
-      <content type="html"><![CDATA[<p>Littlewin，本名「王琪」，89年摩羯男<del>伪90后</del><br><strong>寻找靠谱的前端Team中，进来的瞅一眼<a href="/resume">简历</a></strong></p>
-<blockquote>
-<p>Littlewin是一个 <a href="http://littlewin.info">独立博客</a> 的Owner<br>Littlewin目前热情集中在与 <a href="http://littlewin.info/2016/11/07/Hello,%20%E5%A4%A7%E7%9B%AE%E6%A0%87/">大目标</a> 携手并进和在 <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a> 上积极垒砖<br>Littlewin目前负责SSD FW开发工作，忙里偷闲转向前端</p>
-</blockquote>
-<h3 id="个人特点"><a href="#个人特点" class="headerlink" title="个人特点"></a>个人特点</h3><blockquote>
-<p>Littlewin看重总结 <a href="http://littlewin.info/2016/12/30/2016%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">2016年终总结</a> ， <a href="http://littlewin.info/2016/12/22/To%20be%2027/">To be 27</a> 和立FLAG<br>Littlewin有时会写诗 <a href="http://littlewin.info/2016/10/17/%E5%B0%8F%E4%BB%BB%E6%80%A7%E5%A4%A7%E7%94%B7%E5%AD%A9/">小任性大男孩</a> ， <a href="http://littlewin.info/2016/11/07/Hello,%20%E5%A4%A7%E7%9B%AE%E6%A0%87/">Hello, 大目标</a><br>Littlewin向往单纯和善美，相信 <strong>生活会孕育每一个为之付出了努力的可能</strong><br>Littlewin热情不张扬，相信 <strong>生活也需要近乎无耻的自信</strong></p>
-</blockquote>
-<h3 id="个人爱好"><a href="#个人爱好" class="headerlink" title="个人爱好"></a>个人爱好</h3><blockquote>
-<p>Littlewin Like making cool things and making cool things with cool guys<br>Littlewin是多特死忠，期待有日去威斯特法伦坐在南看台看球<br>Littlewin经常参加足球和篮球运动<br>Littlewin也喜欢玩游戏：FIFA17、NBA2K17</p>
-</blockquote>
-<h3 id="一些声明"><a href="#一些声明" class="headerlink" title="一些声明"></a>一些声明</h3><blockquote>
-<p>本站所有文章均为本人原创，仅代表个人在撰文时刻的观点和想法<br>内容转载请保留署名<strong>Littlewin</strong>或指向该原文(<a href="http://littlewin.info">http://littlewin.info</a>)的链接，请勿用于商业用途</p>
-</blockquote>
-<h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><ul>
-<li>邮箱: <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#x6c;&#x69;&#116;&#x74;&#x6c;&#x65;&#119;&#x69;&#x6e;&#x2e;&#119;&#x61;&#110;&#103;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#109;">&#x6c;&#x69;&#116;&#x74;&#x6c;&#x65;&#119;&#x69;&#x6e;&#x2e;&#119;&#x61;&#110;&#103;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#109;</a></li>
-<li>微信: wxoffred</li>
-<li>Github: <a href="https://github.com/littlewin-wang" target="_blank" rel="external">Github</a></li>
-</ul>
 ]]></content>
     </entry>
     
